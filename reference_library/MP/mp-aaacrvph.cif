@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Ca6Al7O16F
+_symmetry_space_group_name_H-M   I-42d
+_cell_length_a   12.17441600
+_cell_length_b   12.17441600
+_cell_length_c   11.87667800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   122
+_chemical_formula_structural   Ca6Al7O16F
+_chemical_formula_sum   'Ca24 Al28 O64 F4'
+_cell_volume   1760.31851580
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y+1/2, -z+1/4'
+  6  'y, x+1/2, z+1/4'
+  7  '-x, y+1/2, -z+1/4'
+  8  '-y, -x+1/2, z+1/4'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  'x+1/2, -y, -z+3/4'
+  14  'y+1/2, x, z+3/4'
+  15  '-x+1/2, y, -z+3/4'
+  16  '-y+1/2, -x, z+3/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  8  0.00000000  0.00000000  0.30464900  1.0
+  Ca  Ca1  8  0.11206700  0.75000000  0.12500000  1.0
+  Ca  Ca2  8  0.13378300  0.25000000  0.62500000  1.0
+  Al  Al3  16  0.01709700  0.22824200  0.85838100  1.0
+  Al  Al4  8  0.12718000  0.75000000  0.62500000  1.0
+  Al  Al5  4  0.00000000  0.00000000  0.00000000  1.0
+  O  O6  16  0.03622350  0.69152450  0.52649250  1.0
+  O  O7  16  0.06032250  0.10027650  0.91416150  1.0
+  O  O8  16  0.06776350  0.68836250  0.93980450  1.0
+  O  O9  16  0.14938050  0.21650250  0.42928450  1.0
+  F  F10  4  0.00000000  0.00000000  0.50000000  1.0

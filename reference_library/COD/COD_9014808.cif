@@ -1,0 +1,132 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-10 20:44:19 +0300 (Wed, 10 May 2023) $
+#$Revision: 283658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/48/9014808.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9014808
+loop_
+_publ_author_name
+'Ertl, A.'
+'Marschall, H.'
+'Geister, G.'
+'Henry, D.'
+'Schertl, H. P.'
+'Ntaflos, T.'
+'Luvizotto, G.'
+'Nasdala, L.'
+'Tillmanns, E.'
+_publ_section_title
+;
+ Metamorphic ultrahigh-pressure tourmaline: structure,
+ chemistry, and correlations to P-T conditions
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1
+_journal_page_last               10
+_journal_paper_doi               10.2138/am.2010.3283
+_journal_volume                  95
+_journal_year                    2010
+_chemical_compound_source        'Lago di Cignana, Western Alps, Italy'
+_chemical_formula_sum
+'Al5.805 B3 Ca0.09 F0.35 Fe0.48 H3.65 K0.01 Mg2.643 Mn0.06 Na0.84 Ni0.021 O30.65 Si5.982 Ti0.021 Zn0.009'
+_chemical_name_mineral           Dravite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.945
+_cell_length_b                   15.945
+_cell_length_c                   7.210
+_cell_volume                     1587.504
+_database_code_amcsd             0004997
+_exptl_crystal_density_diffrn    3.070
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+'Na.84 Ca.09 K.01 Mg2.643 Al5.805 Fe.48 Mn.06 Ti.021 Ni.021 Zn.009 Si5.982 B3 O30.65 F.35 H3.65'
+_cod_database_code               9014808
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaX 0.00000 0.00000 0.23250 0.84000 0.02040 Na 0
+CaX 0.00000 0.00000 0.23250 0.09000 0.02040 Ca 0
+KX 0.00000 0.00000 0.23250 0.01000 0.02040 K 0
+MgY 0.12426 0.06213 0.63250 0.54700 0.00810 Mg 0
+AlY 0.12426 0.06213 0.63250 0.26300 0.00810 Al 0
+FeY 0.12426 0.06213 0.63250 0.16000 0.00810 Fe 0
+MnY 0.12426 0.06213 0.63250 0.02000 0.00810 Mn 0
+TiY 0.12426 0.06213 0.63250 0.00700 0.00810 Ti 0
+NiY 0.12426 0.06213 0.63250 0.00700 0.00810 Ni 0
+ZnY 0.12426 0.06213 0.63250 0.00300 0.00810 Zn 0
+AlZ 0.29802 0.26159 0.61070 0.83300 0.00545 Al 0
+MgZ 0.29802 0.26159 0.61070 0.16700 0.00545 Mg 0
+SiT 0.19175 0.18990 -0.00135 0.99700 0.00520 Si 0
+AlT 0.19175 0.18990 -0.00135 0.00300 0.00520 Al 0
+B 0.10987 0.21974 0.45360 1.00000 0.00650 B 0
+O-H1 0.00000 0.00000 0.77120 0.65000 0.01350 O 1
+F1 0.00000 0.00000 0.77120 0.35000 0.01350 F 0
+O2 0.06106 0.12212 0.48347 1.00000 0.01023 O 0
+O3 0.26510 0.13255 0.50989 1.00000 0.01250 O 0
+H3 0.25600 0.12800 0.40000 1.00000 0.04500 H 0
+O4 0.09310 0.18620 0.06931 1.00000 0.01017 O 0
+O5 0.18433 0.09217 0.09025 1.00000 0.01010 O 0
+O6 0.19581 0.18592 0.77662 1.00000 0.00840 O 0
+O7 0.28489 0.28483 0.07811 1.00000 0.00850 O 0
+O8 0.20927 0.27006 0.44018 1.00000 0.00962 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9574 2023-05-10 09:00:05Z saulius
+;
+2023-05-10T18:55:32+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0004997

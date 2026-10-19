@@ -1,0 +1,154 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-10 20:44:19 +0300 (Wed, 10 May 2023) $
+#$Revision: 283658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/64/9016494.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9016494
+loop_
+_publ_author_name
+'Bosi, F.'
+'Andreozzi, G. B.'
+'Skogby, H.'
+'Lussier, A. J.'
+'Abdu, Y.'
+'Hawthorne, F. C.'
+_publ_section_title
+;
+ Fluor-elbaite, Na(Li1.5Al1.5)Al6(Si6O18)(BO3)3(OH)3F, a new mineral species
+ of the tourmaline supergroup
+ Note: standard SREF
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              297
+_journal_page_last               303
+_journal_paper_doi               10.2138/am.2013.4285
+_journal_volume                  98
+_journal_year                    2013
+_chemical_compound_source        'Cruzeiro mine, Minas Gerais, Brazil'
+_chemical_formula_sum
+'Al7.149 B3 Ca0.6 F0.76 Fe0.459 H3.24 K0.01 Li1.02 Mn0.279 Na0.78 O30.24 Si6 Zn0.03'
+_chemical_name_mineral           Fluor-elbaite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.8933
+_cell_length_b                   15.8933
+_cell_length_c                   7.1222
+_cell_volume                     1558.020
+_database_code_amcsd             0019777
+_exptl_crystal_density_diffrn    3.158
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+'Na.78 Ca.6 K.01 Li1.02 Mn.279 Fe.459 Al7.149 Zn.03 B3 Si6 F.76 O30.24 H3.24'
+_cod_database_code               9016494
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+NaX 0.02470 0.02470 0.01500 0.01240 0.00000 0.00000
+CaX 0.02470 0.02470 0.01500 0.01240 0.00000 0.00000
+KX 0.02470 0.02470 0.01500 0.01240 0.00000 0.00000
+LiY 0.00938 0.00812 0.01143 0.00469 -0.00107 -0.00053
+Mn2+Y 0.00938 0.00812 0.01143 0.00469 -0.00107 -0.00053
+Fe2+Y 0.00938 0.00812 0.01143 0.00469 -0.00107 -0.00053
+AlY 0.00938 0.00812 0.01143 0.00469 -0.00107 -0.00053
+ZnY 0.00938 0.00812 0.01143 0.00469 -0.00107 -0.00053
+AlZ 0.00620 0.00732 0.00530 0.00369 0.00008 0.00059
+B 0.00690 0.00580 0.00640 0.00290 0.00036 0.00070
+Si 0.00502 0.00484 0.00526 0.00245 0.00007 -0.00017
+F1 0.08120 0.08120 0.01130 0.04060 0.00000 0.00000
+O-H1 0.08120 0.08120 0.01130 0.04060 0.00000 0.00000
+O2 0.02640 0.00440 0.01220 0.00222 0.00043 0.00090
+O3 0.02010 0.00930 0.00540 0.01010 -0.00030 -0.00015
+O4 0.00660 0.01200 0.00760 0.00601 -0.00037 -0.00070
+O5 0.01290 0.00620 0.00770 0.00640 0.00090 0.00045
+O6 0.00700 0.00830 0.00490 0.00260 0.00047 -0.00008
+O7 0.00560 0.00560 0.00610 0.00138 0.00043 -0.00107
+O8 0.00560 0.01030 0.00770 0.00450 0.00092 0.00325
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaX 0.00000 0.00000 0.23620 0.78000 0.02150 Na 0
+CaX 0.00000 0.00000 0.23620 0.60000 0.02150 Ca 0
+KX 0.00000 0.00000 0.23620 0.01000 0.02150 K 0
+LiY 0.12374 0.06187 0.62863 0.34000 0.00950 Li 0
+Mn2+Y 0.12374 0.06187 0.62863 0.09300 0.00950 Mn 0
+Fe2+Y 0.12374 0.06187 0.62863 0.15300 0.00950 Fe 0
+AlY 0.12374 0.06187 0.62863 0.38300 0.00950 Al 0
+ZnY 0.12374 0.06187 0.62863 0.01000 0.00950 Zn 0
+AlZ 0.29746 0.26065 0.61125 1.00000 0.00613 Al 0
+B 0.10946 0.21891 0.45531 1.00000 0.00651 B 0
+Si 0.19197 0.18996 0.00000 1.00000 0.00505 Si 0
+F1 0.00000 0.00000 0.78410 0.76000 0.05790 F 0
+O-H1 0.00000 0.00000 0.78410 0.24000 0.05790 O 1
+O2 0.06070 0.12139 0.48468 1.00000 0.01680 O 0
+O3 0.26834 0.13417 0.50937 1.00000 0.01039 O 0
+H3 0.25530 0.12770 0.39000 1.00000 0.01600 H 0
+O4 0.09316 0.18632 0.07182 1.00000 0.00815 O 0
+O5 0.18650 0.09325 0.09399 1.00000 0.00817 O 0
+O6 0.19679 0.18654 0.77568 1.00000 0.00727 O 0
+O7 0.28573 0.28582 0.08016 1.00000 0.00635 O 0
+O8 0.20986 0.27041 0.44124 1.00000 0.00762 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9574 2023-05-10 09:00:05Z saulius
+;
+2023-05-10T18:57:06+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019777

@@ -1,0 +1,201 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-03 13:19:43 +0300 (Sat, 03 Aug 2024) $
+#$Revision: 293658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/76/9017645.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9017645
+loop_
+_publ_author_name
+'Della Ventura, G.'
+'Bellatreccia, F.'
+'Camara, F.'
+'Oberti, R.'
+_publ_section_title
+;
+ Crystal-chemistry and short-range order of fluoro-edenite and fluoro-pargasite:
+ a combined X-ray diffraction and FTIR spectroscopic approach
+ Note: Sample C2552
+;
+_journal_name_full               'Mineralogical Magazine'
+_journal_page_first              293
+_journal_page_last               310
+_journal_volume                  78
+_journal_year                    2014
+_chemical_compound_source        'Sterling Hill, Ogdensburg, New Jersey, USA'
+_chemical_formula_sum
+'Al1.23 Ca1.92 Cl0.01 F1.31 Fe0.54 H0.68 K0.05 Mg4.34 Mn0.01 Na0.93 O22.68 Si6.86 Ti0.04 Zn0.01'
+_chemical_name_mineral           Fluoro-edenite
+_space_group_IT_number           12
+_space_group_name_Hall           '-C 2y'
+_space_group_name_H-M_alt        'C 1 2/m 1'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 105.013
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.865
+_cell_length_b                   18.026
+_cell_length_c                   5.2836
+_cell_volume                     907.494
+_database_code_amcsd             0020431
+_exptl_crystal_density_diffrn    3.124
+_cod_data_source_file            inputs/fixed/downloads/18/18552.cif
+_cod_data_source_block           18552
+_cod_original_formula_sum
+'Na.93 K.05 Mg4.34 Al1.23 Fe.54 Ti.04 Zn.01 Mn.01 Ca1.92 Si6.86 O22.68 F1.31 Cl.01 H.68'
+_cod_database_code               9017645
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+NaA 0.03082 0.03292 0.02771 0.00000 0.01946 0.00000
+KA 0.03082 0.03292 0.02771 0.00000 0.01946 0.00000
+NaAm 0.02116 0.04115 0.01953 0.00000 0.00936 0.00000
+KAm 0.02116 0.04115 0.01953 0.00000 0.00936 0.00000
+NaA2 0.04553 0.01317 0.06663 0.00000 0.05099 0.00000
+KA2 0.04553 0.01317 0.06663 0.00000 0.05099 0.00000
+MgM1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+AlM1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+Fe3+M1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+TiM1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+ZnM1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+Fe2+M1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+MnM1 0.00828 0.00658 0.00554 0.00000 0.00271 0.00000
+MgM2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+AlM2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+Fe3+M2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+TiM2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+ZnM2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+Fe2+M2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+MnM2 0.00690 0.00658 0.00607 0.00000 0.00246 0.00000
+MgM3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+AlM3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+Fe3+M3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+TiM3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+ZnM3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+Fe2+M3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+MnM3 0.00782 0.00658 0.00646 0.00000 0.00172 0.00000
+CaM4 0.01242 0.00823 0.01161 0.00000 0.00714 0.00000
+NaM4 0.01242 0.00823 0.01161 0.00000 0.00714 0.00000
+CaM4* 4.30134 0.00000 0.00000 0.00000 0.00000 0.00000
+NaM4* 4.30134 0.00000 0.00000 0.00000 0.00000 0.00000
+SiT1 0.00552 0.00494 0.00554 0.00000 0.00148 0.00000
+AlT1 0.00552 0.00494 0.00554 0.00000 0.00148 0.00000
+SiT2 0.00552 0.00658 0.00528 0.00000 0.00172 0.00000
+AlT2 0.00552 0.00658 0.00528 0.00000 0.00172 0.00000
+O1 0.00736 0.00988 0.00660 -0.00087 0.00197 -0.00093
+O2 0.00598 0.00988 0.00765 0.00000 0.00148 0.00000
+O3 0.01150 0.01152 0.01055 0.00000 0.00370 0.00000
+F3 0.01150 0.01152 0.01055 0.00000 0.00370 0.00000
+Cl3 0.01150 0.01152 0.01055 0.00000 0.00370 0.00000
+O4 0.01196 0.00823 0.01029 -0.00261 0.00443 -0.00047
+O5 0.00874 0.01646 0.01003 0.00000 0.00172 0.00466
+O6 0.00828 0.01317 0.01187 0.00000 0.00271 -0.00373
+O7 0.01104 0.01152 0.01636 0.00000 0.00320 0.00000
+H 4.59938 0.00000 0.00000 0.00000 0.00000 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaA 0.00000 0.50000 0.00000 0.17600 0.02837 Na 0
+KA 0.00000 0.50000 0.00000 0.01000 0.02837 K 0
+NaAm 0.04635 0.50000 0.10415 0.17600 0.02660 Na 0
+KAm 0.04635 0.50000 0.10415 0.01000 0.02660 K 0
+NaA2 0.00000 0.47156 0.00000 0.17600 0.03508 Na 0
+KA2 0.00000 0.47156 0.00000 0.01000 0.03508 K 0
+MgM1 0.00000 0.08864 0.50000 0.86800 0.00671 Mg 0
+AlM1 0.00000 0.08864 0.50000 0.01800 0.00671 Al 0
+Fe3+M1 0.00000 0.08864 0.50000 0.01000 0.00671 Fe 0
+TiM1 0.00000 0.08864 0.50000 0.00800 0.00671 Ti 0
+ZnM1 0.00000 0.08864 0.50000 0.00200 0.00671 Zn 0
+Fe2+M1 0.00000 0.08864 0.50000 0.09800 0.00671 Fe 0
+MnM1 0.00000 0.08864 0.50000 0.00200 0.00671 Mn 0
+MgM2 0.00000 0.17620 0.00000 0.86800 0.00621 Mg 0
+AlM2 0.00000 0.17620 0.00000 0.01800 0.00621 Al 0
+Fe3+M2 0.00000 0.17620 0.00000 0.01000 0.00621 Fe 0
+TiM2 0.00000 0.17620 0.00000 0.00800 0.00621 Ti 0
+ZnM2 0.00000 0.17620 0.00000 0.00200 0.00621 Zn 0
+Fe2+M2 0.00000 0.17620 0.00000 0.09800 0.00621 Fe 0
+MnM2 0.00000 0.17620 0.00000 0.00200 0.00621 Mn 0
+MgM3 0.00000 0.00000 0.00000 0.86800 0.00684 Mg 0
+AlM3 0.00000 0.00000 0.00000 0.01800 0.00684 Al 0
+Fe3+M3 0.00000 0.00000 0.00000 0.01000 0.00684 Fe 0
+TiM3 0.00000 0.00000 0.00000 0.00800 0.00684 Ti 0
+ZnM3 0.00000 0.00000 0.00000 0.00200 0.00684 Zn 0
+Fe2+M3 0.00000 0.00000 0.00000 0.09800 0.00684 Fe 0
+MnM3 0.00000 0.00000 0.00000 0.00200 0.00684 Mn 0
+CaM4 0.00000 0.27848 0.50000 0.48000 0.01001 Ca 0
+NaM4 0.00000 0.27848 0.50000 0.01250 0.01001 Na 0
+CaM4* 0.00000 0.25755 0.50000 0.48000 0.01191 Ca 0
+NaM4* 0.00000 0.25755 0.50000 0.01250 0.01191 Na 0
+SiT1 0.28091 0.08455 0.30040 0.85750 0.00557 Si 0
+AlT1 0.28091 0.08455 0.30040 0.14250 0.00557 Al 0
+SiT2 0.28960 0.17200 0.80821 0.85750 0.00570 Si 0
+AlT2 0.28960 0.17200 0.80821 0.14250 0.00570 Al 0
+O1 0.10962 0.08564 0.21880 1.00000 0.00785 O 0
+O2 0.11978 0.17135 0.72712 1.00000 0.00773 O 0
+O3 0.10625 0.00000 0.71453 0.34000 0.01089 O 0
+F3 0.10625 0.00000 0.71453 0.65500 0.01089 F 0
+Cl3 0.10625 0.00000 0.71453 0.00500 0.01089 Cl 0
+O4 0.36481 0.24920 0.78973 1.00000 0.01001 O 0
+O5 0.34894 0.13711 0.10513 1.00000 0.01178 O 0
+O6 0.34560 0.11700 0.60216 1.00000 0.01089 O 0
+O7 0.34273 0.00000 0.28313 1.00000 0.01292 O 0
+H 0.19118 0.00000 0.75125 0.34000 0.01267 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:23:21+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:21:57+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'CaM4'' -> 'CaM4*'
+'NaM4'' -> 'NaM4*'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0020431

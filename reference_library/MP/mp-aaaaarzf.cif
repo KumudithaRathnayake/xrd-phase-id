@@ -1,0 +1,63 @@
+# generated using pymatgen
+data_Ca3Al2O6
+_symmetry_space_group_name_H-M   Pa-3
+_cell_length_a   15.40889798
+_cell_length_b   15.40889798
+_cell_length_c   15.40889798
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   205
+_chemical_formula_structural   Ca3Al2O6
+_chemical_formula_sum   'Ca72 Al48 O144'
+_cell_volume   3658.59839336
+_cell_formula_units_Z   24
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x+1/2, -y, z+1/2'
+  4  'x+1/2, y, -z+1/2'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-x+1/2, y+1/2, z'
+  7  '-x, y+1/2, -z+1/2'
+  8  'x, -y+1/2, z+1/2'
+  9  'z, x, y'
+  10  '-z, -x, -y'
+  11  'z+1/2, -x+1/2, -y'
+  12  '-z+1/2, x+1/2, y'
+  13  '-z, x+1/2, -y+1/2'
+  14  'z, -x+1/2, y+1/2'
+  15  '-z+1/2, -x, y+1/2'
+  16  'z+1/2, x, -y+1/2'
+  17  'y, z, x'
+  18  '-y, -z, -x'
+  19  '-y, z+1/2, -x+1/2'
+  20  'y, -z+1/2, x+1/2'
+  21  '-y+1/2, -z, x+1/2'
+  22  'y+1/2, z, -x+1/2'
+  23  'y+1/2, -z+1/2, -x'
+  24  '-y+1/2, z+1/2, x'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  24  0.11959984  0.62128678  0.62058855  1.0
+  Ca  Ca1  24  0.12007319  0.62499914  0.14070856  1.0
+  Ca  Ca2  8  0.12952747  0.62952747  0.87047253  1.0
+  Ca  Ca3  8  0.24685624  0.74685624  0.75314376  1.0
+  Ca  Ca4  4  0.00000000  0.00000000  0.00000000  1.0
+  Ca  Ca5  4  0.00000000  0.00000000  0.50000000  1.0
+  Al  Al6  24  0.00460553  0.24423183  0.23112262  1.0
+  Al  Al7  24  0.01320770  0.01986388  0.25187912  1.0
+  O  O8  24  0.00545525  0.02977667  0.84870172  1.0
+  O  O9  24  0.01128984  0.21550219  0.62307133  1.0
+  O  O10  24  0.01167256  0.65252857  0.04367448  1.0
+  O  O11  24  0.01743559  0.63104192  0.26057531  1.0
+  O  O12  24  0.09612058  0.70960988  0.73637015  1.0
+  O  O13  24  0.10430958  0.23639525  0.78313412  1.0

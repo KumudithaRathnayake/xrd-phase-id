@@ -1,0 +1,151 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-29 17:00:33 +0300 (Wed, 29 May 2024) $
+#$Revision: 292100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/71/9017193.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9017193
+loop_
+_publ_author_name
+'Gadas, P.'
+'Novak, M.'
+'Cempirek, J.'
+'Filip, J.'
+'Galiova, M. V.'
+'Groat, L. A.'
+'Vsiansky, D.'
+_publ_section_title
+;
+ Mineral assemblages, compositional variation, and crystal structure of feruvitic
+ tourmaline from a contaminated anatectic pegmatite at Mirosov near Strazek,
+ Moldanubian zone, Czech Republic
+ Note: site occupancies from electron density approximation
+;
+_journal_name_full               'The Canadian Mineralogist'
+_journal_page_first              285
+_journal_page_last               301
+_journal_volume                  52
+_journal_year                    2014
+_chemical_compound_source        'Mirosov, Moldanubian zone, Czech Republic'
+_chemical_formula_sum
+'Al5.592 B3 Ca0.494 F0.06 Fe2.472 H4.648 Mg0.939 Mn0.03 Na0.451 O30.94 Si5.88 Ti0.084 Zn0.006'
+_chemical_name_mineral           Feruvite
+_space_group_IT_number           160
+_space_group_name_Hall           'R 3 -2"'
+_space_group_name_H-M_alt        'R 3 m :H'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   16.0047
+_cell_length_b                   16.0047
+_cell_length_c                   7.2120
+_cell_formula_units_Z            3
+_cell_volume                     1599.858
+_database_code_amcsd             0020667
+_exptl_crystal_density_diffrn    3.258
+_cod_data_source_file            inputs/fixed/downloads/07/07405.cif
+_cod_data_source_block           07405
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+'Ca.494 Na.451 Fe2.472 Mg.939 Al5.592 Ti.084 Mn.03 Zn.006 Si5.88 B3 O30.94 F.06 H4.648'
+_cod_database_code               9017193
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Ca 0.01210 0.01210 0.02010 0.00603 0.00000 0.00000
+Na 0.01210 0.01210 0.02010 0.00603 0.00000 0.00000
+FeY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+MgY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+AlY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+TiY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+MnY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+ZnY 0.00829 0.00509 0.00973 0.00415 -0.00384 -0.00192
+AlZ 0.00461 0.00495 0.00453 0.00224 0.00001 0.00052
+FeZ 0.00461 0.00495 0.00453 0.00224 0.00001 0.00052
+MgZ 0.00461 0.00495 0.00453 0.00224 0.00001 0.00052
+SiT 0.00415 0.00384 0.00483 0.00189 -0.00029 -0.00059
+AlT 0.00415 0.00384 0.00483 0.00189 -0.00029 -0.00059
+B 0.00560 0.00590 0.00670 0.00300 0.00020 0.00050
+O1 0.01760 0.01760 0.02050 0.00880 0.00000 0.00000
+F1 0.01760 0.01760 0.02050 0.00880 0.00000 0.00000
+O2 0.01130 0.00490 0.01350 0.00243 0.00079 0.00160
+O3 0.01890 0.01230 0.00460 0.00950 0.00110 0.00055
+F3 0.01890 0.01230 0.00460 0.00950 0.00110 0.00055
+O4 0.00660 0.01330 0.00880 0.00660 -0.00043 -0.00090
+O5 0.01410 0.00640 0.00930 0.00700 0.00170 0.00086
+O6 0.00850 0.00830 0.00500 0.00400 -0.00020 -0.00110
+O7 0.00670 0.00570 0.00820 0.00130 -0.00210 -0.00130
+O8 0.00400 0.00890 0.01370 0.00300 0.00100 0.00230
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ca 0.00000 0.00000 0.21562 0.49400 0.01470
+Na 0.00000 0.00000 0.21562 0.45100 0.01470
+FeY 0.12145 0.06072 0.63711 0.69800 0.00735
+MgY 0.12145 0.06072 0.63711 0.14100 0.00735
+AlY 0.12145 0.06072 0.63711 0.12200 0.00735
+TiY 0.12145 0.06072 0.63711 0.02800 0.00735
+MnY 0.12145 0.06072 0.63711 0.01000 0.00735
+ZnY 0.12145 0.06072 0.63711 0.00200 0.00735
+AlZ 0.29821 0.26149 0.61103 0.85100 0.00476
+FeZ 0.29821 0.26149 0.61103 0.06300 0.00476
+MgZ 0.29821 0.26149 0.61103 0.08600 0.00476
+SiT 0.19176 0.19013 0.00000 0.98000 0.00432
+AlT 0.19176 0.19013 0.00000 0.02000 0.00432
+B 0.11020 0.22040 0.45220 1.00000 0.00600
+O1 0.00000 0.00000 0.78670 0.98500 0.01860
+F1 0.00000 0.00000 0.78670 0.01500 0.01860
+O2 0.06085 0.12169 0.47600 1.00000 0.01060
+O3 0.26752 0.13376 0.51154 0.98500 0.01124
+F3 0.26752 0.13376 0.51154 0.01500 0.01124
+O4 0.09233 0.18466 0.07091 1.00000 0.00881
+O5 0.18308 0.09154 0.09101 1.00000 0.00908
+O6 0.19644 0.18751 -0.22206 1.00000 0.00735
+O7 0.28480 0.28448 0.07979 1.00000 0.00767
+O8 0.20935 0.27013 0.44104 1.00000 0.00898
+H3 0.26100 0.13070 0.39000 0.66400 0.06700
+H1 0.00000 0.00000 0.89800 0.66400 0.34000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0020667

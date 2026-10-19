@@ -1,0 +1,9 @@
+pymatgen
+numpy
+pandas
+scipy
+matplotlib
+requests
+jupyter
+# optional: official Materials Project client (pymatgen has its own fallback)
+# mp-api

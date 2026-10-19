@@ -1,0 +1,171 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-03 13:19:43 +0300 (Sat, 03 Aug 2024) $
+#$Revision: 293658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/21/9002173.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9002173
+loop_
+_publ_author_name
+'Bloodaxe, E. S.'
+'Hughes, J. M.'
+'Dyar, M. D.'
+'Grew, E. S.'
+'Guidotti, C. V.'
+_publ_section_title
+;
+ Linking structure and chemistry in the schorl-dravite series
+ Sample HP2-1
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              922
+_journal_page_last               928
+_journal_volume                  84
+_journal_year                    1999
+_chemical_compound_source
+'Harney Peak Granite, Custer County, South Dakota, USA'
+_chemical_formula_sum
+;Al6.639 B3 Ca0.027 F0.204 Fe1.671 H3.396 K0.025 Mg0.636 Mn0.012 Na0.54
+ O30.796 Si6 Ti0.009 V0.006 Zn0.006
+;
+_chemical_name_mineral           Schorl
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.946
+_cell_length_b                   15.946
+_cell_length_c                   7.157
+_cell_volume                     1576.032
+_database_code_amcsd             0002241
+_exptl_crystal_density_diffrn    3.177
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+;Ca.027 Na.54 K.025 Al6.639 Mg.636 Fe1.671 Ti.009 V.006 Mn.012 Zn.006 Si6 B3
+ O30.796 F.204 H3.396
+;
+_cod_database_code               9002173
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+CaX 0.01642 0.01642 0.02050 0.00821 0.00000 0.00000
+NaX 0.01642 0.01642 0.02050 0.00821 0.00000 0.00000
+KX 0.01642 0.01642 0.02050 0.00821 0.00000 0.00000
+AlY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+MgY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+FeY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+TiY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+VY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+MnY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+ZnY 0.00725 0.01063 0.01502 0.00531 0.00130 0.00260
+AlZ 0.00396 0.00435 0.00368 0.00188 0.00003 0.00045
+MgZ 0.00396 0.00435 0.00368 0.00188 0.00003 0.00045
+SiT 0.00531 0.00454 0.00610 0.00246 -0.00040 -0.00065
+B 0.00676 0.01063 0.00701 0.00531 0.00050 0.00100
+O1 0.03188 0.03188 0.00908 0.01594 0.00000 0.00000
+O-H1 0.03188 0.03188 0.00908 0.01594 0.00000 0.00000
+F1 0.03188 0.03188 0.00908 0.01594 0.00000 0.00000
+O2 0.02125 0.00870 0.01142 0.00435 0.00050 0.00100
+O-H3 0.02609 0.01256 0.00597 0.01304 0.00050 0.00025
+O4 0.00792 0.01449 0.01064 0.00725 -0.00075 -0.00150
+O5 0.01546 0.00812 0.01064 0.00773 0.00125 0.00063
+O6 0.01159 0.01179 0.00597 0.00613 -0.00125 -0.00100
+O7 0.00696 0.00628 0.00960 0.00193 -0.00075 -0.00125
+O8 0.00812 0.01169 0.01272 0.00628 0.00050 0.00175
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+CaX 0.00000 0.00000 0.25000 0.02700 Ca 0
+NaX 0.00000 0.00000 0.25000 0.54000 Na 0
+KX 0.00000 0.00000 0.25000 0.02500 K 0
+AlY 0.27130 0.54260 0.31590 0.39900 Al 0
+MgY 0.27130 0.54260 0.31590 0.02600 Mg 0
+FeY 0.27130 0.54260 0.31590 0.55700 Fe 0
+TiY 0.27130 0.54260 0.31590 0.00300 Ti 0
+VY 0.27130 0.54260 0.31590 0.00200 V 0
+MnY 0.27130 0.54260 0.31590 0.00400 Mn 0
+ZnY 0.27130 0.54260 0.31590 0.00200 Zn 0
+AlZ 0.29822 0.26160 0.62990 0.90700 Al 0
+MgZ 0.29822 0.26160 0.62990 0.09300 Mg 0
+SiT 0.19184 0.18982 0.01930 1.00000 Si 0
+B 0.11040 0.22080 0.47410 1.00000 B 0
+O1 0.00000 0.00000 0.79570 0.40000 O 0
+O-H1 0.00000 0.00000 0.79570 0.39600 O 1
+F1 0.00000 0.00000 0.79570 0.20400 F 0
+O2 0.06144 0.12288 0.50640 1.00000 O 0
+O-H3 0.26650 0.13325 0.52880 1.00000 O 1
+O4 0.09323 0.18646 0.08800 1.00000 O 0
+O5 0.18680 0.09340 0.11090 1.00000 O 0
+O6 0.19680 0.18640 0.79490 1.00000 O 0
+O7 0.28530 0.28560 0.09810 1.00000 O 0
+O8 0.20990 0.27030 0.45970 1.00000 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T11:37:08+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:20:09+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'OH1' -> 'O-H1'
+'OH3' -> 'O-H3'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0002241

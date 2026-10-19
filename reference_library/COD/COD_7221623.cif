@@ -1,0 +1,255 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/7/22/16/7221623.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7221623
+loop_
+_publ_author_name
+'Zhiguo, Xia'
+'Molokeev, Maxim'
+'Oreshonkov, Alexander'
+'Atuchin, Victor'
+'Ru-Shi, Liu'
+'Cheng, Dong'
+_publ_section_title
+;
+ Crystal and local structure refinement in Ca2Al3O6F explored by X-ray
+ diffraction and Raman spectroscopy
+;
+_journal_issue                   13
+_journal_name_full               'Physical Chemistry Chemical Physics'
+_journal_page_first              5952
+_journal_paper_doi               10.1039/C3CP53816H
+_journal_volume                  16
+_journal_year                    2014
+_chemical_formula_moiety
+;
+3(Al2 O4), 2.0(F), 4(Ca)
+;
+_chemical_formula_sum            'Al6 Ca4 F2 O12'
+_chemical_formula_weight         552.1919
+_chemical_name_mineral
+;
+Ca2Al3O6F
+;
+_space_group_IT_number           148
+_symmetry_cell_setting           trigonal
+_symmetry_Int_Tables_number      148
+_symmetry_space_group_name_Hall  '-R 3'
+_symmetry_space_group_name_H-M   'R -3 :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            6
+_cell_length_a                   17.323748(70)
+_cell_length_b                   17.323748(70)
+_cell_length_c                   7.000171(36)
+_cell_measurement_temperature    300
+_cell_volume                     1819.378(14)
+_diffrn_ambient_temperature      300
+_diffrn_measurement_device_type
+;
+Rigaku Ultima IV
+;
+_diffrn_radiation_monochromator  none
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type
+;
+ Cu K\a~1~~2~
+;
+_exptl_absorpt_coefficient_mu    20.831
+_exptl_crystal_density_diffrn    3.024100(19)
+_pd_char_colour
+;
+colourless
+;
+_pd_meas_2theta_range_inc        0.02
+_pd_meas_2theta_range_max        139
+_pd_meas_2theta_range_min        9
+_pd_meas_scan_method             cont
+_pd_proc_ls_pref_orient_corr
+;
+no preferred orientation correction
+;
+_pd_proc_ls_profile_function     PearsonVII
+_pd_proc_ls_prof_R_factor        5.296
+_pd_proc_ls_prof_wR_expected     3.744
+_pd_proc_ls_prof_wR_factor       7.380
+_pd_proc_number_of_points        6500
+_pd_spec_mount_mode              transmission
+_refine_ls_goodness_of_fit_all   3.885
+_refine_ls_goodness_of_fit_ref   1.971
+_refine_ls_R_I_factor            3.445
+_refine_ls_shift/su_max          0.01000
+_cod_data_source_file            Ca2Al3O6F.cif
+_cod_data_source_block           I
+_cod_original_sg_symbol_Hall
+;
+-R 3
+;
+_cod_original_sg_symbol_H-M      'R -3'
+_cod_original_formula_sum
+;
+Al6 Ca4 F2 O12
+;
+_cod_database_code               7221623
+_cod_database_fobs_code          7221623
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -y,x-y,z
+3 -x+y,-x,z
+4 -x,-y,-z
+5 y,-x+y,-z
+6 x-y,x,-z
+7 x+1/3,y+2/3,z+2/3
+8 -y+1/3,x-y+2/3,z+2/3
+9 -x+y+1/3,-x+2/3,z+2/3
+10 -x+1/3,-y+2/3,-z+2/3
+11 y+1/3,-x+y+2/3,-z+2/3
+12 x-y+1/3,x+2/3,-z+2/3
+13 x+2/3,y+1/3,z+1/3
+14 -y+2/3,x-y+1/3,z+1/3
+15 -x+y+2/3,-x+1/3,z+1/3
+16 -x+2/3,-y+1/3,-z+1/3
+17 y+2/3,-x+y+1/3,-z+1/3
+18 x-y+2/3,x+1/3,-z+1/3
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+Ca1 Ca 0.22316(10) 0.414861(97) 0.07597(23) 1 2.243(48)
+Ca2 Ca 0 0 0.27710(44) 1 2.630(78)
+Al1 Al 0.59279(16) 0.45660(17) 0.29843(30) 1 1.846(58)
+Al2 Al 0.64325(17) 0.05015(16) 0.10267(37) 1 1.819(55)
+O1 O 0.59429(30) 0.54030(30) 0.44578(60) 1 1.57(11)
+O2 O 0.14001(32) 0.11132(31) 0.11725(63) 1 2.59(13)
+O3 O 0.55819(29) 0.07728(29) 0.11751(56) 1 2.16(11)
+O4 O 0.60087(29) -0.05778(31) 0.19406(61) 1 1.98(12)
+F F 0.34113(78) 0.56813(62) 0.1799(12) 0.6667 7.60(25)
+loop_
+_diffrn_radiation_wavelength
+_diffrn_radiation_wavelength_wt
+1.5406 1.0000
+1.5443 0.5000
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O1 Ca1 O1 69.69(20) 14_554 17_455
+O1 Ca1 O2 64.85(23) 14_554 9_554
+O1 Ca1 O3 145.21(53) 14_554 13_455
+O1 Ca1 O3 91.45(13) 14_554 16_555
+O1 Ca1 O4 142.39(41) 14_554 3_665
+O1 Ca1 O4 64.47(18) 14_554 16_555
+O1 Ca1 F 122.82(45) 14_554 1_555
+O1 Ca1 F 94.56(22) 14_554 17_455
+O1 Ca1 O2 92.63(14) 17_455 9_554
+O1 Ca1 O3 118.85(25) 17_455 13_455
+O1 Ca1 O3 63.91(24) 17_455 16_555
+O1 Ca1 O4 77.23(15) 17_455 3_665
+O1 Ca1 O4 108.45(16) 17_455 16_555
+O1 Ca1 F 140.24(79) 17_455 1_555
+O2 Ca1 O3 140.63(49) 9_554 13_455
+O2 Ca1 O3 152.02(76) 9_554 16_555
+O2 Ca1 O4 100.23(14) 9_554 3_665
+O2 Ca1 O4 112.23(18) 9_554 16_555
+O2 Ca1 F 66.53(36) 9_554 1_555
+O2 Ca1 F 71.79(31) 9_554 17_455
+O3 Ca1 O3 67.32(21) 13_455 16_555
+O3 Ca1 O4 67.9(19) 13_455 3_665
+O3 Ca1 O4 81.36(13) 13_455 16_555
+O3 Ca1 F 74.2(28) 13_455 1_555
+O3 Ca1 F 79.28(25) 13_455 17_455
+O3 Ca1 O4 89.66(13) 16_555 3_665
+O3 Ca1 O4 65.62(19) 16_555 16_555
+O3 Ca1 F 141.38(82) 16_555 1_555
+O3 Ca1 F 127.68(54) 16_555 17_455
+O4 Ca1 O4 146.45(37) 3_665 16_555
+O4 Ca1 F 74.05(28) 3_665 1_555
+O4 Ca1 F 114.06(34) 3_665 17_455
+O4 Ca1 F 110.74(31) 16_555 1_555
+O4 Ca1 F 70.62(30) 16_555 17_455
+F Ca1 F 41.89(95) 1_555 17_455
+O2 Ca2 O2 101.4(15) 1_555 2_555
+O2 Ca2 F 96.19(25) 1_555 10_555
+O2 Ca2 F 78.46(26) 1_555 12_545
+O2 Ca2 F 118.44(40) 1_555 13_445
+O2 Ca2 F 71.01(31) 1_555 14_555
+O2 Ca2 F 140.23(74) 1_555 15_455
+F Ca2 F 83.82(33) 10_555 11_445
+F Ca2 F 97.56(33) 10_555 13_445
+F Ca2 F 44.29(87) 10_555 14_555
+F Ca2 F 78.74(35) 13_445 14_555
+O1 Al1 O2 104.74(25) 1_555 14_555
+O1 Al1 O2 117.32(27) 1_555 18_555
+O1 Al1 O3 104.86(22) 1_555 3_665
+O2 Al1 O2 102.83(21) 14_555 18_555
+O2 Al1 O3 113.59(27) 14_555 3_665
+O2 Al1 O3 113.45(23) 18_555 3_665
+O1 Al2 O3 112.33(23) 10_655 1_555
+O1 Al2 O4 111.72(28) 10_655 1_555
+O1 Al2 O4 103.78(23) 10_655 9_654
+O3 Al2 O4 107.66(22) 1_555 1_555
+O3 Al2 O4 104.59(20) 1_555 9_654
+O4 Al2 O4 116.64(32) 1_555 9_654
+F F Ca1 68.15(63) 17_455 1_555
+F F Ca2 64.23(67) 17_455 7_554
+F F Ca2 71.48(58) 17_455 10_555
+F F F 118.94(78) 17_455 18_555
+Ca1 F Ca1 106.02(33) 1_555 18_555
+Ca1 F Ca2 104.11(31) 1_555 7_554
+Ca1 F Ca2 130.39(67) 1_555 10_555
+Ca2 O2 Ca1 97.92(15) 1_555 14_555
+Ca2 O2 Al1 119.39(26) 1_555 9_554
+Ca2 O2 Al1 107.3(17) 1_555 17_455
+Al1 O1 Ca1 97.26(19) 1_555 9_555
+Al1 O1 Ca1 96.13(16) 1_555 18_555
+Al1 O1 Al2 121.33(28) 1_555 10_655
+Al2 O3 Ca1 88.34(17) 1_555 7_544
+Al2 O3 Ca1 92.17(18) 1_555 16_555
+Al2 O3 Al1 126.42(28) 1_555 2_655
+Al2 O4 Ca1 134.89(43) 1_555 2_655
+Al2 O4 Ca1 94.49(13) 1_555 16_555
+Al2 O4 Al2 120.18(32) 1_555 14_545
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+Ca1 O1 2.5608(45) 14_554
+Ca1 O1 2.5829(45) 17_455
+Ca1 O2 2.6813(47) 9_554
+Ca1 O3 2.6258(42) 13_455
+Ca1 O3 2.6474(45) 16_555
+Ca1 O4 2.3469(46) 3_665
+Ca1 O4 2.584(6) 16_555
+Ca1 F 2.5159(93) .
+Ca1 F 2.4855(92) 17_455
+Ca2 O2 2.4853(47) .
+Ca2 F 2.3058(90) 10_555
+Ca2 F 2.4280(90) 13_445
+Al1 O1 1.7690(47) .
+Al1 O2 1.7824(51) 14_555
+Al1 O2 1.7488(46) 18_555
+Al1 O3 1.7241(44) 3_665
+Al2 O1 1.7294(45) 10_655
+Al2 O3 1.760(7) .
+Al2 O4 1.7526(52) .
+Al2 O4 1.7581(49) 9_654

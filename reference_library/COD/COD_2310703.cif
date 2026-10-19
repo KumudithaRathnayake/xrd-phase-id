@@ -1,0 +1,77 @@
+#------------------------------------------------------------------------------
+#$Date: 2025-11-01 12:28:30 +0200 (Sat, 01 Nov 2025) $
+#$Revision: 303130 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/31/07/2310703.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2310703
+loop_
+_publ_author_name
+'Zemann, J.'
+_publ_section_title
+;
+ Die Kristallstruktur von Li2 C O3
+;
+_journal_name_full               'Acta Crystallographica (1,1948-23,1967)'
+_journal_page_first              664
+_journal_page_last               666
+_journal_volume                  10
+_journal_year                    1957
+_chemical_formula_sum            'C Li2 O3'
+_chemical_name_systematic        'Li2 (C O3)'
+_space_group_IT_number           15
+_symmetry_space_group_name_Hall  '-C 2yc'
+_symmetry_space_group_name_H-M   'C 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 114.5
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   8.39
+_cell_length_b                   5
+_cell_length_c                   6.21
+_cell_volume                     237.054
+_citation_journal_id_ASTM        ACCRA9
+_cod_data_source_file            Zemann_ACCRA9_1957_246.cif
+_cod_data_source_block           C1Li2O3
+_cod_original_cell_volume        237.0536
+_cod_original_formula_sum        'C1 Li2 O3'
+_cod_database_code               2310703
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z+1/2
+-x,-y,-z
+x,-y,z-1/2
+x+1/2,y+1/2,z
+-x+1/2,y+1/2,-z+1/2
+-x+1/2,-y+1/2,-z
+x+1/2,-y+1/2,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Li1 Li+1 0.203 0.45 0.84 1 0.0
+O2 O-2 0.145 -0.067 0.32 1 0.0
+C1 C+4 0 0.057 0.25 1 0.0
+O1 O-2 0 0.313 0.25 1 0.0
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 PubChem 11125
+2 ROD 3500056
+3 ROD 3500128
+4 ROD 3500195
+5 ROD 3500242

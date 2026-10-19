@@ -1,0 +1,162 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/36/9003673.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003673
+loop_
+_publ_author_name
+'Oberti, R.'
+'Camara, F.'
+'Ottolini, L.'
+_publ_section_title
+;Clinoholmquistite discredited: The new amphibole end-member
+ fluoro-sodic-pedrizite sample from Tastyg spodumene deposit, Tuva, Siberia,
+ Russia
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              732
+_journal_page_last               736
+_journal_paper_doi               10.2138/am.2005.1763
+_journal_volume                  90
+_journal_year                    2005
+_chemical_formula_sum
+;Al0.144 B0.008 Ca1.85 F0.33 Fe0.18 H1.67 K0.1 Mg4.75 Mn0.01 Na0.31 O23.67
+ Si7.928 Ti0.01 Zn0.01
+;
+_chemical_name_mineral           Tremolite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 104.73
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.848
+_cell_length_b                   18.049
+_cell_length_c                   5.279
+_cell_volume                     907.486
+_database_code_amcsd             0003771
+_exptl_crystal_density_diffrn    3.022
+_cod_original_formula_sum
+;Na.31 K.1 Mg4.75 Fe.18 Mn.01 Ti.01 Zn.01 Al.144 Ca1.85 Si7.928 B.008 O23.67
+ F.33 H1.67
+;
+_cod_database_code               9003673
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+NaA2 0.04044 0.02641 0.03697 0.00000 0.02932 0.00000
+KA2 0.04044 0.02641 0.03697 0.00000 0.02932 0.00000
+NaAm 0.00092 0.02145 0.00964 0.00000 0.00246 0.00000
+KAm 0.00092 0.02145 0.00964 0.00000 0.00246 0.00000
+Mg1 0.00689 0.00660 0.00806 0.00000 0.00197 0.00000
+Fe1 0.00689 0.00660 0.00806 0.00000 0.00197 0.00000
+Mg2 0.00643 0.00660 0.00766 0.00000 0.00197 0.00000
+Fe2 0.00643 0.00660 0.00766 0.00000 0.00197 0.00000
+Mn2 0.00643 0.00660 0.00766 0.00000 0.00197 0.00000
+Ti2 0.00643 0.00660 0.00766 0.00000 0.00197 0.00000
+Zn2 0.00643 0.00660 0.00766 0.00000 0.00197 0.00000
+Mg3 0.00735 0.00660 0.00779 0.00000 0.00123 0.00000
+Al3 0.00735 0.00660 0.00779 0.00000 0.00123 0.00000
+Fe3 0.00735 0.00660 0.00779 0.00000 0.00123 0.00000
+Ca4 0.01103 0.00825 0.01281 0.00000 0.00690 0.00000
+Na4 0.01103 0.00825 0.01281 0.00000 0.00690 0.00000
+Si1 0.00506 0.00495 0.00687 -0.00087 0.00123 -0.00047
+Al1 0.00506 0.00495 0.00687 -0.00087 0.00123 -0.00047
+B1 0.00506 0.00495 0.00687 -0.00087 0.00123 -0.00047
+Si2 0.00506 0.00495 0.00660 -0.00087 0.00148 0.00000
+Al2 0.00506 0.00495 0.00660 -0.00087 0.00148 0.00000
+B2 0.00506 0.00495 0.00660 -0.00087 0.00148 0.00000
+O1 0.00597 0.00660 0.00779 0.00000 0.00074 0.00000
+O2 0.00551 0.00825 0.00832 -0.00087 0.00099 -0.00093
+O3 0.00919 0.00990 0.01030 0.00000 0.00246 0.00000
+F 0.00919 0.00990 0.01030 0.00000 0.00246 0.00000
+O4 0.01057 0.00660 0.01122 -0.00348 0.00296 -0.00047
+O5 0.00873 0.00990 0.00911 0.00000 0.00197 0.00327
+O6 0.00735 0.00990 0.00792 0.00000 0.00197 -0.00233
+O7 0.00965 0.00660 0.01387 0.00000 0.00197 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaA2 0.00000 0.48300 0.00000 0.03100 0.02533 Na 0
+KA2 0.00000 0.48300 0.00000 0.01900 0.02533 K 0
+NaAm 0.04000 0.50000 0.09300 0.04900 0.01013 Na 0
+KAm 0.04000 0.50000 0.09300 0.03100 0.01013 K 0
+Mg1 0.00000 0.08800 0.50000 0.98000 0.00709 Mg 0
+Fe1 0.00000 0.08800 0.50000 0.04000 0.00709 Fe 0
+Mg2 0.00000 0.17700 0.00000 0.97500 0.00671 Mg 0
+Fe2 0.00000 0.17700 0.00000 0.01000 0.00671 Fe 0
+Mn2 0.00000 0.17700 0.00000 0.00500 0.00671 Mn 0
+Ti2 0.00000 0.17700 0.00000 0.00500 0.00671 Ti 0
+Zn2 0.00000 0.17700 0.00000 0.00500 0.00671 Zn 0
+Mg3 0.00000 0.00000 0.00000 0.84000 0.00747 Mg 0
+Al3 0.00000 0.00000 0.00000 0.08000 0.00747 Al 0
+Fe3 0.00000 0.00000 0.00000 0.08000 0.00747 Fe 0
+Ca4 0.00000 0.27780 0.50000 0.92500 0.01001 Ca 0
+Na4 0.00000 0.27780 0.50000 0.07500 0.01001 Na 0
+Si1 0.28020 0.08420 0.29740 0.99100 0.00557 Si 0
+Al1 0.28020 0.08420 0.29740 0.00800 0.00557 Al 0
+B1 0.28020 0.08420 0.29740 0.00100 0.00557 B 0
+Si2 0.28810 0.17120 0.80470 0.99100 0.00570 Si 0
+Al2 0.28810 0.17120 0.80470 0.00800 0.00570 Al 0
+B2 0.28810 0.17120 0.80470 0.00100 0.00570 B 0
+O1 0.11170 0.08590 0.21790 1.00000 0.00697 O 0
+O2 0.11860 0.17090 0.72500 1.00000 0.00747 O 0
+O3 0.10870 0.00000 0.71550 0.83500 0.00963 O 0
+F 0.10870 0.00000 0.71550 0.16500 0.00963 F 0
+O4 0.36470 0.24800 0.79280 1.00000 0.00963 O 0
+O5 0.34650 0.13400 0.09960 1.00000 0.00937 O 0
+O6 0.34370 0.11840 0.59020 1.00000 0.00861 O 0
+O7 0.33740 0.00000 0.29210 1.00000 0.01001 O 0
+H 0.19000 0.00000 0.75900 0.83500 0.00253 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:17:55+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0003771

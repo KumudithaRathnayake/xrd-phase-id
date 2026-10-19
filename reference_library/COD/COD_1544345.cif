@@ -1,0 +1,83 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-10-24 04:12:04 +0300 (Mon, 24 Oct 2016) $
+#$Revision: 187514 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/54/43/1544345.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1544345
+loop_
+_publ_author_name
+'Parfitt, D.C.'
+'Keen, D.A.'
+'Hull, S.'
+'Crichton, W.A.'
+'Mezouar, M.'
+'Wilson, M.'
+'Madden, P.A.'
+_publ_section_title
+;
+ High-pressure forms of lithium sulphate: structural determination and
+ computer simulation Sample: P = 5.2 GPa and T = 723 K
+;
+_journal_name_full               'Physical Review B'
+_journal_page_first              054121
+_journal_page_last               054127
+_journal_paper_doi               10.1103/PhysRevB.72.054121
+_journal_volume                  72
+_journal_year                    2005
+_chemical_formula_sum            'Li2 O4 S'
+_chemical_name_common            'epsilon-Li2SO4 7.2 GPa and 723 K D.C. '
+_space_group_IT_number           63
+_space_group_name_H-M_alt        'C m c m'
+_symmetry_space_group_name_Hall  '-C 2c 2'
+_symmetry_space_group_name_H-M   'C m c m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   5.3452(2)
+_cell_length_b                   7.9323(3)
+_cell_length_c                   6.0292(3)
+_cell_volume                     255.636(19)
+_cod_data_source_file            Li2SO4-epsilon.cif
+_cod_data_source_block           Li2SO4-epsilon
+_cod_original_formula_sum        'O4 S Li2'
+_cod_database_code               1544345
+loop_
+_space_group_symop_operation_xyz
+'x, y, z'
+'-x, -y, -z'
+'-x, -y, z+1/2'
+'x, y, -z+1/2'
+'-x, y, -z+1/2'
+'x, -y, z+1/2'
+'x, -y, -z'
+'-x, y, z'
+'x+1/2, y+1/2, z'
+'-x+1/2, -y+1/2, -z'
+'-x+1/2, -y+1/2, z+1/2'
+'x+1/2, y+1/2, -z+1/2'
+'-x+1/2, y+1/2, -z+1/2'
+'x+1/2, -y+1/2, z+1/2'
+'x+1/2, -y+1/2, -z'
+'-x+1/2, y+1/2, z'
+loop_
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_B_iso_or_equiv
+_atom_site_type_symbol
+Li1 1.0 0.000000 0.500000 0.000000 Biso 16.299999 Li
+Li2 1.0 0.000000 0.195(2) 0.250000 Biso 12.230000 Li
+S 1.0 0.000000 0.8570(2) 0.250000 Biso 3.200000 S
+O1 1.0 0.000000 0.2460(4) 0.5575(4) Biso 3.150000 O
+O2 1.0 0.2744(4) 0.4610(4) 0.250000 Biso 2.660000 O

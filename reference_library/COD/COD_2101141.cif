@@ -1,0 +1,96 @@
+#------------------------------------------------------------------------------
+#$Date: 2017-01-30 17:04:15 +0200 (Mon, 30 Jan 2017) $
+#$Revision: 191100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/11/2101141.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2101141
+loop_
+_publ_author_name
+'Ojam\"ae, L.'
+'Hermansson, K.'
+'Pisani, C.'
+'Caus\`a, M.'
+'Roetti, C.'
+_publ_section_title
+;
+ Structural, vibrational and electronic properties of a crystalline
+ hydrate from <i>ab initio</i> periodic Hartree--Fock calculations
+;
+_journal_issue                   3
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              268
+_journal_page_last               279
+_journal_paper_doi               10.1107/S0108768193010390
+_journal_volume                  50
+_journal_year                    1994
+_chemical_formula_sum            'H3 Li O2'
+_chemical_formula_weight         42
+_symmetry_cell_setting           monoclinic
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 110.107(4)
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   7.4153(2)
+_cell_length_b                   8.3054(2)
+_cell_length_c                   3.19500(10)
+_cell_volume                     184.778(10)
+_diffrn_radiation_probe          neutron
+_diffrn_radiation_type           Neutron
+_diffrn_radiation_wavelength     1.210
+_exptl_absorpt_coefficient_mu    1.285
+_cod_data_source_file            ab0314.cif
+_cod_data_source_block           ab0314a
+_cod_depositor_comments
+;
+ Adding the _atom_site_type_symbol data item.
+
+ Antanas Vaitkus,
+ 2017-01-30
+;
+_cod_original_cell_volume        184.78
+_cod_original_formula_sum        'H3 O2 Li'
+_cod_database_code               2101141
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Li Li .0 .3479(3) .5
+O1 O .28600(10) .0 .3959(3)
+OW O .00000 .20668(8) .0
+H1 H .2653(3) .0 .6737(6)
+HW H .11126(16) .13264(13) .1389(5)
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+HW OW HW 104.30(10)
+OW HW O1 174.80(10)
+O1 H1 O1 167.6(2)
+Li OW Li 107.40(10)
+O1 OW O1 100.50(10)
+Li O1 Li 80.00(10)
+HW OW HW 101.70(10)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+OW HW 1.0020(10)
+O1 H1 .951(2)
+HW O1 1.6840(10)
+H1 O1 2.259(2)
+Li OW 1.9820(10)
+Li O1 1.9650(10)

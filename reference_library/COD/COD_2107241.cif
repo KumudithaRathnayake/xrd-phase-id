@@ -1,0 +1,119 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-03-26 11:09:57 +0300 (Sun, 26 Mar 2023) $
+#$Revision: 282068 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/72/2107241.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2107241
+loop_
+_publ_author_name
+'Williams, P.P.'
+_publ_section_title
+;
+ Refinement of the structure of (Ca O)11 (Al2 O3)7 Ca F2
+;
+_journal_name_full               'Acta Crystallographica B (24,1968-38,1982)'
+_journal_page_first              1550
+_journal_page_last               1551
+_journal_volume                  29
+_journal_year                    1973
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'Al14 Ca12 F2 O32'
+_chemical_name_mineral           Fluormayenite
+_chemical_name_systematic        'Ca12 Al14 O32 F2'
+_space_group_IT_number           220
+_symmetry_space_group_name_Hall  'I -4bd 2c 3'
+_symmetry_space_group_name_H-M   'I -4 3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   11.97
+_cell_length_b                   11.97
+_cell_length_c                   11.97
+_cell_volume                     1715.072
+_citation_journal_id_ASTM        ACBCAR
+_database_code_amcsd             0019954
+_exptl_crystal_density_diffrn    2.746
+_cod_data_source_file            Williams_ACBCAR_1973_1014.cif
+_cod_data_source_block           Al14Ca12F2O32
+_cod_original_cell_volume        1715.073
+_cod_database_code               2107241
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+y+1/4,-x+3/4,-z+1/4
+-x,-y+1/2,z
+-y+3/4,x+3/4,-z+1/4
+x,-y,-z+1/2
+-y+1/4,-x+3/4,z+3/4
+-x,y+1/2,-z+1/2
+y+3/4,x+3/4,z+3/4
+z,x,y
+x+1/4,-z+3/4,-y+1/4
+-z,-x+1/2,y
+-x+3/4,z+3/4,-y+1/4
+z,-x,-y+1/2
+-x+1/4,-z+3/4,y+3/4
+-z,x+1/2,-y+1/2
+x+3/4,z+3/4,y+3/4
+y,z,x
+y,-z,-x+1/2
+-z+1/4,-y+3/4,x+3/4
+-y,z+1/2,-x+1/2
+z+1/4,y+1/4,x+1/4
+-y+1/2,-z,x+1/2
+-z+1/4,y+1/4,-x+3/4
+z+3/4,-y+1/4,-x+3/4
+x+1/2,y+1/2,z+1/2
+y+3/4,-x+5/4,-z+3/4
+-x+1/2,-y+1,z+1/2
+-y+5/4,x+5/4,-z+3/4
+x+1/2,-y+1/2,-z+1
+-y+3/4,-x+5/4,z+5/4
+-x+1/2,y+1,-z+1
+y+5/4,x+5/4,z+5/4
+z+1/2,x+1/2,y+1/2
+x+3/4,-z+5/4,-y+3/4
+-z+1/2,-x+1,y+1/2
+-x+5/4,z+5/4,-y+3/4
+z+1/2,-x+1/2,-y+1
+-x+3/4,-z+5/4,y+5/4
+-z+1/2,x+1,-y+1
+x+5/4,z+5/4,y+5/4
+y+1/2,z+1/2,x+1/2
+y+1/2,-z+1/2,-x+1
+-z+3/4,-y+5/4,x+5/4
+-y+1/2,z+1,-x+1
+z+3/4,y+3/4,x+3/4
+-y+1,-z+1/2,x+1
+-z+3/4,y+3/4,-x+5/4
+z+5/4,-y+3/4,-x+5/4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ca1 Ca+2 0.1103 0 0.25 0.74 0.0
+O2 O-2 0.3139 0.3139 0.3139 1 0.0
+F1 F-1 0.875 0 0.25 0.33 0.0
+Al1 Al+3 0.375 0 0.25 1 0.0
+Ca2 Ca+2 0.0682 0 0.25 0.28 0.0
+Al2 Al+3 0.2306 0.2306 0.2306 1 0.0
+O1 O-2 0.1919 0.2857 0.0991 1 0.0
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019954

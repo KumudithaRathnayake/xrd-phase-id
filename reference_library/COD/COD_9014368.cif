@@ -1,0 +1,138 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-23 11:35:25 +0300 (Tue, 23 May 2023) $
+#$Revision: 283960 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/43/9014368.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9014368
+loop_
+_publ_author_name
+'Ertl, A.'
+'Schuster, R.'
+'Hughes, J. M.'
+'Ludwig, T.'
+'Meyer, H.-P.'
+'Finger, F.'
+'Dyar, M. D.'
+'Ruschel, K.'
+'Rossman, G. R.'
+'Klotzli, U.'
+'Brandstatter, F.'
+'Lengauer, C. L.'
+'Tillmanns, E.'
+_publ_section_title
+;
+ Li-bearing tourmalines in Variscan granitic pegmatites
+ from the Moldanubian nappes, Lower Austria
+ Note: Sample MAG
+;
+_journal_name_full               'European Journal of Mineralogy'
+_journal_page_first              695
+_journal_page_last               715
+_journal_paper_doi               10.1127/0935-1221/2012/0024-2203
+_journal_volume                  24
+_journal_year                    2012
+_chemical_compound_source        'Maigen, Moldanubian nappes, Lower Austria'
+_chemical_formula_sum
+'Al8.922 B6.15 Ca0.01 F0.26 Fe1.338 H8.22 K0.01 Li0.42 Mn0.798 Na0.56 O42.74 Si5.568 Ti0.018 Zn0.06'
+_chemical_name_mineral           Olenite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.8830
+_cell_length_b                   15.8830
+_cell_length_c                   7.1093
+_cell_volume                     1553.183
+_database_code_amcsd             0019402
+_exptl_crystal_density_diffrn    4.171
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+'Na.56 Ca.01 K.01 Al8.922 Fe1.338 Mn.798 Li.42 Zn.06 Ti.018 Si5.568 B6.15 F.26 O42.74 H8.22'
+_cod_database_code               9014368
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaX 0.00000 0.00000 0.25000 0.56000 0.02690 Na 0
+CaX 0.00000 0.00000 0.25000 0.01000 0.02690 Ca 0
+KX 0.00000 0.00000 0.25000 0.01000 0.02690 K 0
+AlY 0.12248 -0.06124 0.34775 0.44000 0.01120 Al 0
+Fe3+Y 0.12248 -0.06124 0.34775 0.15000 0.01120 Fe 0
+Mn2+Y 0.12248 -0.06124 0.34775 0.13300 0.01120 Mn 0
+Fe2+Y 0.12248 -0.06124 0.34775 0.07300 0.01120 Fe 0
+LiY 0.12248 -0.06124 0.34775 0.07000 0.01120 Li 0
+ZnY 0.12248 -0.06124 0.34775 0.01000 0.01120 Zn 0
+Ti4+Y 0.12248 -0.06124 0.34775 0.00300 0.01120 Ti 0
+AlZ 0.29724 0.26071 0.36897 1.00000 0.00770 Al 0
+SiT 0.19185 0.18983 0.02240 0.92800 0.00710 Si 0
+AlT 0.19185 0.18983 0.02240 0.04700 0.00710 Al 0
+BT 0.19185 0.18983 0.02240 0.02500 0.00710 B 0
+B 0.10962 -0.21924 0.47500 1.00000 0.00870 B 0
+F1 0.00000 0.00000 0.20500 0.26000 0.02880 F 0
+O1 0.00000 0.00000 0.20500 0.74000 0.02880 O 0
+H1 0.01860 0.03730 0.18200 0.74000 ? H 0
+O2 0.06098 -0.12196 0.50920 1.00000 0.01780 O 0
+O3 0.26390 -0.13195 0.47030 1.00000 0.01450 O 0
+H3 0.25800 -0.12900 0.59100 1.00000 0.04600 H 0
+O4 0.09416 -0.18832 0.09410 1.00000 0.01180 O 0
+O5 0.18790 -0.09395 0.11660 1.00000 0.01250 O 0
+O6 0.19581 0.18530 0.20390 1.00000 0.01040 O 0
+O7 0.28642 0.28647 0.09970 1.00000 0.00910 O 0
+O8 0.20963 0.27061 0.46040 1.00000 0.01010 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:25:02+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019402

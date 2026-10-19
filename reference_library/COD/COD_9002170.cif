@@ -1,0 +1,172 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-03 13:19:43 +0300 (Sat, 03 Aug 2024) $
+#$Revision: 293658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/21/9002170.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9002170
+loop_
+_publ_author_name
+'Bloodaxe, E. S.'
+'Hughes, J. M.'
+'Dyar, M. D.'
+'Grew, E. S.'
+'Guidotti, C. V.'
+_publ_section_title
+;
+ Linking structure and chemistry in the schorl-dravite series
+ Sample 108749
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              922
+_journal_page_last               928
+_journal_volume                  84
+_journal_year                    1999
+_chemical_compound_source        Madagascar
+_chemical_formula_sum
+;Al7.014 B3 Ca0.1 F0.302 Fe1.233 H3.465 K0.043 Li0.006 Mg0.846 Na0.711 O30.698
+ Si5.832 Ti0.048 V0.006 Zn0.006
+;
+_chemical_name_mineral           Schorl
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.939
+_cell_length_b                   15.939
+_cell_length_c                   7.146
+_cell_volume                     1572.229
+_database_code_amcsd             0002238
+_exptl_crystal_density_diffrn    3.170
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+;Ca.1 Na.711 K.043 Al7.014 Mg.846 Fe1.233 Ti.048 V.006 Li.006 Zn.006 Si5.832
+ B3 O30.698 F.302 H3.465
+;
+_cod_database_code               9002170
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+CaX 0.01950 0.01950 0.02354 0.00975 0.00000 0.00000
+NaX 0.01950 0.01950 0.02354 0.00975 0.00000 0.00000
+KX 0.01950 0.01950 0.02354 0.00975 0.00000 0.00000
+AlY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+MgY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+FeY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+TiY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+VY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+LiY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+ZnY 0.00792 0.01062 0.01477 0.00531 0.00192 0.00385
+AlZ 0.00483 0.00473 0.00417 0.00236 -0.00035 0.00020
+MgZ 0.00483 0.00473 0.00417 0.00236 -0.00035 0.00020
+SiT 0.00531 0.00502 0.00564 0.00261 -0.00010 -0.00057
+AlT 0.00531 0.00502 0.00564 0.00261 -0.00010 -0.00057
+B 0.00869 0.00676 0.00569 0.00338 0.00025 0.00050
+O1 0.02703 0.02703 0.00983 0.01351 0.00000 0.00000
+O-H1 0.02703 0.02703 0.00983 0.01351 0.00000 0.00000
+F1 0.02703 0.02703 0.00983 0.01351 0.00000 0.00000
+O2 0.01863 0.00763 0.01035 0.00381 0.00000 0.00000
+O-H3 0.02336 0.01207 0.00647 0.01168 0.00000 0.00000
+O4 0.00917 0.01689 0.01009 0.00854 -0.00075 -0.00150
+O5 0.01738 0.00830 0.01061 0.00869 0.00075 0.00150
+O6 0.00956 0.01149 0.00647 0.00526 -0.00050 -0.00100
+O7 0.00801 0.00734 0.00802 0.00198 -0.00050 -0.00125
+O8 0.00714 0.01014 0.01035 0.00473 0.00025 0.00225
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+CaX 0.00000 0.00000 0.25000 0.10000 Ca 0
+NaX 0.00000 0.00000 0.25000 0.71100 Na 0
+KX 0.00000 0.00000 0.25000 0.04300 K 0
+AlY 0.27140 0.54280 0.32225 0.42800 Al 0
+MgY 0.27140 0.54280 0.32225 0.13600 Mg 0
+FeY 0.27140 0.54280 0.32225 0.41100 Fe 0
+TiY 0.27140 0.54280 0.32225 0.01600 Ti 0
+VY 0.27140 0.54280 0.32225 0.00200 V 0
+LiY 0.27140 0.54280 0.32225 0.00200 Li 0
+ZnY 0.27140 0.54280 0.32225 0.00200 Zn 0
+AlZ 0.29802 0.26158 0.63386 0.92700 Al 0
+MgZ 0.29802 0.26158 0.63386 0.07300 Mg 0
+SiT 0.19205 0.19007 0.02373 0.97200 Si 0
+AlT 0.19205 0.19007 0.02373 0.02800 Al 0
+B 0.10995 0.21990 0.47660 1.00000 B 0
+O1 0.00000 0.00000 0.79840 0.23300 O 0
+O-H1 0.00000 0.00000 0.79840 0.46500 O 1
+F1 0.00000 0.00000 0.79840 0.30200 F 0
+O2 0.06111 0.12222 0.50820 1.00000 O 0
+O-H3 0.26600 0.13300 0.53260 1.00000 O 1
+O4 0.09313 0.18626 0.09400 1.00000 O 0
+O5 0.18580 0.09290 0.11680 1.00000 O 0
+O6 0.19696 0.18640 0.79840 1.00000 O 0
+O7 0.28589 0.28604 0.10220 1.00000 O 0
+O8 0.20956 0.27008 0.46320 1.00000 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T11:37:06+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:20:08+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'OH1' -> 'O-H1'
+'OH3' -> 'O-H3'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0002238

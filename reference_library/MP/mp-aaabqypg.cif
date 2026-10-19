@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Al2O3
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   9.70446088
+_cell_length_b   3.26954650
+_cell_length_c   7.11883149
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   104.33364749
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Al2O3
+_chemical_formula_sum   'Al8 O12'
+_cell_volume   218.84336483
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  4  0.11591904  0.50000000  0.93161306  1.0
+  Al  Al1  4  0.23732941  0.50000000  0.34292265  1.0
+  O  O2  4  0.07239775  0.50000000  0.16710666  1.0
+  O  O3  4  0.17660971  0.00000000  0.87759082  1.0
+  O  O4  4  0.19331623  0.50000000  0.58862806  1.0

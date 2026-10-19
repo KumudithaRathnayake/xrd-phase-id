@@ -1,0 +1,177 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-07 20:09:39 +0300 (Wed, 07 Aug 2024) $
+#$Revision: 294031 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/10/9001022.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9001022
+loop_
+_publ_author_name
+'Fitzgerald, S.'
+'Rheingold, A. L.'
+'Leavens, P. B.'
+_publ_section_title
+;
+ Crystal structure of Cu-bearing vesuvianite
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1011
+_journal_page_last               1014
+_journal_volume                  71
+_journal_year                    1986
+_chemical_formula_sum
+;Al5.425 Ca9.14 Cu0.355 F0.533 Fe0.145 H4.25 Mg0.28 Mn0.34 O38.25 Si8.755
+ Zn0.484
+;
+_chemical_name_mineral           Vesuvianite
+_space_group_IT_number           126
+_symmetry_space_group_name_Hall  '-P 4a 2bc'
+_symmetry_space_group_name_H-M   'P 4/n n c :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   15.532
+_cell_length_b                   15.532
+_cell_length_c                   11.776
+_cell_volume                     2840.878
+_database_code_amcsd             0001044
+_exptl_crystal_density_diffrn    3.443
+_cod_original_sg_symbol_H-M      'P 4/n n c'
+_cod_original_formula_sum
+'Si8.755 Al5.425 Ca9.14 Mn.34 Cu.355 Fe.145 Mg.28 Zn.484 O38.25 F.533 H4.25'
+_cod_database_code               9001022
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+-y,-x,1/2+z
+y,x,1/2-z
+1/2+y,-x,-z
+1/2-y,x,z
+1/2+x,-y,1/2+z
+1/2-x,y,1/2-z
+1/2+x,1/2+y,-z
+1/2-x,1/2-y,z
+1/2+y,1/2+x,1/2+z
+1/2-y,1/2-x,1/2-z
+-y,1/2+x,-z
+y,1/2-x,z
+-x,1/2+y,1/2+z
+x,1/2-y,1/2-z
+-x,-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Si1 0.00800 0.00800 0.00900 0.00000 0.00000 0.00000
+Al1_1 0.00800 0.00800 0.00900 0.00000 0.00000 0.00000
+Si2 0.00800 0.00600 0.00700 0.00000 0.00000 0.00000
+Si3 0.01100 0.00600 0.00800 0.00000 0.00000 0.00000
+Ca1 0.01200 0.00700 0.00700 0.00000 0.00000 0.00000
+Ca2 0.00700 0.00900 0.00800 0.00100 0.00000 0.00000
+Ca3 0.00900 0.01000 0.01600 -0.00300 0.00500 -0.00400
+Cac 0.00900 0.00900 0.00900 0.00000 0.00000 0.00000
+Mnc 0.00900 0.00900 0.00900 0.00000 0.00000 0.00000
+Cub 0.00700 0.00700 0.01900 0.00000 0.00000 0.00000
+Feb 0.00700 0.00700 0.01900 0.00000 0.00000 0.00000
+Al1_2 0.00700 0.00800 0.00700 0.00000 0.00100 0.00000
+Mg 0.00700 0.00800 0.00700 0.00000 0.00100 0.00000
+Zn 0.00700 0.00800 0.00700 0.00000 0.00100 0.00000
+Ala 0.00700 0.00600 0.00900 0.00000 -0.00100 0.00000
+O1 0.01200 0.00600 0.01000 -0.00100 0.00000 -0.00100
+O2 0.01100 0.01100 0.00900 -0.00100 -0.00200 0.00300
+O3 0.00900 0.00800 0.00800 0.00100 -0.00100 0.00000
+O4 0.00800 0.00600 0.01000 0.00100 -0.00100 0.00100
+O5 0.01100 0.01300 0.01000 0.00300 0.00200 -0.00100
+O6 0.02100 0.01100 0.01400 -0.00200 -0.00500 0.00300
+O7 0.00800 0.01300 0.01300 0.00100 0.00100 0.00000
+O8 0.01000 0.00800 0.01100 -0.00100 -0.00300 0.00000
+O9 0.01300 0.01300 0.00700 -0.00200 0.00000 0.00000
+O-H10 0.00700 0.00700 0.01500 0.00000 0.00000 0.00000
+F10 0.00700 0.00700 0.01500 0.00000 0.00000 0.00000
+O-H11 0.00700 0.01000 0.00700 0.00000 -0.00100 -0.00200
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+Si1 -0.25000 0.25000 0.00000 0.75500 Si 0
+Al1_1 -0.25000 0.25000 0.00000 0.24500 Al 0
+Si2 -0.04040 0.18100 0.37130 1.00000 Si 0
+Si3 -0.08320 -0.15090 0.36470 1.00000 Si 0
+Ca1 -0.25000 0.25000 0.25000 1.00000 Ca 0
+Ca2 -0.18900 0.04410 0.37930 1.00000 Ca 0
+Ca3 0.10120 0.31970 0.38890 1.00000 Ca 0
+Cac 0.25000 0.25000 0.64520 0.14000 Ca 0
+Mnc 0.25000 0.25000 0.64520 0.34000 Mn 0
+Cub 0.25000 0.25000 0.55880 0.35500 Cu 0
+Feb 0.25000 0.25000 0.55880 0.14500 Fe 0
+Al1_2 -0.11270 0.12140 0.12660 0.79500 Al 0
+Mg -0.11270 0.12140 0.12660 0.07000 Mg 0
+Zn -0.11270 0.12140 0.12660 0.12100 Zn 0
+Ala 0.00000 0.50000 0.50000 1.00000 Al 0
+O1 -0.22000 0.17270 0.08580 1.00000 O 0
+O2 -0.11680 0.15980 0.27910 1.00000 O 0
+O3 -0.04890 0.22190 0.07550 1.00000 O 0
+O4 -0.06150 0.10620 0.47020 1.00000 O 0
+O5 -0.17040 0.01460 0.17850 1.00000 O 0
+O6 0.11880 0.22840 0.55820 1.00000 O 0
+O7 0.05640 0.17380 0.32220 1.00000 O 0
+O8 0.06030 0.40940 0.56700 1.00000 O 0
+O9 0.14480 -0.14480 0.25000 0.50000 O 0
+O-H10 0.25000 0.25000 0.36350 0.25000 O 1
+F10 0.25000 0.25000 0.36350 0.53300 F 0
+O-H11 -0.00390 0.06190 0.13630 1.00000 O 1
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T11:36:33+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:19:53+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'OH10' -> 'O-H10'
+'OH11' -> 'O-H11'
+;
+3
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_atom_labels 10224 2024-08-07 11:09:31Z saulius
+;
+2024-08-07T19:38:08+03:00
+;Changed the following '_atom_site_label' values:
+the first duplicated label 'Al1'  converted to 'Al1_1'
+duplicated label 'Al1' at index 11 converted to 'Al1_2'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0001044

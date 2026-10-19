@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-09-19 12:39:42 +0300 (Thu, 19 Sep 2024) $
+#$Revision: 294795 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/3/00/04/3000496.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_3000496
+loop_
+_publ_author_name
+'Hettler, Simon'
+'Singha-Roy, Kankona'
+'Arenal, Raul'
+'Panchakarla, Leela'
+_publ_section_title
+;
+ Stable CoO~2 Nanoscrolls With Outstanding Electrical Properties
+;
+_journal_name_full               'Advanced Materials Interfaces'
+_journal_year                    2024
+_chemical_formula_sum            'Co O2'
+_chemical_formula_weight         90.93
+_chemical_name_common            'cobalt dioxide'
+_space_group_IT_number           8
+_space_group_name_Hall           'C -2y'
+_space_group_name_H-M_alt        'C 1 m 1'
+_symmetry_cell_setting           monoclinic
+_cell_angle_alpha                90
+_cell_angle_beta                 98
+_cell_angle_gamma                90
+_cell_formula_units_Z            3
+_cell_length_a                   4.83
+_cell_length_b                   2.82
+_cell_length_c                   4.5
+_cell_volume                     60.696
+_diffrn_radiation_type           'electron 300 kV'
+_journal_article_reference       2400317
+_cod_data_source_file            CoO2_nanoscrolls.cif
+_cod_data_source_block           cobaltdioxideNSs
+_cod_depositor_comments
+'Releasing structure 3000496 into public domain as published material.'
+_cod_original_cell_volume        60.806
+_cod_original_sg_symbol_H-M      'C m'
+_cod_database_code               3000496
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 'x, y, z'
+2 'x, -y, z'
+3 'x+1/2, y+1/2, z'
+4 'x+1/2, -y+1/2, z'
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_occupancy
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+Co Co1 1.0 0.363000 0.000000 0.200000 1 Uiso
+O O1 1.0 0.727000 0.000000 0.450000 1 Uiso
+O O2 1.0 0.000000 0.000000 0.000000 1 Uiso
+loop_
+_atom_type_symbol
+Co
+O

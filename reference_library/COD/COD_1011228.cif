@@ -1,0 +1,91 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-07-06 22:17:43 +0300 (Fri, 06 Jul 2018) $
+#$Revision: 208881 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/01/12/1011228.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1011228
+loop_
+_publ_author_name
+'Wyckoff, R. W. G.'
+_publ_section_title
+;
+ The crystal structures of some carbonates of the calcite group
+;
+_journal_coden_ASTM              AJSCAP
+_journal_name_full               'American Journal of Science'
+_journal_page_first              317
+_journal_page_last               360
+_journal_paper_doi               10.2475/ajs.s4-50.299.317
+_journal_volume                  50
+_journal_year                    1920
+_chemical_compound_source        'from Lake Co., Colorado'
+_chemical_formula_structural     'Mn (C O3)'
+_chemical_formula_sum            'C Mn O3'
+_chemical_name_mineral           Rhodochrosite
+_chemical_name_systematic        'Manganese carbonate'
+_symmetry_cell_setting           trigonal
+_symmetry_Int_Tables_number      167
+_symmetry_space_group_name_H-M   'R -3 c RS'
+_cell_angle_alpha                47.77
+_cell_angle_beta                 47.77
+_cell_angle_gamma                47.77
+_cell_formula_units_Z            2
+_cell_length_a                   5.84
+_cell_length_b                   5.84
+_cell_length_c                   5.84
+_cell_volume                     100.0
+_exptl_crystal_density_meas      3.85
+_cod_depositor_comments
+;
+ Updating bibliography and correcting the summary chemical formula.
+
+ Antanas Vaitkus,
+ 2018-07-06
+;
+_cod_database_code               1011228
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+z,x,y
+y,z,x
+-y,-x,-z
+-x,-z,-y
+-z,-y,-x
+1/2-x,1/2-y,1/2-z
+1/2-y,1/2-z,1/2-x
+1/2-z,1/2-x,1/2-y
+1/2+y,1/2+x,1/2+z
+1/2+x,1/2+z,1/2+y
+1/2+z,1/2+y,1/2+x
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Mn1 Mn2+ 2 b 0.25 0.25 0.25 1. 0 d
+C1 C4+ 2 a 0. 0. 0. 1. 0 d
+O1 O2- 6 e 0.27 -0.27 0. 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Mn2+ 2
+C4+ 4
+O2- -2
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 ChemSpider 8329682

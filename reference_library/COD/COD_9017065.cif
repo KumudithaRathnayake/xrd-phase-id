@@ -1,0 +1,141 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-29 17:00:33 +0300 (Wed, 29 May 2024) $
+#$Revision: 292100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/70/9017065.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9017065
+loop_
+_publ_author_name
+'Ishizawa, N.'
+'Tateishi, K.'
+'Oishi, S.'
+'Kishimoto, S.'
+_publ_section_title
+;
+ Bond-length fluctuation in the orthorhombic 3x3x1 superstructure of LiMn2O4
+ Note: T = 230 K
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1528
+_journal_page_last               1536
+_journal_volume                  99
+_journal_year                    2014
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'Li9 Mn18 O36'
+_space_group_IT_number           70
+_space_group_name_Hall           '-F 2uv 2vw'
+_space_group_name_H-M_alt        'F d d d :2'
+_symmetry_space_group_name_H-M   'F d d d :2'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   24.764
+_cell_length_b                   24.862
+_cell_length_c                   8.1995
+_cell_formula_units_Z            8
+_cell_volume                     5048.289
+_database_code_amcsd             0020311
+_diffrn_ambient_temperature      230
+_exptl_crystal_density_diffrn    4.282
+_cod_data_source_file            inputs/fixed/downloads/05/05786.cif
+_cod_data_source_block           05786
+_cod_original_sg_symbol_H-M      'F d d d'
+_cod_original_formula_sum        'Mn18 Li9 O36'
+_cod_database_code               9017065
+_amcsd_formula_title             LiMn2O4
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+x,1/2+y,1/2+z
+1/2+x,y,1/2+z
+1/2+x,1/2+y,z
+3/4+x,-y,3/4+z
+3/4+x,1/2-y,1/4+z
+1/4+x,-y,1/4+z
+1/4+x,1/2-y,3/4+z
+3/4-x,y,3/4-z
+3/4-x,1/2+y,1/4-z
+1/4-x,y,1/4-z
+1/4-x,1/2+y,3/4-z
+-x,3/4+y,3/4+z
+-x,1/4+y,1/4+z
+1/2-x,3/4+y,1/4+z
+1/2-x,1/4+y,3/4+z
+x,3/4-y,3/4-z
+x,1/4-y,1/4-z
+1/2+x,3/4-y,1/4-z
+1/2+x,1/4-y,3/4-z
+3/4+x,3/4+y,-z
+3/4+x,1/4+y,1/2-z
+1/4+x,3/4+y,1/2-z
+1/4+x,1/4+y,-z
+3/4-x,3/4-y,z
+3/4-x,1/4-y,1/2+z
+1/4-x,3/4-y,1/2+z
+1/4-x,1/4-y,z
+-x,-y,-z
+-x,1/2-y,1/2-z
+1/2-x,-y,1/2-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn1 0.00473 0.00448 0.00553 -0.00027 -0.00111 -0.00038
+Mn2 0.00647 0.00338 0.00374 -0.00068 -0.00047 -0.00019
+Mn3 0.00428 0.00483 0.00394 0.00071 0.00030 -0.00057
+Mn4 0.00407 0.00378 0.00377 0.00042 0.00046 -0.00054
+Mn5 0.00361 0.00406 0.00419 0.00028 -0.00036 0.00013
+O1 0.00560 0.00470 0.00500 -0.00010 -0.00030 0.00070
+O2 0.00690 0.00590 0.00540 -0.00080 0.00100 -0.00040
+O3 0.00570 0.00610 0.00540 -0.00070 -0.00110 -0.00180
+O5 0.00510 0.00400 0.00610 0.00030 -0.00010 0.00010
+O6 0.00500 0.00480 0.00400 -0.00100 -0.00050 0.00040
+O7 0.00590 0.00420 0.00480 0.00070 -0.00040 0.00010
+O8 0.00340 0.00680 0.00580 -0.00120 0.00090 0.00110
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Mn1 0.25000 0.25000 0.50000 1.00000 0.00492
+Mn2 0.08080 0.08552 0.50091 1.00000 0.00453
+Mn3 0.08415 0.33013 0.24966 1.00000 0.00435
+Mn4 0.25341 0.16798 0.24512 1.00000 0.00387
+Mn5 0.16674 0.24385 0.24376 1.00000 0.00395
+Li1 0.12500 0.12500 0.12500 1.00000 0.01070
+Li2 0.37500 0.21309 0.37500 1.00000 0.00120
+Li3 0.20520 0.37500 0.37500 1.00000 0.00500
+Li4 0.29002 0.29430 0.12270 1.00000 0.01020
+O1 0.17436 0.16781 0.26212 1.00000 0.00510
+O2 0.07878 0.00765 0.47870 1.00000 0.00610
+O3 0.07897 0.33141 0.48165 1.00000 0.00570
+O4a 0.25580 0.17353 0.47410 0.62000 0.00480
+O4b 0.24820 0.17200 0.48120 0.38000 0.00480
+O5 0.00657 0.00694 0.23681 1.00000 0.00510
+O6 0.25635 0.09033 0.23907 1.00000 0.00460
+O7 0.16285 0.32245 0.23581 1.00000 0.00500
+O8 0.09053 0.24332 0.23415 1.00000 0.00530
+O9a 0.07970 0.16069 0.51940 0.62000 0.00630
+O9b 0.09050 0.16210 0.51230 0.38000 0.00630
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0020311

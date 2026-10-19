@@ -1,0 +1,115 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-02 13:48:35 +0300 (Thu, 02 May 2024) $
+#$Revision: 291455 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/76/9007690.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9007690
+loop_
+_publ_author_name
+'Maslen, E. N.'
+'Streltsov, V. A.'
+'Streltsova, N. R.'
+'Ishizawa, N.'
+_publ_section_title
+;
+ Electron density and optical anisotropy in rhombohedral carbonates.
+ III. Synchrotron X-ray studies of CaCO3, MgCO3 and MnCO3
+ Sample: Synchrotron data
+;
+_journal_issue                   6
+_journal_name_full               'Acta Crystallographica, Section B'
+_journal_page_first              929
+_journal_page_last               939
+_journal_paper_doi               10.1107/S0108768195006434
+_journal_volume                  51
+_journal_year                    1995
+_chemical_formula_sum            'C Mn O3'
+_chemical_name_mineral           Rhodochrosite
+_space_group_IT_number           167
+_symmetry_space_group_name_Hall  '-R 3 2"c'
+_symmetry_space_group_name_H-M   'R -3 c :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   4.772
+_cell_length_b                   4.772
+_cell_length_c                   15.637
+_cell_formula_units_Z            6
+_cell_volume                     308.379
+_database_code_amcsd             0009891
+_exptl_crystal_density_diffrn    3.714
+_cod_original_sg_symbol_H-M      'R -3 c'
+_cod_original_formula_sum        'Mn C O3'
+_cod_database_code               9007690
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,1/2+z
+2/3+x,1/3+x-y,5/6+z
+1/3+x,2/3+x-y,1/6+z
+y,x,1/2-z
+2/3+y,1/3+x,5/6-z
+1/3+y,2/3+x,1/6-z
+-x+y,y,1/2+z
+2/3-x+y,1/3+y,5/6+z
+1/3-x+y,2/3+y,1/6+z
+-x,-x+y,1/2-z
+2/3-x,1/3-x+y,5/6-z
+1/3-x,2/3-x+y,1/6-z
+-y,-x,1/2+z
+2/3-y,1/3-x,5/6+z
+1/3-y,2/3-x,1/6+z
+x-y,-y,1/2-z
+2/3+x-y,1/3-y,5/6-z
+1/3+x-y,2/3-y,1/6-z
+y,-x+y,-z
+2/3+y,1/3-x+y,1/3-z
+1/3+y,2/3-x+y,2/3-z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+-x,-y,-z
+2/3-x,1/3-y,1/3-z
+1/3-x,2/3-y,2/3-z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+x-y,x,-z
+2/3+x-y,1/3+x,1/3-z
+1/3+x-y,2/3+x,2/3-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn 0.00944 0.00944 0.01125 0.00472 0.00000 0.00000
+C 0.00810 0.00810 0.00990 0.00405 0.00000 0.00000
+O 0.00850 0.01170 0.01480 0.00585 -0.00099 -0.00198
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Mn 0.00000 0.00000 0.00000
+C 0.00000 0.00000 0.25000
+O 0.26975 0.00000 0.25000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0009891

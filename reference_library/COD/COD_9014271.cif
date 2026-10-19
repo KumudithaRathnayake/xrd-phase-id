@@ -1,0 +1,131 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-18 10:14:51 +0300 (Thu, 18 May 2023) $
+#$Revision: 283850 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/42/9014271.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9014271
+loop_
+_publ_author_name
+'Birch, W. D.'
+'Grey, I. E.'
+'Mills, S. J.'
+'Pring, A.'
+'Bougerol, C.'
+'Ribabldi-Tunnicliffe A'
+'Wilson, N. C.'
+'Keck, E.'
+_publ_section_title
+;
+ Nordgauite, MnAl2(PO4)2(F,OH)2*5H2O, a new mineral from the Hagendorf-Sud
+ pegmatite, Bavaria, Germany: description and crystal structure
+;
+_journal_name_full               'Mineralogical Magazine'
+_journal_page_first              269
+_journal_page_last               278
+_journal_paper_doi               10.1180/minmag.2011.075.2.269
+_journal_volume                  75
+_journal_year                    2011
+_chemical_compound_source        'the Hagendorf-Sud pegmatite, Bavaria, Germany'
+_chemical_formula_sum
+'Al2 Ca0.07 F2 Fe0.04 H10 Mg0.01 Mn0.87 O13 P2 Zn0.01'
+_chemical_name_mineral           Nordgauite
+_space_group_IT_number           2
+_symmetry_space_group_name_Hall  '-P 1'
+_symmetry_space_group_name_H-M   'P -1'
+_cell_angle_alpha                92.70
+_cell_angle_beta                 99.83
+_cell_angle_gamma                97.10
+_cell_formula_units_Z            2
+_cell_length_a                   9.887
+_cell_length_b                   9.796
+_cell_length_c                   6.054
+_cell_volume                     571.913
+_exptl_crystal_density_diffrn    2.472
+_cod_depositor_comments
+;
+ Correcting the z coordinate of the 'H(51)' atom by changing it from
+ '**********' to '0.05600' after consulting the AMCSD entry 0018376.
+
+ Antanas Vaitkus,
+ 2018-07-18
+;
+_cod_original_formula_sum
+'(Mn.87 Ca.07 Fe.04 Zn.01 Mg.01) P2 Al2 O13 F2 H10'
+_cod_database_code               9014271
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+Mn 0.59120 0.41140 0.35020 0.87000 0.01700 Mn 0
+Ca 0.59120 0.41140 0.35020 0.07000 0.01700 Ca 0
+Fe 0.59120 0.41140 0.35020 0.04000 0.01700 Fe 0
+Zn 0.59120 0.41140 0.35020 0.01000 0.01700 Zn 0
+Mg 0.59120 0.41140 0.35020 0.01000 0.01700 Mg 0
+P(1) 0.89160 0.73000 0.70740 1.00000 0.01300 P 0
+P(2) 0.66890 0.43900 0.91830 1.00000 0.01400 P 0
+Al(1) 0.00000 0.50000 0.00000 1.00000 0.01100 Al 0
+Al(2) 0.00000 0.00000 0.50000 1.00000 0.01300 Al 0
+Al(3) 0.79630 0.71820 0.18410 1.00000 0.01200 Al 0
+O(1) 0.79610 0.68990 0.48240 1.00000 0.01600 O 0
+O(2) 0.79810 0.74560 0.88150 1.00000 0.01400 O 0
+O(3) 0.98470 0.86650 0.69960 1.00000 0.01600 O 0
+O(4) 0.98920 0.62200 0.77070 1.00000 0.01500 O 0
+O(5) 0.81520 0.42150 0.88600 1.00000 0.01600 O 0
+O(6) 0.60070 0.30910 0.00980 1.00000 0.01900 O 0
+O(7) 0.58430 0.47250 0.69500 1.00000 0.01700 O 0
+O(8) 0.67220 0.55390 0.10680 1.00000 0.01500 O 0
+F(1) 0.90840 0.88310 0.26100 1.00000 0.02000 F 0
+F(2) 0.94660 0.62350 0.19140 1.00000 0.01600 F 0
+Ow1 0.82390 0.05760 0.55240 1.00000 0.02100 O 0
+Ow2 0.64020 0.82100 0.17230 1.00000 0.01800 O 0
+Ow3 0.45730 0.21940 0.37590 1.00000 0.02400 O 0
+Ow4 0.79060 0.33540 0.45090 1.00000 0.02000 O 0
+Ow5 0.74760 0.07460 0.98390 1.00000 0.03000 O 0
+H(11) 0.81000 0.13900 0.51400 1.00000 0.04100 H 0
+H(12) 0.80500 0.04900 0.65200 1.00000 0.06000 H 0
+H(21) 0.65600 0.89500 0.13100 1.00000 0.04200 H 0
+H(22) 0.56900 0.78200 0.11300 1.00000 0.02500 H 0
+H(31) 0.44200 0.20000 0.51200 1.00000 0.03100 H 0
+H(32) 0.37500 0.22700 0.28800 1.00000 0.07000 H 0
+H(41) 0.85200 0.34900 0.35800 1.00000 0.03700 H 0
+H(42) 0.81700 0.35800 0.57700 1.00000 0.04900 H 0
+H(51) 0.83800 0.08900 0.05600 1.00000 0.04700 H 0
+H(52) 0.72400 0.15900 0.99500 1.00000 0.09000 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T08:45:14+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0018376

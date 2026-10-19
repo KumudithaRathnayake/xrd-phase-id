@@ -1,0 +1,143 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-29 17:00:33 +0300 (Wed, 29 May 2024) $
+#$Revision: 292100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/69/9016956.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9016956
+loop_
+_publ_author_name
+'Vereshchagin, O. S.'
+'Rozhdestvenskaya, I. V.'
+'Frank-Kamenetskaya O V'
+'Zolotarev, A. A.'
+'Mashkovtsev, R. I.'
+_publ_section_title
+;
+ Crystal chemistry of Cu-bearing tourmalines
+ Note: Sample 2
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1610
+_journal_page_last               1616
+_journal_volume                  98
+_journal_year                    2013
+_chemical_compound_source        'Paraiba, Brazil'
+_chemical_formula_sum
+'Al7.65 B3 Ca0.03 Cu0.348 F0.06 Fe0.03 H6 Li0.75 Mn0.18 Na0.9 O30.8 Si5.7 Zn0.342'
+_chemical_name_mineral           Elbaite
+_space_group_IT_number           160
+_space_group_name_Hall           'R 3 -2"'
+_space_group_name_H-M_alt        'R 3 m :H'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   15.881
+_cell_length_b                   15.881
+_cell_length_c                   7.112
+_cell_formula_units_Z            3
+_cell_volume                     1553.381
+_database_code_amcsd             0020257
+_exptl_crystal_density_diffrn    3.149
+_cod_data_source_file            inputs/fixed/downloads/05/05584.cif
+_cod_data_source_block           05584
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+'Na.9 Ca.03 Al7.65 Li.75 Cu.348 Zn.342 Mn.18 Fe.03 Si5.7 B3 O30.8 F.06 H6'
+_cod_database_code               9016956
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+NaX 0.02700 0.02700 0.01900 0.01400 0.00000 0.00000
+CaX 0.02700 0.02700 0.01900 0.01400 0.00000 0.00000
+AlY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+LiY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+CuY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+ZnY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+MnY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+FeY 0.00730 0.00680 0.01000 0.00270 -0.00110 -0.00050
+AlZ 0.00730 0.00810 0.00530 0.00420 -0.00020 0.00070
+CuZ 0.00730 0.00810 0.00530 0.00420 -0.00020 0.00070
+ZnZ 0.00730 0.00810 0.00530 0.00420 -0.00020 0.00070
+SiT 0.00390 0.00390 0.00410 0.00200 0.00020 0.00020
+AlT 0.00390 0.00390 0.00410 0.00200 0.00020 0.00020
+B 0.00650 0.00440 0.00570 0.00220 -0.00010 0.00000
+O1w 0.06500 0.06500 0.01100 0.03200 0.00000 0.00000
+O2 0.02200 0.00430 0.01200 0.00210 0.00000 0.00000
+O3v 0.02500 0.00940 0.00380 0.01200 -0.00040 -0.00020
+O4 0.00640 0.01200 0.00730 0.00590 -0.00070 -0.00300
+O5 0.01500 0.00670 0.00630 0.00740 0.00050 0.00020
+O6 0.00620 0.00740 0.00420 0.00160 0.00040 0.00010
+O7 0.00450 0.00650 0.00520 0.00150 0.00030 -0.00050
+O8 0.00380 0.00990 0.00700 0.00360 0.00090 0.00320
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+NaX 0.00000 0.00000 0.23500 0.90000 0.02420
+CaX 0.00000 0.00000 0.23500 0.03000 0.02420
+AlY 0.12456 0.06228 0.63050 0.50000 0.00810
+LiY 0.12456 0.06228 0.63050 0.25000 0.00810
+CuY 0.12456 0.06228 0.63050 0.09000 0.00810
+ZnY 0.12456 0.06228 0.63050 0.09000 0.00810
+MnY 0.12456 0.06228 0.63050 0.06000 0.00810
+FeY 0.12456 0.06228 0.63050 0.01000 0.00810
+AlZ 0.29773 0.26045 0.61090 0.97500 0.00670
+CuZ 0.29773 0.26045 0.61090 0.01300 0.00670
+ZnZ 0.29773 0.26045 0.61090 0.01200 0.00670
+SiT 0.19208 0.19001 0.00000 0.95000 0.00400
+AlT 0.19208 0.19001 0.00000 0.05000 0.00400
+B 0.10899 0.21798 0.45640 1.00000 0.00570
+O1w 0.00000 0.00000 0.78730 0.80000 0.04700
+O2 0.06050 0.12100 0.48930 1.00000 0.01470
+O3v 0.26920 0.13460 0.50790 1.00000 0.01100
+O4 0.09309 0.18620 0.07230 1.00000 0.00790
+O5 0.18610 0.09305 0.09520 1.00000 0.00840
+O6 0.19719 0.18614 0.77500 1.00000 0.00670
+O7 0.28616 0.28590 0.07960 1.00000 0.00600
+O8 0.20945 0.26984 0.44070 1.00000 0.00680
+F 0.03570 0.01780 0.79600 0.02000 0.02400
+H 0.30500 0.15300 0.39700 1.00000 0.05100
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0020257

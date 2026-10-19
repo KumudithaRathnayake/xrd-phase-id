@@ -1,0 +1,114 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-23 12:45:01 +0300 (Thu, 23 May 2024) $
+#$Revision: 292002 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/37/9013700.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9013700
+loop_
+_publ_author_name
+'Ertl, A.'
+'Marschall, H.'
+'Geister, G.'
+'Henry, D.'
+'Schertl, H. P.'
+'Ntaflos, T.'
+'Luvizotto, G.'
+'Nasdala, L.'
+'Tillmanns, E.'
+_publ_section_title
+;
+ Metamorphic ultrahigh-pressure tourmaline: structure,
+ chemistry, and correlations to P-T conditions
+ Locality: Lago di Cignana, Western Alps, Italy
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1
+_journal_page_last               10
+_journal_paper_doi               10.2138/am.2010.3283
+_journal_volume                  95
+_journal_year                    2010
+_chemical_formula_sum
+;Al5.805 B3 Ca0.09 F0.39 Fe0.48 H3 K0.01 Mg2.643 Mn0.06 Na0.84 Ni0.021 O30.61
+ Si5.982 Ti0.021 Zn0.009
+;
+_chemical_name_mineral           Dravite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   15.945
+_cell_length_b                   15.945
+_cell_length_c                   7.210
+_cell_formula_units_Z            3
+_cell_volume                     1587.504
+_exptl_crystal_density_diffrn    3.068
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+;Na.84 Ca.09 K.01 Mg2.643 Al5.805 Fe.48 Mn.06 Ti.021 Ni.021 Zn.009 B3 Si5.982
+ H3 O30.61 F.39
+;
+_cod_database_code               9013700
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Na 0.00000 0.00000 0.23250 0.84000 0.02040
+Ca 0.00000 0.00000 0.23250 0.09000 0.02040
+K 0.00000 0.00000 0.23250 0.01000 0.02040
+Mg1 0.12426 0.06213 0.63250 0.54700 0.00810
+Al1 0.12426 0.06213 0.63250 0.26300 0.00810
+Fe 0.12426 0.06213 0.63250 0.16000 0.00810
+Mn 0.12426 0.06213 0.63250 0.02000 0.00810
+Ti 0.12426 0.06213 0.63250 0.00700 0.00810
+Ni 0.12426 0.06213 0.63250 0.00700 0.00810
+Zn 0.12426 0.06213 0.63250 0.00300 0.00810
+Al2 0.29802 0.26159 0.61070 0.83300 0.00545
+Mg2 0.29802 0.26159 0.61070 0.16700 0.00545
+B 0.10987 0.21974 0.45360 1.00000 0.00650
+Si 0.19175 0.18990 -0.00135 0.99700 0.00520
+Al3 0.19175 0.18990 -0.00135 0.00300 0.00520
+H 0.25600 0.12800 0.40000 1.00000 0.04500
+O1 0.00000 0.00000 0.77120 0.61000 0.01350
+F 0.00000 0.00000 0.77120 0.39000 0.01350
+O2 0.06106 0.12212 0.48347 1.00000 0.01023
+O3 0.26510 0.13255 0.50989 1.00000 0.01250
+O4 0.09310 0.18620 0.06931 1.00000 0.01017
+O5 0.18433 0.09217 0.09025 1.00000 0.01010
+O6 0.19581 0.18592 0.77662 1.00000 0.00840
+O7 0.28489 0.28483 0.07811 1.00000 0.00850
+O8 0.20927 0.27006 0.44018 1.00000 0.00962

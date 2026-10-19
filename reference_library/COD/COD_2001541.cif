@@ -1,0 +1,286 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-19 16:29:56 +0200 (Fri, 19 Feb 2016) $
+#$Revision: 176759 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/00/15/2001541.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2001541
+loop_
+_publ_author_name
+'Worth, G. H.'
+'Robinson, B. H.'
+'Simpson, J.'
+_publ_section_title
+;Redetermination of the structure of
+ \m~6~-acetonato-1:2:3\k^3^<i>C</i>^1^;4:5:6\k^3^<i>C</i>^3^-bis[nonacarbonyl-1\k^3^<i>C</i>,2\k^3^<i>C</i>,3\k^3^<i>C</i>-<i>triangulo</i>-tricobalt(3
+ <i>Co</i>--<i>Co</i>)] at 128 K
+;
+_journal_issue                   7
+_journal_name_full               'Acta Crystallographica Section C'
+_journal_page_first              1367
+_journal_page_last               1369
+_journal_paper_doi               10.1107/S0108270193000526
+_journal_volume                  49
+_journal_year                    1993
+_chemical_formula_sum            'C21 Co6 O19'
+_chemical_formula_weight         909.82
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'P 2ac 2ab'
+_symmetry_space_group_name_H-M   'P 21 21 21'
+_atom_type_scat_source           'SHELX76 for C and O and IntTabIV for Co.'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   9.775(2)
+_cell_length_b                   30.857(10)
+_cell_length_c                   9.698(2)
+_cell_measurement_reflns_used    25
+_cell_measurement_temperature    128(5)
+_cell_measurement_theta_max      33.2
+_cell_measurement_theta_min      4.9
+_cell_volume                     2925.2(13)
+_diffrn_measurement_device       'Nicolet R3m'
+_diffrn_measurement_method       \w
+_diffrn_radiation_type           Mo
+_diffrn_radiation_wavelength     0.71069
+_diffrn_reflns_av_R_equivalents  0.0273
+_diffrn_reflns_limit_h_max       13
+_diffrn_reflns_limit_h_min       0
+_diffrn_reflns_limit_k_max       41
+_diffrn_reflns_limit_k_min       0
+_diffrn_reflns_limit_l_max       13
+_diffrn_reflns_limit_l_min       0
+_diffrn_reflns_number            3945
+_diffrn_reflns_theta_max         55
+_diffrn_standards_decay_%        <1
+_diffrn_standards_interval_count 100
+_diffrn_standards_number         3
+_exptl_absorpt_coefficient_mu    3.54
+_exptl_absorpt_correction_T_max  0.788
+_exptl_absorpt_correction_T_min  0.618
+_exptl_absorpt_correction_type   empirical
+_exptl_crystal_colour            Brown-black
+_exptl_crystal_density_diffrn    2.04
+_exptl_crystal_description       Block
+_exptl_crystal_size_max          0.4
+_exptl_crystal_size_mid          0.2
+_exptl_crystal_size_min          0.2
+_refine_diff_density_max         0.59
+_refine_diff_density_min         -0.66
+_refine_ls_number_parameters     415
+_refine_ls_number_reflns         3630
+_refine_ls_R_factor_obs          0.0316
+_refine_ls_shift/esd_max         0.001
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_details     'w = (\s^2^F+0.002949F^2^)^-1^'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_obs         0.0470
+_reflns_number_observed          3630
+_reflns_number_total             3792
+_reflns_observed_criterion       I>2\s(I)
+_cod_data_source_file            hl1020.cif
+_cod_data_source_block           hl1020_structure_1_of_1
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+'_refine_ls_weighting_scheme' value 'w = (\s^2^F+0.002949F^2^)^-1^'
+was changed to 'calc'. New tag '_refine_ls_weighting_details' was
+created. The value of the new tag was set to 'w =
+(\s^2^F+0.002949F^2^)^-1^'.
+
+Automatic conversion script
+Id: cif_fix_values 3143 2015-03-26 13:38:13Z robertas 
+;
+_cod_original_cell_volume        2925.0(10)
+_cod_database_code               2001541
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+C(1) .9533(4) .38830(10) -.0307(5) .019
+C(2) .8972(5) .34570(10) -.07100(10) .018
+O(2) .9446(4) .31320(10) -.0129(4) .029
+C(3) .7870(5) .33940(10) -.1745(4) .018
+Co(1) .91010(10) .4169 .13830(10) .021
+Co(2) 1.13330(10) .3958 .04180(10) .021
+Co(3) .98640(10) .4463 -.08550(10) .024
+Co(4) .63500(10) .3027 -.14690(10) .019
+Co(5) .81180(10) .3016 -.32810(10) .019
+Co(6) .66280(10) .3651 -.30130(10) .021
+C(11) .8540(6) .3695(2) .2314(5) .031
+O(11) .8091(6) .34040(10) .2861(4) .046
+C(12) .7426(6) .4409(2) .1297(6) .034
+O(12) .6380(4) .4552(2) .1223(6) .055
+C(13) .9960(6) .4508(2) .2664(6) .031
+O(13) 1.0521(5) .47160(10) .3447(5) .042
+C(21) 1.1518(5) .3525(2) .1641(5) .031
+O(21) 1.1664(5) .32480(10) .2395(4) .040
+C(22) 1.2157(5) .3696(2) -.1008(5) .028
+O(22) 1.2601(4) .35190(10) -.1916(4) .037
+C(23) 1.2604(6) .4341(2) .1089(7) .039
+O(23) 1.3365(4) .4581(2) .1559(7) .058
+C(31) .8265(6) .46750(10) -.1472(6) .034
+O(31) .7280(4) .48180(10) -.1843(6) .047
+C(32) 1.0749(6) .4408(2) -.2476(6) .035
+O(32) 1.1286(5) .4364(2) -.3498(5) .049
+C(33) 1.0590(6) .4969(2) -.0195(7) .043
+O(33) 1.0949(7) .52870(10) .0230(7) .071
+C(41) .5507(5) .3316(2) -.0103(5) .028
+O(41) .5032(5) .35090(10) .0766(4) .044
+C(42) .7066(5) .2599(2) -.0427(5) .026
+O(42) .7488(4) .23260(10) .0235(4) .036
+C(43) .4970(6) .2722(2) -.2339(5) .031
+O(43) .4183(5) .2531(2) -.2910(5) .045
+C(51) .9188(6) .2600(2) -.2548(5) .028
+O(51) .9883(6) .23380(10) -.2122(4) .048
+C(52) .9461(5) .3287(2) -.4231(5) .027
+O(52) 1.0310(5) .3461(2) -.4766(5) .048
+C(53) .7209(6) .2696(2) -.4581(5) .032
+O(53) .6623(5) .2491(2) -.5338(4) .046
+C(61) .7575(6) .4033(2) -.4007(5) .031
+O(61) .8126(5) .42880(10) -.4660(5) .049
+C(62) .5568(5) .4019(2) -.2059(5) .028
+O(62) .4855(4) .42520(10) -.1494(5) .039
+C(63) .5375(7) .3484(2) -.4301(6) .038
+O(63) .4605(6) .3370(2) -.5103(6) .060
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_publ_flag
+C(1) C(2) C(3) 124.4(4) yes
+C(1) C(2) O(2) 117.4(4) yes
+O(2) C(2) C(3) 118.2(4) yes
+C(2) C(1) Co(1) 123.8(3) yes
+C(2) C(1) Co(2) 123.2(3) yes
+C(2) C(1) Co(3) 146.1(3) yes
+Co(1) Co(2) Co(3) 60.30(10) yes
+Co(1) Co(3) Co(2) 60.10(10) yes
+Co(2) Co(1) Co(3) 59.70(10) yes
+Co(1) C(1) Co(2) 80.3(2) yes
+Co(1) C(1) Co(3) 80.9(2) yes
+Co(2) C(1) Co(3) 80.3(2) yes
+C(2) C(3) Co(4) 123.7(3) yes
+C(2) C(3) Co(5) 121.0(3) yes
+C(2) C(3) Co(6) 147.7(3) yes
+Co(4) C(3) Co(5) 81.0(2) yes
+Co(4) C(3) Co(6) 80.8(2) yes
+Co(5) C(3) Co(6) 80.3(2) yes
+C(1) Co(1) Co(2) 49.90(10) yes
+C(1) Co(1) Co(3) 49.30(10) yes
+C(1) Co(1) C(11) 97.0(2) yes
+C(1) Co(1) C(12) 110.6(2) yes
+C(1) Co(1) C(13) 138.3(2) yes
+C(1) Co(2) Co(1) 49.80(10) yes
+C(1) Co(2) Co(3) 49.60(10) yes
+C(1) Co(2) C(21) 104.2(2) yes
+C(1) Co(2) C(22) 94.3(2) yes
+C(1) Co(2) C(23) 146.5(2) yes
+C(1) Co(3) Co(1) 49.80(10) yes
+C(1) Co(3) Co(2) 50.20(10) yes
+C(1) Co(3) C(31) 106.9(2) yes
+C(1) Co(3) C(32) 103.8(2) yes
+C(1) Co(3) C(33) 140.7(2) yes
+Co(4) Co(5) Co(6) 59.80(10) yes
+Co(4) Co(6) Co(5) 60.20(10) yes
+Co(5) Co(4) Co(6) 59.90(10) yes
+C(3) Co(4) Co(5) 49.90(10) yes
+C(3) Co(4) Co(6) 49.90(10) yes
+C(3) Co(4) C(41) 99.6(2) yes
+C(3) Co(4) C(42) 102.3(2) yes
+C(3) Co(4) C(43) 144.6(2) yes
+C(3) Co(5) Co(4) 49.10(10) yes
+C(3) Co(5) Co(6) 49.70(10) yes
+C(3) Co(5) C(51) 101.6(2) yes
+C(3) Co(5) C(52) 102.0(2) yes
+C(3) Co(5) C(53) 143.6(2) yes
+C(3) Co(6) Co(4) 49.30(10) yes
+C(3) Co(6) Co(5) 50.00(10) yes
+C(3) Co(6) C(61) 107.1(2) yes
+C(3) Co(6) C(62) 107.4(2) yes
+C(3) Co(6) C(63) 138.9(2) yes
+Co(1) C(11) O(11) 174.7(5) yes
+Co(1) C(12) O(12) 178.5(6) yes
+Co(1) C(13) O(13) 178.5(5) yes
+Co(2) C(21) O(21) 178.2(5) yes
+Co(2) C(22) O(22) 175.8(5) yes
+Co(2) C(23) O(23) 177.1(6) yes
+Co(3) C(31) O(31) 178.2(5) yes
+Co(3) C(32) O(32) 178.3(5) yes
+Co(3) C(33) O(33) 175.3(7) yes
+Co(4) C(41) O(41) 176.7(5) yes
+Co(4) C(42) O(42) 178.5(4) yes
+Co(4) C(43) O(43) 176.7(5) yes
+Co(5) C(51) O(51) 177.9(5) yes
+Co(5) C(52) O(52) 177.0(5) yes
+Co(5) C(53) O(53) 177.2(5) yes
+Co(6) C(61) O(61) 176.8(5) yes
+Co(6) C(62) O(62) 177.2(5) yes
+Co(6) C(63) O(63) 178.4(5) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_publ_flag
+C(1) C(2) 1.477(5) yes
+Co(2) C(23) 1.833(6) yes
+C(2) O(2) 1.241(5) yes
+C(23) O(23) 1.145(7) yes
+C(2) C(3) 1.485(6) yes
+Co(3) C(31) 1.798(6) yes
+Co(1) Co(2) 2.4620(10) yes
+C(31) O(31) 1.118(7) yes
+Co(1) Co(3) 2.4670(10) yes
+Co(3) C(32) 1.802(6) yes
+Co(2) Co(3) 2.4520(10) yes
+C(32) O(32) 1.130(8) yes
+Co(4) Co(5) 2.4660(10) yes
+Co(3) C(33) 1.831(6) yes
+Co(4) Co(6) 2.4560(10) yes
+C(33) O(33) 1.122(7) yes
+Co(5) Co(6) 2.4570(10) yes
+Co(4) C(41) 1.797(5) yes
+C(1) Co(1) 1.909(4) yes
+C(41) O(41) 1.132(7) yes
+C(1) Co(2) 1.910(4) yes
+C(42) O(42) 1.134(6) yes
+C(3) Co(4) 1.887(4) yes
+Co(4) C(43) 1.849(5) yes
+C(3) Co(5) 1.909(4) yes
+C(43) O(43) 1.115(7) yes
+C(3) Co(6) 1.902(4) yes
+Co(5) C(51) 1.801(5) yes
+Co(1) C(11) 1.804(5) yes
+C(51) O(51) 1.133(7) yes
+C(11) O(11) 1.133(7) yes
+Co(5) C(52) 1.809(5) yes
+Co(1) C(12) 1.799(5) yes
+C(52) O(52) 1.117(7) yes
+C(12) O(12) 1.117(7) yes
+Co(5) C(53) 1.831(6) yes
+Co(1) C(13) 1.829(5) yes
+C(53) O(53) 1.126(7) yes
+C(13) O(13) 1.135(7) yes
+Co(6) C(61) 1.781(5) yes
+Co(2) C(21) 1.796(6) yes
+C(61) O(61) 1.144(7) yes
+C(21) O(21) 1.133(7) yes
+Co(6) C(62) 1.794(5) yes
+Co(2) C(22) 1.793(5) yes
+C(62) O(62) 1.141(6) yes
+C(22) O(22) 1.124(6) yes
+Co(6) C(63) 1.824(6) yes
+C(63) O(63) 1.138(7) yes

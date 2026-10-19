@@ -1,0 +1,125 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/00/9010043.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9010043
+loop_
+_publ_author_name
+'Hawthorne, F. C.'
+'Ungaretti, L.'
+'Oberti, R.'
+'Bottazzi, P.'
+'Czamanske, G. K.'
+_publ_section_title
+;
+ Li: an important component in igneous alkali amphiboles
+ Sample: A(13)
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              733
+_journal_page_last               745
+_journal_volume                  78
+_journal_year                    1993
+_chemical_formula_sum
+;Al0.112 Ca0.05 F0.3 Fe4.48 H1.7 K0.521 Li0.22 Mg0.04 Mn0.14 Na2.231 O23.7
+ Si7.928 Ti0.06 Zn0.02
+;
+_chemical_name_mineral           Arfvedsonite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 103.92
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.986
+_cell_length_b                   18.042
+_cell_length_c                   5.314
+_cell_volume                     929.293
+_database_code_amcsd             0001598
+_exptl_crystal_density_diffrn    3.397
+_cod_original_formula_sum
+;O23.7 F.3 Si7.928 Al.112 Mg.04 Fe4.48 Ti.06 Zn.02 Li.22 Mn.14 Na2.231 Ca.05
+ K.521 H1.7
+;
+_cod_database_code               9010043
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+O1 0.11010 0.09130 0.20770 1.00000 0.00988 O 0
+O2 0.12020 0.17260 0.73320 1.00000 0.01064 O 0
+O3 0.10820 0.00000 0.70810 0.85000 0.01254 O 0
+F 0.10820 0.00000 0.70810 0.15000 0.01254 F 0
+O4 0.36400 0.24750 0.79920 1.00000 0.01292 O 0
+O5 0.34490 0.12680 0.08040 1.00000 0.01089 O 0
+O6 0.33760 0.11830 0.58140 1.00000 0.01165 O 0
+O7 0.32760 0.00000 0.29720 1.00000 0.01305 O 0
+SiT1 0.27500 0.08600 0.29090 0.99100 0.00697 Si 0
+AlT1 0.27500 0.08600 0.29090 0.00900 0.00697 Al 0
+SiT2 0.28670 0.17080 0.79980 0.99100 0.00697 Si 0
+AlT2 0.28670 0.17080 0.79980 0.00900 0.00697 Al 0
+MgM1 0.00000 0.09090 0.50000 0.02000 0.00925 Mg 0
+Fe2+M1 0.00000 0.09090 0.50000 0.98000 0.00925 Fe 0
+Fe2+M2 0.00000 0.18390 0.00000 0.34000 0.00747 Fe 0
+Fe3+M2 0.00000 0.18390 0.00000 0.60000 0.00747 Fe 0
+TiM2 0.00000 0.18390 0.00000 0.03000 0.00747 Ti 0
+ZnM2 0.00000 0.18390 0.00000 0.01000 0.00747 Zn 0
+AlM2 0.00000 0.18390 0.00000 0.02000 0.00747 Al 0
+LiM3 0.00000 0.00000 0.00000 0.22000 0.00861 Li 0
+Fe2+M3 0.00000 0.00000 0.00000 0.64000 0.00861 Fe 0
+MnM3 0.00000 0.00000 0.00000 0.14000 0.00861 Mn 0
+NaM4 0.00000 0.27780 0.50000 0.97500 0.01722 Na 0
+CaM4 0.00000 0.27780 0.50000 0.02500 0.01722 Ca 0
+KA 0.00000 0.50000 0.00000 0.37700 0.04040 K 0
+NaA 0.00000 0.50000 0.00000 0.20300 0.04040 Na 0
+KAm 0.03860 0.50000 0.09370 0.05900 0.04104 K 0
+NaAm 0.03860 0.50000 0.09370 0.03200 0.04104 Na 0
+KA2 0.00000 0.47000 0.00000 0.01300 0.03800 K 0
+NaA2 0.00000 0.47000 0.00000 0.00700 0.03800 Na 0
+H 0.18700 0.00000 0.74800 0.85000 0.01039 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:20:49+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0001598

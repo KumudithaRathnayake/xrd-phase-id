@@ -1,0 +1,131 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/38/9003818.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003818
+loop_
+_publ_author_name
+'Bosi, F.'
+'Agrosi, G.'
+'Lucchesi, S.'
+'Melchiorre, G.'
+'Scandale, E.'
+_publ_section_title
+;
+ Mn-tourmaline from island of Elba (Italy): Crystal chemistry.
+ Sample: Tsl2y
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1661
+_journal_page_last               1668
+_journal_paper_doi               10.2138/am.2005.1852
+_journal_volume                  90
+_journal_year                    2005
+_chemical_compound_source        'Elba, Italy'
+_chemical_formula_sum
+;Al7.23 B3.006 Ca0.021 F0.648 H3.352 K0.008 Li0.849 Mn0.897 Na0.786 O30.352
+ Si5.976 Ti0.033 Zn0.009
+;
+_chemical_name_mineral           Elbaite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.9055
+_cell_length_b                   15.9055
+_cell_length_c                   7.1270
+_cell_volume                     1561.464
+_database_code_amcsd             0003942
+_exptl_crystal_density_diffrn    3.105
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+;Na.786 Ca.021 K.008 Al7.23 Li.849 Mn.897 Ti.033 Zn.009 B3.006 Si5.976 F.648
+ O30.352 H3.352
+;
+_cod_database_code               9003818
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaX 0.00000 0.00000 0.23267 0.78600 0.02250 Na 0
+CaX 0.00000 0.00000 0.23267 0.02100 0.02250 Ca 0
+KX 0.00000 0.00000 0.23267 0.00800 0.02250 K 0
+AlY 0.12318 0.06159 0.62744 0.42200 0.00830 Al 0
+LiY 0.12318 0.06159 0.62744 0.28300 0.00830 Li 0
+MnY 0.12318 0.06159 0.62744 0.28100 0.00830 Mn 0
+TiY 0.12318 0.06159 0.62744 0.01100 0.00830 Ti 0
+ZnY 0.12318 0.06159 0.62744 0.00300 0.00830 Zn 0
+AlZ 0.29758 0.26086 0.61151 0.99100 0.00510 Al 0
+MnZ 0.29758 0.26086 0.61151 0.00900 0.00510 Mn 0
+B 0.10969 0.21938 0.45457 1.00000 0.00500 B 0
+SiT 0.19192 0.18996 0.00000 0.99600 0.00401 Si 0
+AlT 0.19192 0.18996 0.00000 0.00300 0.00401 Al 0
+BT 0.19192 0.18996 0.00000 0.00100 0.00401 B 0
+F1W 0.00000 0.00000 0.78262 0.64800 0.06000 F 0
+O-H1W 0.00000 0.00000 0.78262 0.35200 0.06000 O 1
+O2 0.06091 0.12182 0.48293 1.00000 0.01920 O 0
+O3V 0.26857 0.13429 0.50990 1.00000 0.01030 O 0
+O4 0.09335 0.18670 0.07149 1.00000 0.00750 O 0
+O5 0.18670 0.09335 0.09304 1.00000 0.00790 O 0
+O6 0.19695 0.18684 0.77565 1.00000 0.00680 O 0
+O7 0.28554 0.28578 0.08043 1.00000 0.00560 O 0
+O8 0.20989 0.27071 0.44137 1.00000 0.00720 O 0
+H3 0.26640 0.13320 0.38180 1.00000 0.09000 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:14:41+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0003942

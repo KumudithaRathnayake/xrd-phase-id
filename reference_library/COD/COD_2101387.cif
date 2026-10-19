@@ -1,0 +1,120 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-03-26 11:09:57 +0300 (Sun, 26 Mar 2023) $
+#$Revision: 282068 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/13/2101387.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2101387
+loop_
+_publ_author_name
+'Maslen, E. N.'
+'Streltsov, V. A.'
+'Streltsova, N. R.'
+'Ishizawa, N.'
+_publ_section_title
+;
+ Electron density and optical anisotropy in rhombohedral carbonates.
+ III. Synchrotron X-ray studies of CaCO~3~, MgCO~3~ and MnCO~3~
+;
+_journal_issue                   6
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              929
+_journal_page_last               939
+_journal_paper_doi               10.1107/S0108768195006434
+_journal_volume                  51
+_journal_year                    1995
+_chemical_formula_sum            'C Mn O3'
+_chemical_formula_weight         114.95
+_chemical_name_mineral           Rhodochrosite
+_space_group_IT_number           167
+_symmetry_cell_setting           trigonal
+_symmetry_space_group_name_Hall  '-R 3 2"c'
+_symmetry_space_group_name_H-M   'R -3 c :H'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                120.0
+_cell_formula_units_Z            6
+_cell_length_a                   4.7730(10)
+_cell_length_b                   4.7730(10)
+_cell_length_c                   15.6420(10)
+_cell_volume                     308.60(10)
+_database_code_amcsd             0009892
+_diffrn_radiation_type           Mo
+_diffrn_radiation_wavelength     0.71073
+_exptl_absorpt_coefficient_mu    5.86
+_exptl_crystal_density_diffrn    3.711
+_exptl_crystal_F_000             330
+_cod_data_source_file            as0682.cif
+_cod_original_sg_symbol_H-M      'R -3 c {hexagonal axes}'
+_cod_original_formula_sum        'C1 Mn1 O3'
+_cod_database_code               2101387
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,1/2+z
+2/3+x,1/3+x-y,5/6+z
+1/3+x,2/3+x-y,1/6+z
+y,x,1/2-z
+2/3+y,1/3+x,5/6-z
+1/3+y,2/3+x,1/6-z
+-x+y,y,1/2+z
+2/3-x+y,1/3+y,5/6+z
+1/3-x+y,2/3+y,1/6+z
+-x,-x+y,1/2-z
+2/3-x,1/3-x+y,5/6-z
+1/3-x,2/3-x+y,1/6-z
+-y,-x,1/2+z
+2/3-y,1/3-x,5/6+z
+1/3-y,2/3-x,1/6+z
+x-y,-y,1/2-z
+2/3+x-y,1/3-y,5/6-z
+1/3+x-y,2/3-y,1/6-z
+y,-x+y,-z
+2/3+y,1/3-x+y,1/3-z
+1/3+y,2/3-x+y,2/3-z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+-x,-y,-z
+2/3-x,1/3-y,1/3-z
+1/3-x,2/3-y,2/3-z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+x-y,x,-z
+2/3+x-y,1/3+x,1/3-z
+1/3+x-y,2/3+x,2/3-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn 0.00777(6) 0.00777(6) 0.00966(9) 0.00389 0.00000 0.00000
+C 0.0064(2) 0.0064(2) 0.0074(4) 0.00320 0.00000 0.00000
+O 0.0068(2) 0.0103(2) 0.0123(3) 0.00501 -0.0009(1) -0.00180
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Mn .0 .0 .0
+C .0 .0 .25
+O .26950(10) .0 .25
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0009892

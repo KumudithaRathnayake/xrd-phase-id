@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+#$Date: 2025-09-08 10:13:20 +0300 (Mon, 08 Sep 2025) $
+#$Revision: 302052 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/3/00/05/3000557.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_3000557
+loop_
+_publ_author_name
+'Bin Cao'
+_publ_section_title
+;
+ A Li-rich layered oxide cathode with remarkable capacity and prolonged
+ cycle life
+;
+_journal_name_full               'Chemical Engineering Journal'
+_journal_year                    2024
+_chemical_formula_structural     Li2MnO3
+_chemical_formula_sum            'Li8 Mn4 O12'
+_space_group_IT_number           12
+_space_group_name_Hall           '-C 2y'
+_space_group_name_H-M_alt        'C 1 2/m 1'
+_symmetry_Int_Tables_number      12
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90.00000000
+_cell_angle_beta                 109.48644
+_cell_angle_gamma                90.00000000
+_cell_formula_units_Z            4
+_cell_length_a                   4.94018
+_cell_length_b                   8.53897
+_cell_length_c                   5.03008
+_cell_volume                     200.035
+_journal_article_reference
+https://www.sciencedirect.com/science/article/abs/pii/S1385894724030092
+_cod_data_source_file            Li2MnO_F3.cif
+_cod_data_source_block           Li2MnO3
+_cod_depositor_comments
+'Releasing structure 3000557 into public domain as published material.'
+_cod_original_cell_volume        200.03504511139664
+_cod_original_sg_symbol_H-M      C2/m
+_cod_database_code               3000557
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 'x, y, z'
+2 '-x, -y, -z'
+3 '-x, y, -z'
+4 'x, -y, z'
+5 'x+1/2, y+1/2, z'
+6 '-x+1/2, -y+1/2, -z'
+7 '-x+1/2, y+1/2, -z'
+8 'x+1/2, -y+1/2, z'
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+Li+ Li0 4 0.00000000 0.33872861 0.50000000 1
+Li+ Li1 2 0.00000000 0.00000000 0.50000000 1
+Li+ Li2 2 0.00000000 0.50000000 0.00000000 1
+Mn4+ Mn3 4 0.00000000 0.16707251 0.00000000 1
+O2- O4 8 0.24618014 0.17812514 0.77539142 1
+O2- O5 4 0.22026001 0.00000000 0.22771423 1
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Li+ 1.0
+Mn4+ 4.0
+O2- -2.0

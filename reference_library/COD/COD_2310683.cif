@@ -1,0 +1,81 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-07-14 02:37:03 +0300 (Tue, 14 Jul 2015) $
+#$Revision: 151720 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/31/06/2310683.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2310683
+loop_
+_publ_author_name
+'Sumner, G.G.'
+'Klug, H.P.'
+_publ_section_title
+;
+ The crystal structure of dicobalt octacarbonyl
+;
+_journal_name_full               'Acta Crystallographica (1,1948-23,1967)'
+_journal_page_first              732
+_journal_page_last               742
+_journal_volume                  17
+_journal_year                    1964
+_chemical_formula_sum            'C8 Co2 O8'
+_chemical_name_systematic        'Co2 (C O)8'
+_space_group_IT_number           11
+_symmetry_space_group_name_Hall  '-P 2yb'
+_symmetry_space_group_name_H-M   'P 1 21/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90.01
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   6.62
+_cell_length_b                   15.59
+_cell_length_c                   11.31
+_cell_volume                     1167.258
+_citation_journal_id_ASTM        ACCRA9
+_cod_data_source_file            Sumner_ACCRA9_1964_149.cif
+_cod_data_source_block           C8Co2O8
+_cod_database_code               2310683
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y+1/2,-z
+-x,-y,-z
+x,-y-1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O4 O-2 0.1447 0.0769 0.927 1 0.0
+C2 C+2 0.6643 0.1347 0.0563 1 0.0
+Co1 Co 0.2426 0.1691 0.4459 1 0.0
+O10 O-2 0.3495 0.25 0.9272 1 0.0
+C1 C+2 0.1542 0.1294 0.3039 1 0.0
+O5 O-2 0.0346 0.0641 0.6435 1 0.0
+O6 O-2 0.5396 0.0632 0.7336 1 0.0
+C10 C+2 0.5287 0.25 0.9244 1 0.0
+O9 O-2 0.8463 0.25 0.4185 1 0.0
+O2 O-2 0.6046 0.1067 0.1452 1 0.0
+O7 O-2 0.4549 0.25 0.6437 1 0.0
+C4 C+2 0.995 0.1169 0.9237 1 0.0
+C3 C+2 0.4881 0.1184 0.4383 1 0.0
+C7 C+2 0.3518 0.25 0.5518 1 0.0
+C5 C+2 0.1116 0.1065 0.5516 1 0.0
+O3 O-2 0.6456 0.0802 0.4377 1 0.0
+O8 O-2 0.9671 0.25 0.7168 1 0.0
+O1 O-2 0.0993 0.102 0.2166 1 0.0
+C8 C+2 0.8702 0.25 0.8046 1 0.0
+C6 C+2 0.6274 0.1041 0.8042 1 0.0
+C9 C+2 0.0247 0.25 0.4298 1 0.0
+Co2 Co 0.7522 0.1691 0.9134 1 0.0

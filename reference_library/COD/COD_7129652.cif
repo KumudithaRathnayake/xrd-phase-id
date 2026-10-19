@@ -1,0 +1,302 @@
+#------------------------------------------------------------------------------
+#$Date: 2022-02-04 00:54:10 +0200 (Fri, 04 Feb 2022) $
+#$Revision: 272495 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/7/12/96/7129652.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_7129652
+loop_
+_publ_author_name
+'Wu, Xiaoyu'
+'Wu, Haowei'
+'Wu, Sicheng'
+'Sun, Yimeng'
+'Zhu, Jia'
+'Zou, Ye'
+'Xu, Wei'
+'Zhu, Daoben'
+_publ_section_title
+;
+ Chemical structure modulation in conductive MOFs by adjusting the
+ oxidation state of the ligand and introducing alkali metal ions
+;
+_journal_name_full               'Chemical Communications'
+_journal_paper_doi               10.1039/D1CC06407J
+_journal_year                    2022
+_chemical_formula_sum            'C12 Mn5 O12'
+_chemical_formula_weight         610.8
+_space_group_IT_number           191
+_space_group_name_Hall           '-P 6 2'
+_space_group_name_H-M_alt        'P 6/m m m'
+_symmetry_cell_setting           hexagonal
+_symmetry_Int_Tables_number      191
+_symmetry_space_group_name_Hall  '-P 6 2'
+_symmetry_space_group_name_H-M   'P 6/m m m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   7.4696(19)
+_cell_length_b                   7.4696(19)
+_cell_length_c                   5.847(4)
+_cell_measurement_temperature    293
+_cell_volume                     282.5(2)
+_diffrn_ambient_temperature      293
+_diffrn_measurement_device_type  synchrotron
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           synchrotron
+_diffrn_radiation_wavelength     0.69
+_exptl_absorpt_coefficient_mu    4.901
+_exptl_crystal_density_diffrn    3.5899
+_exptl_crystal_F_000             293
+_pd_instr_location               ' ?'
+_pd_meas_2theta_range_max        54.685
+_pd_meas_2theta_range_min        2.502
+_pd_meas_number_of_points        14697
+_pd_proc_2theta_range_max        54.685
+_pd_proc_2theta_range_min        2.502
+_pd_proc_ls_background_function  'Manual background'
+_pd_proc_ls_pref_orient_corr     none
+_pd_proc_ls_profile_function     Pseudo-Voigt
+_pd_proc_ls_prof_R_factor        0.051862
+_pd_proc_ls_prof_wR_expected     0.023509
+_pd_proc_ls_prof_wR_factor       0.074407
+_refine_ls_goodness_of_fit_all   3.1652
+_refine_ls_number_constraints    0
+_refine_ls_number_parameters     19
+_refine_ls_number_restraints     0
+_refine_ls_R_factor_all          0.1347
+_refine_ls_R_factor_gt           0.1298
+_refine_ls_shift/su_max          0.0433
+_refine_ls_shift/su_mean         0.0108
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_all         0.1549
+_refine_ls_wR_factor_gt          0.1548
+_cod_data_source_file            d1cc06407j5.cif
+_cod_data_source_block           I
+_cod_depositor_comments
+;
+The following automatic conversions were performed:
+
+data item '_diffrn_radiation_probe' value 'X-ray' was changed to
+'x-ray' in accordance with the
+/home/data/users/saulius/crontab/automatic-downloads/rss-feeds/RSC/lib/dictionaries/cif_core.dic
+dictionary named 'cif_core.dic' version 2.4.2 last updated on
+2011-04-26.
+
+Automatic conversion script
+Id: cif_fix_values 7556 2019-12-06 15:28:31Z antanas 
+;
+_cod_original_sg_symbol_Hall     '-P 6;-2'
+_cod_original_formula_sum        'Mn5 C12 O12'
+_cod_database_code               7129652
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -y,x-y,z
+3 -x+y,-x,z
+4 -x,-y,z
+5 y,-x+y,z
+6 x-y,x,z
+7 y,x,-z
+8 x-y,-y,-z
+9 -x,-x+y,-z
+10 -y,-x,-z
+11 -x+y,y,-z
+12 x,x-y,-z
+13 -x,-y,-z
+14 y,-x+y,-z
+15 x-y,x,-z
+16 x,y,-z
+17 -y,x-y,-z
+18 -x+y,-x,-z
+19 -y,-x,z
+20 -x+y,y,z
+21 x,x-y,z
+22 y,x,z
+23 x-y,-y,z
+24 -x,-x+y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_adp_type
+_atom_site_U_iso_or_equiv
+_atom_site_site_symmetry_multiplicity
+_atom_site_occupancy
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+Mn1 Mn 0.666667 0.333333 0 Uiso 0.009(3) 2 1 d . . .
+Mn2 Mn 0.5 0 0.5 Uiso 0.037(5) 3 1 d . . .
+O1 O 0.7861(12) 0.2139(12) 0.267(4) Uiso 0.036(8) 12 1 d . . .
+C1 C 0.8915(16) 0.1085(16) 0.25 Uiso 0.030(11) 12 1 d . . .
+loop_
+_atom_type_symbol
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+C 0.0032 0.0016 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+Mn 0.3324 0.6976 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+O 0.0107 0.0058 'International Tables Vol C tables 4.2.6.8 and 6.1.1.1'
+loop_
+_exptl_crystal_face_index_h
+_exptl_crystal_face_index_k
+_exptl_crystal_face_index_l
+_exptl_crystal_face_perp_dist
+? ? ? ?
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O1 Mn1 O1 . . 2_655 75.1(6) ?
+O1 Mn1 O1 . . 3_665 75.1(6) ?
+O1 Mn1 O1 . . 10_665 90.5(6) ?
+O1 Mn1 O1 . . 11_655 138.8(4) ?
+O1 Mn1 O1 . . 12_555 138.8(4) ?
+O1 Mn1 O1 2_655 . 3_665 75.1(5) ?
+O1 Mn1 O1 2_655 . 10_665 138.8(4) ?
+O1 Mn1 O1 2_655 . 11_655 138.8(5) ?
+O1 Mn1 O1 2_655 . 12_555 90.5(6) ?
+O1 Mn1 O1 3_665 . 10_665 138.8(4) ?
+O1 Mn1 O1 3_665 . 11_655 90.5(6) ?
+O1 Mn1 O1 3_665 . 12_555 138.8(5) ?
+O1 Mn1 O1 10_665 . 11_655 75.1(6) ?
+O1 Mn1 O1 10_665 . 12_555 75.1(6) ?
+O1 Mn1 O1 11_655 . 12_555 75.1(5) ?
+O1 Mn2 O1 . . 3_665 69.1(5) ?
+O1 Mn2 O1 . . 4_655 109.3(6) ?
+O1 Mn2 O1 . . 6_545 71.8(4) ?
+O1 Mn2 O1 . . 7_546 180.0(5) ?
+O1 Mn2 O1 . . 8_556 110.9(5) ?
+O1 Mn2 O1 . . 10_666 70.7(6) ?
+O1 Mn2 O1 . . 11_656 108.2(4) ?
+O1 Mn2 O1 3_665 . 4_655 71.8(4) ?
+O1 Mn2 O1 3_665 . 6_545 109.3(6) ?
+O1 Mn2 O1 3_665 . 7_546 110.9(5) ?
+O1 Mn2 O1 3_665 . 8_556 180.0(5) ?
+O1 Mn2 O1 3_665 . 10_666 108.2(4) ?
+O1 Mn2 O1 3_665 . 11_656 70.7(6) ?
+O1 Mn2 O1 4_655 . 6_545 69.1(5) ?
+O1 Mn2 O1 4_655 . 7_546 70.7(6) ?
+O1 Mn2 O1 4_655 . 8_556 108.2(4) ?
+O1 Mn2 O1 4_655 . 10_666 180.0(5) ?
+O1 Mn2 O1 4_655 . 11_656 110.9(5) ?
+O1 Mn2 O1 6_545 . 7_546 108.2(4) ?
+O1 Mn2 O1 6_545 . 8_556 70.7(6) ?
+O1 Mn2 O1 6_545 . 10_666 110.9(5) ?
+O1 Mn2 O1 6_545 . 11_656 180.0(5) ?
+O1 Mn2 O1 7_546 . 8_556 69.1(5) ?
+O1 Mn2 O1 7_546 . 10_666 109.3(6) ?
+O1 Mn2 O1 7_546 . 11_656 71.8(4) ?
+O1 Mn2 O1 8_556 . 10_666 71.8(4) ?
+O1 Mn2 O1 8_556 . 11_656 109.3(6) ?
+O1 Mn2 O1 10_666 . 11_656 69.1(5) ?
+Mn1 O1 Mn2 . . . 105.8(4) ?
+Mn1 O1 Mn2 . . 2_655 105.8(4) ?
+Mn1 O1 C1 . . . 130.7(13) ?
+Mn2 O1 Mn2 . . 2_655 104.6(8) ?
+Mn2 O1 C1 . . . 103.8(7) ?
+Mn2 O1 C1 2_655 . . 103.8(7) ?
+O1 C1 C1 . . 5_665 119.9(11) ?
+O1 C1 C1 . . 6_545 119.9(11) ?
+C1 C1 C1 5_665 . 6_545 120.0(15) ?
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Mn1 O1 . . 2.195(17) ?
+Mn1 O1 . 2_655 2.195(17) ?
+Mn1 O1 . 3_665 2.195(17) ?
+Mn1 O1 . 10_665 2.195(17) ?
+Mn1 O1 . 11_655 2.195(17) ?
+Mn1 O1 . 12_555 2.195(17) ?
+Mn2 O1 . . 2.360(14) ?
+Mn2 O1 . 3_665 2.360(16) ?
+Mn2 O1 . 4_655 2.360(14) ?
+Mn2 O1 . 6_545 2.360(16) ?
+Mn2 O1 . 7_546 2.360(14) ?
+Mn2 O1 . 8_556 2.360(16) ?
+Mn2 O1 . 10_666 2.360(14) ?
+Mn2 O1 . 11_656 2.360(16) ?
+O1 C1 . . 1.368(18) ?
+C1 C1 . 5_665 1.404(15) ?
+C1 C1 . 6_545 1.404(15) ?
+loop_
+_restr_angle_atom_site_label_1
+_restr_angle_site_symmetry_1
+_restr_angle_atom_site_label_2
+_restr_angle_site_symmetry_2
+_restr_angle_atom_site_label_3
+_restr_angle_site_symmetry_3
+_restr_angle_target
+_restr_angle_target_weight_param
+? ? ? ? ? ? ? ?
+loop_
+_restr_distance_atom_site_label_1
+_restr_distance_site_symmetry_1
+_restr_distance_atom_site_label_2
+_restr_distance_site_symmetry_2
+_restr_distance_target
+_restr_distance_target_weight_param
+? ? ? ? ? ?
+loop_
+_restr_equal_angle_atom_site_label_1
+_restr_equal_angle_site_symmetry_1
+_restr_equal_angle_atom_site_label_2
+_restr_equal_angle_site_symmetry_2
+_restr_equal_angle_atom_site_label_3
+_restr_equal_angle_site_symmetry_3
+_restr_equal_angle_class_class_id
+_restr_equal_angle_class_target_weight_param
+? ? ? ? ? ? ? ?
+loop_
+_restr_equal_distance_atom_site_label_1
+_restr_equal_distance_site_symmetry_1
+_restr_equal_distance_atom_site_label_2
+_restr_equal_distance_site_symmetry_2
+_restr_equal_distance_class_class_id
+_restr_equal_distance_class_target_weight_param
+? ? ? ? ? ?
+loop_
+_restr_equal_torsion_atom_site_label_1
+_restr_equal_torsion_site_symmetry_1
+_restr_equal_torsion_atom_site_label_2
+_restr_equal_torsion_site_symmetry_2
+_restr_equal_torsion_atom_site_label_3
+_restr_equal_torsion_site_symmetry_3
+_restr_equal_torsion_atom_site_label_4
+_restr_equal_torsion_site_symmetry_4
+_restr_equal_torsion_class_class_id
+_restr_equal_torsion_class_target_weight_param
+? ? ? ? ? ? ? ? ? ?
+loop_
+_restr_torsion_atom_site_label_1
+_restr_torsion_site_symmetry_1
+_restr_torsion_atom_site_label_2
+_restr_torsion_site_symmetry_2
+_restr_torsion_atom_site_label_3
+_restr_torsion_site_symmetry_3
+_restr_torsion_atom_site_label_4
+_restr_torsion_site_symmetry_4
+_restr_torsion_angle_target
+_restr_torsion_weight_param
+? ? ? ? ? ? ? ? ? ?

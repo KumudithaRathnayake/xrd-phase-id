@@ -1,0 +1,163 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-03 13:19:43 +0300 (Sat, 03 Aug 2024) $
+#$Revision: 293658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/36/9003672.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003672
+loop_
+_publ_author_name
+'Oberti, R.'
+'Camara, F.'
+'Ottolini, L.'
+_publ_section_title
+;Clinoholmquistite discredited: The new amphibole end-member
+ fluoro-sodic-pedrizite sample from Tastyg spodumene deposit, Tuva, Siberia,
+ Russia
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              732
+_journal_page_last               736
+_journal_paper_doi               10.2138/am.2005.1763
+_journal_volume                  90
+_journal_year                    2005
+_chemical_formula_sum
+;Al2.02 Ca0.04 Cr0.01 F0.9 Fe0.52 H1.1 K0.01 Li2.57 Mg1.82 Mn0.02 Na0.67 O23.1
+ Si7.96 Zn0.01
+;
+_chemical_name_mineral           Fluoro-sodic-pedrizite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 102.38
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.368
+_cell_length_b                   17.616
+_cell_length_c                   5.271
+_cell_volume                     849.629
+_database_code_amcsd             0003770
+_exptl_crystal_density_diffrn    3.036
+_cod_original_formula_sum
+;Na.67 K.01 Mg1.82 Fe.52 Al2.02 Cr.01 Zn.01 Li2.57 Mn.02 Ca.04 Si7.96 O23.1
+ (F.9 H1.1)
+;
+_cod_database_code               9003672
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+NaA 0.06320 0.01415 0.06110 0.00000 0.05227 0.00000
+KA 0.06320 0.01415 0.06110 0.00000 0.05227 0.00000
+NaAm 0.04963 0.02515 0.04002 0.00000 0.03079 0.00000
+KAm 0.04963 0.02515 0.04002 0.00000 0.03079 0.00000
+Mg1 0.00976 0.00786 0.00792 0.00000 0.00358 0.00000
+Fe1 0.00976 0.00786 0.00792 0.00000 0.00358 0.00000
+Al2 0.00679 0.00786 0.00806 0.00000 0.00143 0.00000
+Cr2 0.00679 0.00786 0.00806 0.00000 0.00143 0.00000
+Zn2 0.00679 0.00786 0.00806 0.00000 0.00143 0.00000
+Li3 0.00933 0.00314 0.00685 0.00000 0.00143 0.00000
+Fe3 0.00933 0.00314 0.00685 0.00000 0.00143 0.00000
+Mg3 0.00933 0.00314 0.00685 0.00000 0.00143 0.00000
+Mn3 0.00933 0.00314 0.00685 0.00000 0.00143 0.00000
+Li4 0.01400 0.03773 0.01249 0.00000 0.00621 0.00000
+Ca4 0.01400 0.03773 0.01249 0.00000 0.00621 0.00000
+Na4 0.01400 0.03773 0.01249 0.00000 0.00621 0.00000
+Si1 0.00721 0.00472 0.00712 0.00000 0.00191 0.00000
+Al1 0.00721 0.00472 0.00712 0.00000 0.00191 0.00000
+Si2 0.00721 0.00629 0.00671 -0.00082 0.00167 0.00000
+O1 0.00636 0.00786 0.00927 0.00000 0.00191 -0.00046
+O2 0.00679 0.00943 0.00994 0.00000 0.00191 0.00000
+O-H3 0.01357 0.01100 0.01329 0.00000 0.00095 0.00000
+F3 0.01357 0.01100 0.01329 0.00000 0.00095 0.00000
+O4 0.01188 0.00786 0.01168 -0.00327 0.00167 0.00046
+O5 0.00848 0.01729 0.01168 0.00000 0.00239 0.00597
+O6 0.00933 0.01887 0.01209 0.00082 0.00143 -0.00597
+O7 0.01230 0.00472 0.02014 0.00000 0.00239 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaA 0.00000 0.50000 0.00000 0.14400 0.04053 Na 0
+KA 0.00000 0.50000 0.00000 0.00200 0.04053 K 0
+NaAm 0.06730 0.50000 0.13690 0.24800 0.03546 Na 0
+KAm 0.06730 0.50000 0.13690 0.00400 0.03546 K 0
+Mg1 0.00000 0.08900 0.50000 0.84500 0.00811 Mg 0
+Fe1 0.00000 0.08900 0.50000 0.15500 0.00811 Fe 0
+Al2 0.00000 0.17870 0.00000 0.99000 0.00747 Al 0
+Cr2 0.00000 0.17870 0.00000 0.00500 0.00747 Cr 0
+Zn2 0.00000 0.17870 0.00000 0.00500 0.00747 Zn 0
+Li3 0.00000 0.00000 0.00000 0.64000 0.00646 Li 0
+Fe3 0.00000 0.00000 0.00000 0.21000 0.00646 Fe 0
+Mg3 0.00000 0.00000 0.00000 0.13000 0.00646 Mg 0
+Mn3 0.00000 0.00000 0.00000 0.02000 0.00646 Mn 0
+Li4 0.00000 0.25870 0.50000 0.96500 0.02026 Li 0
+Ca4 0.00000 0.25870 0.50000 0.02000 0.02026 Ca 0
+Na4 0.00000 0.25870 0.50000 0.01500 0.02026 Na 0
+Si1 0.28550 0.08790 0.28030 0.99000 0.00646 Si 0
+Al1 0.28550 0.08790 0.28030 0.01000 0.00646 Al 0
+Si2 0.29710 0.17400 0.79290 1.00000 0.00671 Si 0
+O1 0.10910 0.09330 0.20030 1.00000 0.00760 O 0
+O2 0.11900 0.17400 0.74020 1.00000 0.00849 O 0
+O-H3 0.11610 0.00000 0.69380 0.55000 0.01292 O 1
+F3 0.11610 0.00000 0.69380 0.45000 0.01292 F 0
+O4 0.37590 0.25390 0.79150 1.00000 0.01064 O 0
+O5 0.35830 0.13000 0.06770 1.00000 0.01241 O 0
+O6 0.34720 0.12350 0.56500 1.00000 0.01330 O 0
+O7 0.33910 0.00000 0.28810 1.00000 0.01267 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T11:37:39+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:20:26+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'OH3' -> 'O-H3'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0003770

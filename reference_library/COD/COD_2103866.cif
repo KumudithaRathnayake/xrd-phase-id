@@ -1,0 +1,234 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-20 02:53:41 +0200 (Sat, 20 Feb 2016) $
+#$Revision: 176768 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/38/2103866.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2103866
+loop_
+_publ_author_name
+'Farrugia, Louis J.'
+'Mallinson, Paul R.'
+'Stewart, Brian'
+_publ_section_title
+;
+ Experimental charge density in the transition metal complex
+ Mn~2~(CO)~10~: a comparative study
+;
+_journal_issue                   2
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              234
+_journal_page_last               247
+_journal_paper_doi               10.1107/S0108768103000892
+_journal_volume                  59
+_journal_year                    2003
+_chemical_formula_sum            'C10 Mn2 O10'
+_chemical_formula_weight         389.98
+_space_group_IT_number           15
+_symmetry_cell_setting           monoclinic
+_symmetry_space_group_name_Hall  '-I 2ya'
+_symmetry_space_group_name_H-M   'I 1 2/a 1'
+_atom_type_scat_source
+'International Tables Vol. IV Tables 2.2B and 2.3.1'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 105.0780(10)
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   14.1257(2)
+_cell_length_b                   6.87990(10)
+_cell_length_c                   14.3121(3)
+_cell_volume                     1343.01(4)
+_computing_molecular_graphics    'Koritsanszky et al, (1995)'
+_computing_publication_material  'Koritsanszky et al, (1995)'
+_computing_structure_refinement  'Koritsanszky et al, (1995)'
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_theta_max         50.06
+_diffrn_reflns_theta_min         3.31
+_exptl_crystal_colour            orange-yellow
+_exptl_crystal_density_diffrn    1.929
+_exptl_crystal_description       'approximately spherical'
+_exptl_crystal_size_max          0.45
+_exptl_crystal_size_mid          0.45
+_exptl_crystal_size_min          0.40
+_refine_diff_density_max         0.274
+_refine_diff_density_min         -0.200
+_refine_ls_extinction_coef       0.231(7)
+_refine_ls_extinction_method     'Becker-Coppens type 1 isotropic'
+_refine_ls_goodness_of_fit_obs   2.161
+_refine_ls_number_parameters     296
+_refine_ls_number_reflns         6532
+_refine_ls_R_factor_all          0.0168
+_refine_ls_R_factor_gt           0.0135
+_refine_ls_shift/esd_max         0.0036
+_refine_ls_structure_factor_coef F
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_ref         0.0157
+_reflns_number_gt                6532
+_reflns_number_total             7052
+_reflns_threshold_expression     I>3u(I)
+_cod_data_source_file            bs0019.cif
+_cod_data_source_block           3
+_cod_original_sg_symbol_H-M      I2/a
+_cod_database_code               2103866
+_cod_database_fobs_code          2103866
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 1/2-x,y,-z
+3 -x,-y,-z
+4 1/2+x,-y,z
+5 1/2+x,1/2+y,1/2+z
+6 1/2-x,1/2-y,1/2-z
+7 -x,1/2+y,1/2-z
+8 x,1/2-y,1/2+z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn(1) 0.01125(4) 0.01326(3) 0.01359(3) -0.000440(10) 0.00178(2) 0.002580(10)
+O(1) 0.0231(2) 0.0475(3) 0.0371(2) -0.0049(2) -0.0143(2) 0.0140(2)
+O(2) 0.0391(2) 0.02280(10) 0.02240(10) -0.00640(10) 0.01770(10) 0.00120(10)
+O(3) 0.0272(2) 0.01750(10) 0.0372(2) 0.00560(10) 0.01380(10) 0.00060(10)
+O(4) 0.02300(10) 0.02720(10) 0.02470(10) -0.00270(10) 0.01130(10) 0.00690(10)
+O(5) 0.02890(10) 0.01440(10) 0.01910(10) -0.00100(10) 0.00400(10) -0.00170(10)
+C(1) 0.01710(10) 0.02650(10) 0.02350(10) -0.00160(10) -0.00360(10) 0.00750(10)
+C(2) 0.02310(10) 0.01550(10) 0.01580(10) -0.00210(10) 0.00760(10) 0.00110(10)
+C(3) 0.01690(10) 0.01560(10) 0.02340(10) 0.00230(10) 0.00760(10) 0.00310(10)
+C(4) 0.01500(10) 0.01770(10) 0.01910(10) -0.00100(10) 0.00550(10) 0.00370(10)
+C(5) 0.01810(10) 0.01420(10) 0.01390(10) -0.00180(10) 0.00190(10) 0.00070(10)
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+_atom_site_type_symbol
+Mn(1) 0.345618(7) 0.236664(18) 0.069074(7) 0.013 1 Mn
+O(1) 0.53310(5) 0.25158(10) 0.22244(5) 0.039 1 O
+O(2) 0.23745(3) 0.04633(6) 0.19933(3) 0.028 1 O
+O(3) 0.39564(3) -0.14917(6) -0.00310(3) 0.028 1 O
+O(4) 0.42233(3) 0.40697(6) -0.08996(3) 0.025 1 O
+O(5) 0.28882(3) 0.63587(5) 0.12099(2) 0.022 1 O
+C(1) 0.46121(3) 0.24537(4) 0.16248(3) 0.024 1 C
+C(2) 0.27779(2) 0.11903(4) 0.14913(2) 0.018 1 C
+C(3) 0.37337(2) -0.00477(4) 0.02461(2) 0.019 1 C
+C(4) 0.39290(2) 0.34522(4) -0.02886(2) 0.018 1 C
+C(5) 0.30933(2) 0.48337(4) 0.10154(2) 0.016 1 C
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle
+Mn(1) Mn(1) C(1) 2_555 1_555 1_555 175.570(14)
+Mn(1) Mn(1) C(2) 2_555 1_555 1_555 83.241(9)
+Mn(1) Mn(1) C(3) 2_555 1_555 1_555 90.492(9)
+Mn(1) Mn(1) C(4) 2_555 1_555 1_555 86.540(9)
+Mn(1) Mn(1) C(5) 2_555 1_555 1_555 84.397(7)
+C(1) Mn(1) C(2) 1_555 1_555 1_555 93.972(15)
+C(1) Mn(1) C(3) 1_555 1_555 1_555 92.985(14)
+C(1) Mn(1) C(4) 1_555 1_555 1_555 96.363(15)
+C(1) Mn(1) C(5) 1_555 1_555 1_555 92.245(14)
+C(2) Mn(1) C(3) 1_555 1_555 1_555 90.595(12)
+C(2) Mn(1) C(4) 1_555 1_555 1_555 169.534(13)
+C(2) Mn(1) C(5) 1_555 1_555 1_555 91.347(12)
+C(3) Mn(1) C(4) 1_555 1_555 1_555 87.230(13)
+C(3) Mn(1) C(5) 1_555 1_555 1_555 174.282(15)
+C(4) Mn(1) C(5) 1_555 1_555 1_555 89.896(12)
+Mn(1) C(1) O(1) 1_555 1_555 1_555 178.82(8)
+Mn(1) C(1) C(2) 1_555 1_555 1_555 43.550(10)
+Mn(1) C(1) C(3) 1_555 1_555 1_555 44.015(10)
+Mn(1) C(1) C(4) 1_555 1_555 1_555 42.327(10)
+Mn(1) C(1) C(5) 1_555 1_555 1_555 44.534(10)
+O(1) C(1) C(2) 1_555 1_555 1_555 135.52(5)
+O(1) C(1) C(3) 1_555 1_555 1_555 136.71(5)
+O(1) C(1) C(4) 1_555 1_555 1_555 138.62(5)
+O(1) C(1) C(5) 1_555 1_555 1_555 134.76(5)
+C(2) C(1) C(3) 1_555 1_555 1_555 59.035(11)
+C(2) C(1) C(4) 1_555 1_555 1_555 85.866(13)
+C(2) C(1) C(5) 1_555 1_555 1_555 59.740(11)
+C(3) C(1) C(4) 1_555 1_555 1_555 56.513(11)
+C(3) C(1) C(5) 1_555 1_555 1_555 88.527(13)
+C(4) C(1) C(5) 1_555 1_555 1_555 58.278(10)
+Mn(1) C(2) O(2) 1_555 1_555 1_555 178.96(9)
+Mn(1) C(2) C(1) 1_555 1_555 1_555 42.479(10)
+Mn(1) C(2) C(3) 1_555 1_555 1_555 44.664(9)
+Mn(1) C(2) C(5) 1_555 1_555 1_555 44.433(8)
+O(2) C(2) C(1) 1_555 1_555 1_555 136.49(3)
+O(2) C(2) C(3) 1_555 1_555 1_555 135.20(3)
+O(2) C(2) C(5) 1_555 1_555 1_555 135.78(3)
+C(1) C(2) C(3) 1_555 1_555 1_555 60.037(12)
+C(1) C(2) C(5) 1_555 1_555 1_555 59.516(10)
+C(3) C(2) C(5) 1_555 1_555 1_555 88.973(11)
+Mn(1) C(3) O(3) 1_555 1_555 1_555 175.99(3)
+Mn(1) C(3) C(1) 1_555 1_555 1_555 43.000(10)
+Mn(1) C(3) C(2) 1_555 1_555 1_555 44.741(8)
+Mn(1) C(3) C(4) 1_555 1_555 1_555 46.420(8)
+O(3) C(3) C(1) 1_555 1_555 1_555 134.40(3)
+O(3) C(3) C(2) 1_555 1_555 1_555 138.50(3)
+O(3) C(3) C(4) 1_555 1_555 1_555 130.68(3)
+C(1) C(3) C(2) 1_555 1_555 1_555 60.927(12)
+C(1) C(3) C(4) 1_555 1_555 1_555 63.223(11)
+C(2) C(3) C(4) 1_555 1_555 1_555 90.696(12)
+Mn(1) C(4) O(4) 1_555 1_555 1_555 178.13(5)
+Mn(1) C(4) C(1) 1_555 1_555 1_555 41.310(10)
+Mn(1) C(4) C(3) 1_555 1_555 1_555 46.350(9)
+Mn(1) C(4) C(5) 1_555 1_555 1_555 45.167(9)
+O(4) C(4) C(1) 1_555 1_555 1_555 138.85(3)
+O(4) C(4) C(3) 1_555 1_555 1_555 131.78(3)
+O(4) C(4) C(5) 1_555 1_555 1_555 136.69(3)
+C(1) C(4) C(3) 1_555 1_555 1_555 60.264(11)
+C(1) C(4) C(5) 1_555 1_555 1_555 59.254(11)
+C(3) C(4) C(5) 1_555 1_555 1_555 91.407(12)
+Mn(1) C(5) O(5) 1_555 1_555 1_555 178.58(4)
+Mn(1) C(5) C(1) 1_555 1_555 1_555 43.220(10)
+Mn(1) C(5) C(2) 1_555 1_555 1_555 44.220(8)
+Mn(1) C(5) C(4) 1_555 1_555 1_555 44.937(9)
+O(5) C(5) C(1) 1_555 1_555 1_555 136.05(2)
+O(5) C(5) C(2) 1_555 1_555 1_555 137.04(3)
+O(5) C(5) C(4) 1_555 1_555 1_555 133.93(3)
+C(1) C(5) C(2) 1_555 1_555 1_555 60.745(11)
+C(1) C(5) C(4) 1_555 1_555 1_555 62.469(12)
+C(2) C(5) C(4) 1_555 1_555 1_555 88.694(12)
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+Mn(1) Mn(1) 1_555 2_555 2.90306(16)
+Mn(1) C(1) 1_555 1_555 1.8224(4)
+Mn(1) C(2) 1_555 1_555 1.8593(3)
+Mn(1) C(3) 1_555 1_555 1.8567(3)
+Mn(1) C(4) 1_555 1_555 1.8589(3)
+Mn(1) C(5) 1_555 1_555 1.8664(3)
+O(1) C(1) 1_555 1_555 1.1472(6)
+O(2) C(2) 1_555 1_555 1.1420(4)
+O(3) C(3) 1_555 1_555 1.1437(4)
+O(4) C(4) 1_555 1_555 1.1433(4)
+O(5) C(5) 1_555 1_555 1.1420(4)
+C(1) C(2) 1_555 1_555 2.6921(4)
+C(1) C(3) 1_555 1_555 2.6685(5)
+C(1) C(4) 1_555 1_555 2.7437(4)
+C(1) C(5) 1_555 1_555 2.6591(4)
+C(2) C(3) 1_555 1_555 2.6412(4)
+C(2) C(5) 1_555 1_555 2.6652(4)
+C(3) C(4) 1_555 1_555 2.5631(4)
+C(4) C(5) 1_555 1_555 2.6318(4)

@@ -1,0 +1,82 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-01-12 17:53:12 +0200 (Fri, 12 Jan 2018) $
+#$Revision: 205126 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/01/02/1010267.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1010267
+loop_
+_publ_author_name
+'Lotmar, W.'
+'Feitknecht, W.'
+_publ_section_title
+;
+ \"Uber \"Anderungen der Ionenabst\"ande in Hydroxyd-Schichtengittern
+;
+_journal_coden_ASTM              ZEKGAX
+_journal_name_full
+;
+ Zeitschrift fuer Kristallographie, Kristallgeometrie, Kristallphysik,
+ Kristallchemie (-144,1977)
+;
+_journal_page_first              368
+_journal_page_last               378
+_journal_paper_doi               10.1524/zkri.1936.93.1.368
+_journal_volume                  93
+_journal_year                    1936
+_chemical_formula_structural     'Co (O H)2'
+_chemical_formula_sum            'Co H2 O2'
+_chemical_name_systematic        'Cobalt hydroxide'
+_space_group_crystal_system      trigonal
+_space_group_IT_number           164
+_space_group_name_Hall           '-P 3 2"'
+_space_group_name_H-M_alt        'P -3 m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            1
+_cell_length_a                   3.173(2)
+_cell_length_b                   3.173(2)
+_cell_length_c                   4.640(4)
+_cell_volume                     40.5
+_cod_original_formula_sum        'H2 Co O2'
+_cod_database_code               1010267
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -y,x-y,z
+3 y-x,-x,z
+4 -y,-x,z
+5 x,x-y,z
+6 y-x,y,z
+7 -x,-y,-z
+8 y,y-x,-z
+9 x-y,x,-z
+10 y,x,-z
+11 -x,y-x,-z
+12 x-y,-y,-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+Co1 Co2+ 1 a 0. 0. 0. 1. 0 d
+O1 O2- 2 d 0.3333 0.6667 0.22 1. 1 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Co2+ 2.000
+O2- -2.000

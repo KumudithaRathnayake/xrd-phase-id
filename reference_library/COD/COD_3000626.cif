@@ -1,0 +1,24 @@
+data_3000626
+loop_
+_publ_author_name
+'Musen Li'
+_journal_name_full               'To be published in Physical Review B'
+_chemical_formula_sum            'O2 Zn2'
+_space_group_name_Hall           '-P 6c 2c'
+_space_group_name_H-M_alt        'P 63/m m c'
+_cell_angle_alpha                90.00000
+_cell_angle_beta                 90.00000
+_cell_angle_gamma                120.00000
+_cell_length_a                   3.30000
+_cell_length_b                   3.30000
+_cell_length_c                   4.46000
+_cell_volume                     42.062
+_cod_database_code               3000626
+_cod_hold_until_date             2026-11-13
+_cod_depositor_requested_release_date 2026-11-13
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+? ? ? ?

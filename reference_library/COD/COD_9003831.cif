@@ -1,0 +1,133 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-07-06 21:05:47 +0300 (Thu, 06 Jul 2023) $
+#$Revision: 285044 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/38/9003831.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003831
+loop_
+_publ_author_name
+'Bosi, F.'
+'Andreozzi, G. B.'
+'Federico, M.'
+'Graziani, G.'
+'Lucchesi, S.'
+_publ_section_title
+;
+ Crystal chemistry of the elbaite-schorl series
+ Sample: 61Vbh
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              1784
+_journal_page_last               1792
+_journal_paper_doi               10.2138/am.2005.1827
+_journal_volume                  90
+_journal_year                    2005
+_chemical_compound_source        'Cruziero pegmatite, Minas Gerais, Brazil'
+_chemical_formula_sum
+;Al7.208 B3.026 Ca0.049 F0.542 Fe0.962 H3.355 K0.008 Li0.649 Mn0.149 Na0.823
+ O30.458 Si5.871 Ti0.015 Zn0.15
+;
+_chemical_name_mineral           Elbaite
+_space_group_IT_number           160
+_symmetry_space_group_name_Hall  'R 3 -2"'
+_symmetry_space_group_name_H-M   'R 3 m :H'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            3
+_cell_length_a                   15.9285
+_cell_length_b                   15.9285
+_cell_length_c                   7.1286
+_cell_volume                     1566.335
+_database_code_amcsd             0003955
+_exptl_crystal_density_diffrn    3.152
+_cod_original_sg_symbol_H-M      'R 3 m'
+_cod_original_formula_sum
+;Ca.049 Na.823 K.008 Ti.015 Al7.208 Fe.962 Mn.149 Zn.15 Li.649 B3.026 Si5.871
+ F.542 O30.458 H3.355
+;
+_cod_database_code               9003831
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+2/3+x,1/3+y,1/3+z
+1/3+x,2/3+y,2/3+z
+x,x-y,z
+2/3+x,1/3+x-y,1/3+z
+1/3+x,2/3+x-y,2/3+z
+-y,-x,z
+2/3-y,1/3-x,1/3+z
+1/3-y,2/3-x,2/3+z
+-x+y,y,z
+2/3-x+y,1/3+y,1/3+z
+1/3-x+y,2/3+y,2/3+z
+-y,x-y,z
+2/3-y,1/3+x-y,1/3+z
+1/3-y,2/3+x-y,2/3+z
+-x+y,-x,z
+2/3-x+y,1/3-x,1/3+z
+1/3-x+y,2/3-x,2/3+z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+CaX 0.00000 0.00000 0.23439 0.04900 0.02300 Ca 0
+NaX 0.00000 0.00000 0.23439 0.82300 0.02300 Na 0
+KX 0.00000 0.00000 0.23439 0.00800 0.02300 K 0
+TiY 0.12429 0.06214 0.62729 0.00500 0.00690 Ti 0
+AlY 0.12429 0.06214 0.62729 0.39200 0.00690 Al 0
+Fe3+Y 0.12429 0.06214 0.62729 0.01000 0.00690 Fe 0
+Fe2+Y 0.12429 0.06214 0.62729 0.28700 0.00690 Fe 0
+MnY 0.12429 0.06214 0.62729 0.04970 0.00690 Mn 0
+ZnY 0.12429 0.06214 0.62729 0.05000 0.00690 Zn 0
+LiY 0.12429 0.06214 0.62729 0.21630 0.00690 Li 0
+AlZ 0.29790 0.26104 0.61145 0.98820 0.00490 Al 0
+FeZ 0.29790 0.26104 0.61145 0.01180 0.00490 Fe 0
+B 0.10980 0.21960 0.45534 1.00000 0.00530 B 0
+SiT 0.19201 0.18998 0.00000 0.97850 0.00378 Si 0
+AlT 0.19201 0.18998 0.00000 0.01720 0.00378 Al 0
+BT 0.19201 0.18998 0.00000 0.00430 0.00378 B 0
+F1W 0.00000 0.00000 0.78365 0.54200 0.06100 F 0
+O-H1W 0.00000 0.00000 0.78365 0.35500 0.06100 O 1
+O1 0.00000 0.00000 0.78365 0.10300 0.06100 O 0
+O2 0.06107 0.12214 0.48478 1.00000 0.01670 O 0
+O-H3V 0.26901 0.13451 0.50937 1.00000 0.00930 O 1
+O4 0.09325 0.18650 0.07042 1.00000 0.00770 O 0
+O5 0.18689 0.09345 0.09308 1.00000 0.00810 O 0
+O6 0.19751 0.18714 0.77552 1.00000 0.00640 O 0
+O7 0.28561 0.28584 0.08028 1.00000 0.00560 O 0
+O8 0.20992 0.27047 0.44139 1.00000 0.00690 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:14:41+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0003955

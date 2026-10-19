@@ -1,0 +1,433 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-03-26 11:09:57 +0300 (Sun, 26 Mar 2023) $
+#$Revision: 282068 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/2/10/29/2102956.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided by IUCr Journals, http://journals.iucr.org/.
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_2102956
+loop_
+_publ_author_name
+'Boysen, H.'
+'Lerch, M.'
+'Stys, A.'
+'Senyshyn, A.'
+_publ_contact_author_address
+;Department f\"ur Geo- und Umweltwissenschaften,
+Sektion Kristallographie, LMU M\"unchen,
+ Am Coulombwall 1, 85748 Garching, Germany
+;
+_publ_contact_author_email       boysen@lmu.de
+_publ_contact_author_fax         498928914015
+_publ_contact_author_name        'Hans Boysen'
+_publ_contact_author_phone       498928914040
+_publ_section_title
+;
+ Structure and oxygen mobility in mayenite (Ca~12~Al~14~O~33~): a
+ high-temperature neutron powder diffraction study
+;
+_journal_coeditor_code           WS5057
+_journal_issue                   5
+_journal_name_full               'Acta Crystallographica Section B'
+_journal_page_first              675
+_journal_page_last               682
+_journal_paper_doi               10.1107/S0108768107030005
+_journal_volume                  63
+_journal_year                    2007
+_chemical_compound_source        Synthetic
+_chemical_formula_moiety         'Al14  Ca12  O33'
+_chemical_formula_sum            'Al14 Ca12 O33'
+_chemical_formula_weight         1386.7
+_chemical_name_mineral           mayenite
+_space_group_IT_number           220
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_Hall  'I -4bd 2c 3'
+_symmetry_space_group_name_H-M   'I -4 3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   12.0308
+_cell_length_b                   12.0308
+_cell_length_c                   12.0308
+_cell_measurement_temperature    973
+_cell_volume                     1741.340
+_computing_publication_material  '(Jana2000; Petricek and Dusek, 2000)'
+_computing_structure_refinement  '(Jana2000; Petricek and Dusek, 2000)'
+_database_code_amcsd             0009965
+_diffrn_ambient_temperature      973
+_diffrn_measurement_device_type  'Debye Scherrer'
+_diffrn_radiation_probe          neutron
+_diffrn_radiation_type           neutron
+_diffrn_radiation_wavelength     1.548
+_exptl_absorpt_coefficient_mu    0.001
+_exptl_absorpt_process_details
+'(Jana2000; Petricek, Dusek & Palatinus, 2000)'
+_exptl_crystal_density_diffrn    2.6438
+_exptl_crystal_F_000             1373
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.38
+_refine_ls_number_parameters     41
+_refine_ls_R_factor_all          0.0238
+_refine_ls_R_factor_gt           0.0207
+_refine_ls_shift/su_max          0.0200
+_refine_ls_shift/su_mean         0.0008
+_refine_ls_weighting_scheme      sigma
+_refine_ls_wR_factor_gt          0.0148
+_refine_ls_wR_factor_ref         0.0150
+_cod_data_source_file            ws5057.cif
+_cod_data_source_block           II
+_cod_depositor_comments
+;
+ Renaming the _chemical_name_common data item to _chemical_name_mineral
+ and removing the '?' prefix from the data value.
+
+ Antanas Vaitkus,
+ 2018-08-28
+;
+_cod_original_cell_volume        1741.319
+_cod_original_sg_symbol_Hall     'I -4bd;2ab;3'
+_cod_database_code               2102956
+loop_
+_symmetry_equiv_pos_site_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 1/4+y,3/4-x,1/4-z
+3 x,-y,1/2-z
+4 z,x,y
+5 -x,1/2-y,z
+6 1/4-y,3/4-x,3/4+z
+7 1/4+x,3/4-z,1/4-y
+8 1/4-y,1/4+x,3/4-z
+9 -x,1/2+y,1/2-z
+10 -z,1/2-x,y
+11 1/4+y,1/4+x,1/4+z
+12 1/4-x,1/4+z,3/4-y
+13 z,-x,1/2-y
+14 1/4-x,3/4-z,3/4+y
+15 -z,1/2+x,1/2-y
+16 1/4+x,1/4+z,1/4+y
+17 1/4-z,1/4+y,3/4-x
+18 y,z,x
+19 1/4+z,3/4-y,1/4-x
+20 -y,1/2-z,x
+21 1/4-z,3/4-y,3/4+x
+22 -y,1/2+z,1/2-x
+23 1/4+z,1/4+y,1/4+x
+24 y,-z,1/2-x
+25 1/2+x,1/2+y,1/2+z
+26 3/4+y,1/4-x,3/4-z
+27 1/2+x,1/2-y,-z
+28 1/2+z,1/2+x,1/2+y
+29 1/2-x,-y,1/2+z
+30 3/4-y,1/4-x,1/4+z
+31 3/4+x,1/4-z,3/4-y
+32 3/4-y,3/4+x,1/4-z
+33 1/2-x,y,-z
+34 1/2-z,-x,1/2+y
+35 3/4+y,3/4+x,3/4+z
+36 3/4-x,3/4+z,1/4-y
+37 1/2+z,1/2-x,-y
+38 3/4-x,1/4-z,1/4+y
+39 1/2-z,x,-y
+40 3/4+x,3/4+z,3/4+y
+41 3/4-z,3/4+y,1/4-x
+42 1/2+y,1/2+z,1/2+x
+43 3/4+z,1/4-y,3/4-x
+44 1/2-y,-z,1/2+x
+45 3/4-z,1/4-y,1/4+x
+46 1/2-y,z,-x
+47 3/4+z,3/4+y,3/4+x
+48 1/2+y,1/2-z,-x
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_calc_flag
+_atom_site_occupancy
+Ca Ca 0.1464(4) 0 0.25 0.0342(15) Uani d 0.910(5)
+Al Al1 0.0176(2) 0.0176(2) 0.0176(2) 0.0183(7) Uani d 1
+Al Al2 0.875 0 0.25 0.0141(12) Uani d 1
+O O1 0.78685(15) 0.10030(14) 0.30637(13) 0.0291(6) Uani d 1
+O O2 -0.06453(13) -0.06453(13) -0.06453(13) 0.0301(4) Uani d 1
+O O3 0.25 0.375 0 0.038(8) Uiso d 0.181(9)
+Ca Cas 0.195(3) 0 0.25 0.016(9) Uiso d 0.090(5)
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+_atom_site_aniso_type_symbol
+Ca 0.041(3) 0.035(2) 0.027(2) 0 0 0.0004(16) Ca
+Al1 0.0183(12) 0.0183(12) 0.0183(12) -0.0007(11) -0.0007(11) -0.0007(11) Al
+Al2 0.005(3) 0.0187(16) 0.0187(16) 0 0 0 Al
+O1 0.0334(11) 0.0268(10) 0.0270(10) 0.0194(8) 0.0131(8) 0.0041(8) O
+O2 0.0301(7) 0.0301(7) 0.0301(7) -0.0102(7) -0.0102(7) -0.0102(7) O
+loop_
+_atom_type_symbol
+_atom_type_scat_source
+Ca International_Tables_Vol_C
+Al International_Tables_Vol_C
+O International_Tables_Vol_C
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+_geom_angle
+_geom_angle_publ_flag
+O1 Ca O1 6_554 8_545 178.1(2) yes
+O1 Ca O1 6_554 36_545 66.89(9) yes
+O1 Ca O1 6_554 38_555 114.89(15) yes
+O1 Ca O2 6_554 2_545 98.06(6) yes
+O1 Ca O2 6_554 11_555 81.56(6) yes
+O1 Ca O3 6_554 30_555 89.04(12) yes
+O1 Ca Cas 6_554 . 89.04(12) yes
+O1 Ca O1 8_545 6_554 178.1(2) yes
+O1 Ca O1 8_545 36_545 114.89(15) yes
+O1 Ca O1 8_545 38_555 66.89(9) yes
+O1 Ca O2 8_545 2_545 81.56(6) yes
+O1 Ca O2 8_545 11_555 98.06(6) yes
+O1 Ca O3 8_545 30_555 89.04(12) yes
+O1 Ca Cas 8_545 . 89.04(12) yes
+O1 Ca O1 36_545 6_554 66.89(9) yes
+O1 Ca O1 36_545 8_545 114.89(15) yes
+O1 Ca O1 36_545 38_555 64.25(12) yes
+O1 Ca O2 36_545 2_545 123.78(14) yes
+O1 Ca O2 36_545 11_555 76.97(8) yes
+O1 Ca O3 36_545 30_555 147.88(7) yes
+O1 Ca Cas 36_545 . 147.88(7) yes
+O1 Ca O1 38_555 6_554 114.89(15) yes
+O1 Ca O1 38_555 8_545 66.89(9) yes
+O1 Ca O1 38_555 36_545 64.25(12) yes
+O1 Ca O2 38_555 2_545 76.97(8) yes
+O1 Ca O2 38_555 11_555 123.78(14) yes
+O1 Ca O3 38_555 30_555 147.88(7) yes
+O1 Ca Cas 38_555 . 147.88(7) yes
+O2 Ca O2 2_545 11_555 157.5(2) yes
+O2 Ca O3 2_545 30_555 78.75(11) yes
+O2 Ca Cas 2_545 . 78.75(11) yes
+O2 Ca O2 11_555 2_545 157.5(2) yes
+O2 Ca O3 11_555 30_555 78.75(11) yes
+O2 Ca Cas 11_555 . 78.75(11) yes
+O3 Ca Cas 30_555 . 0 yes
+O1 Al1 O1 6_554 36_545 101.03(14) yes
+O1 Al1 O1 6_554 43_455 101.03(14) yes
+O1 Al1 O2 6_554 . 116.97(16) yes
+O1 Al1 O1 36_545 6_554 101.03(14) yes
+O1 Al1 O1 36_545 43_455 101.03(14) yes
+O1 Al1 O2 36_545 . 116.97(16) yes
+O1 Al1 O1 43_455 6_554 101.03(14) yes
+O1 Al1 O1 43_455 36_545 101.03(14) yes
+O1 Al1 O2 43_455 . 116.97(16) yes
+O1 Al2 O1 . 3_555 105.08(8) yes
+O1 Al2 O1 . 36_645 111.71(8) yes
+O1 Al2 O1 . 38_655 111.71(8) yes
+O1 Al2 O1 3_555 . 105.08(8) yes
+O1 Al2 O1 3_555 36_645 111.71(8) yes
+O1 Al2 O1 3_555 38_655 111.71(8) yes
+O1 Al2 O1 36_645 . 111.71(8) yes
+O1 Al2 O1 36_645 3_555 111.71(8) yes
+O1 Al2 O1 36_645 38_655 105.08(8) yes
+O1 Al2 O1 38_655 . 111.71(8) yes
+O1 Al2 O1 38_655 3_555 111.71(8) yes
+O1 Al2 O1 38_655 36_645 105.08(8) yes
+Ca O1 Ca 26_555 36_545 96.05(8) yes
+Ca O1 Al1 26_555 30_555 99.98(15) yes
+Ca O1 Al2 26_555 . 120.48(12) yes
+Ca O1 O1 26_555 3_555 119.72(13) yes
+Ca O1 O1 26_555 36_645 141.43(8) yes
+Ca O1 O1 26_555 38_655 88.19(9) yes
+Ca O1 O1 26_555 15_645 60.58(12) yes
+Ca O1 O1 26_555 48_556 103.96(9) yes
+Ca O1 O2 26_555 30_555 119.09(13) yes
+Ca O1 Cas 26_555 26_555 14.0(8) yes
+Ca O1 Ca 36_545 26_555 96.05(8) yes
+Ca O1 Al1 36_545 30_555 91.93(11) yes
+Ca O1 Al2 36_545 . 95.33(9) yes
+Ca O1 O1 36_545 3_555 57.88(7) yes
+Ca O1 O1 36_545 36_645 111.55(8) yes
+Ca O1 O1 36_545 38_655 111.55(8) yes
+Ca O1 O1 36_545 15_645 98.01(9) yes
+Ca O1 O1 36_545 48_556 52.52(6) yes
+Ca O1 O2 36_545 30_555 111.63(7) yes
+Ca O1 Cas 36_545 26_555 89.5(4) yes
+Al1 O1 Al2 30_555 . 137.69(13) yes
+Al1 O1 O1 30_555 3_555 130.51(12) yes
+Al1 O1 O1 30_555 36_645 105.25(11) yes
+Al1 O1 O1 30_555 38_655 154.30(12) yes
+Al1 O1 O1 30_555 15_645 39.48(9) yes
+Al1 O1 O1 30_555 48_556 39.48(9) yes
+Al1 O1 O2 30_555 30_555 30.83(9) yes
+Al1 O1 Cas 30_555 26_555 112.6(7) yes
+Al2 O1 O1 . 3_555 37.46(5) yes
+Al2 O1 O1 . 36_645 34.15(5) yes
+Al2 O1 O1 . 38_655 34.15(5) yes
+Al2 O1 O1 . 15_645 166.41(10) yes
+Al2 O1 O1 . 48_556 128.36(9) yes
+Al2 O1 O2 . 30_555 109.93(8) yes
+Al2 O1 Cas . 26_555 109.1(7) yes
+O1 O1 O1 3_555 36_645 61.34(6) yes
+O1 O1 O1 3_555 38_655 61.34(6) yes
+O1 O1 O1 3_555 15_645 155.77(9) yes
+O1 O1 O1 3_555 48_556 98.99(7) yes
+O1 O1 O2 3_555 30_555 121.01(7) yes
+O1 O1 Cas 3_555 26_555 105.8(8) yes
+O1 O1 O1 36_645 3_555 61.34(6) yes
+O1 O1 O1 36_645 38_655 57.31(6) yes
+O1 O1 O1 36_645 15_645 135.73(8) yes
+O1 O1 O1 36_645 48_556 114.10(7) yes
+O1 O1 O2 36_645 30_555 75.96(6) yes
+O1 O1 Cas 36_645 26_555 135.9(4) yes
+O1 O1 O1 38_655 3_555 61.34(6) yes
+O1 O1 O1 38_655 36_645 57.31(6) yes
+O1 O1 O1 38_655 15_645 139.31(8) yes
+O1 O1 O1 38_655 48_556 160.30(8) yes
+O1 O1 O2 38_655 30_555 124.92(8) yes
+O1 O1 Cas 38_655 26_555 79.1(5) yes
+O1 O1 O1 15_645 3_555 155.77(9) yes
+O1 O1 O1 15_645 36_645 135.73(8) yes
+O1 O1 O1 15_645 38_655 139.31(8) yes
+O1 O1 O1 15_645 48_556 60.00(6) yes
+O1 O1 O2 15_645 30_555 62.52(6) yes
+O1 O1 Cas 15_645 26_555 73.7(7) yes
+O1 O1 O1 48_556 3_555 98.99(7) yes
+O1 O1 O1 48_556 36_645 114.10(7) yes
+O1 O1 O1 48_556 38_655 160.30(8) yes
+O1 O1 O1 48_556 15_645 60.00(6) yes
+O1 O1 O2 48_556 30_555 62.52(6) yes
+O1 O1 Cas 48_556 26_555 109.5(3) yes
+O2 O1 Cas 30_555 26_555 133.1(8) yes
+Ca O2 Ca 31_454 32_445 100.41(13) yes
+Ca O2 Ca 31_454 21_544 100.41(13) yes
+Ca O2 Al1 31_454 . 117.48(13) yes
+Ca O2 O1 31_454 6_554 125.82(12) yes
+Ca O2 O1 31_454 36_545 131.76(7) yes
+Ca O2 O1 31_454 43_455 85.41(8) yes
+Ca O2 Cas 31_454 31_454 14.1(8) yes
+Ca O2 Cas 31_454 32_445 96.0(3) yes
+Ca O2 Cas 31_454 21_544 114.5(8) yes
+Ca O2 Ca 32_445 31_454 100.41(13) yes
+Ca O2 Ca 32_445 21_544 100.41(13) yes
+Ca O2 Al1 32_445 . 117.48(13) yes
+Ca O2 O1 32_445 6_554 131.76(7) yes
+Ca O2 O1 32_445 36_545 85.41(8) yes
+Ca O2 O1 32_445 43_455 125.82(12) yes
+Ca O2 Cas 32_445 31_454 114.5(8) yes
+Ca O2 Cas 32_445 32_445 14.1(8) yes
+Ca O2 Cas 32_445 21_544 96.0(3) yes
+Ca O2 Ca 21_544 31_454 100.41(13) yes
+Ca O2 Ca 21_544 32_445 100.41(13) yes
+Ca O2 Al1 21_544 . 117.48(13) yes
+Ca O2 O1 21_544 6_554 85.41(8) yes
+Ca O2 O1 21_544 36_545 125.82(12) yes
+Ca O2 O1 21_544 43_455 131.76(7) yes
+Ca O2 Cas 21_544 31_454 96.0(3) yes
+Ca O2 Cas 21_544 32_445 114.5(8) yes
+Ca O2 Cas 21_544 21_544 14.1(8) yes
+Al1 O2 O1 . 6_554 32.20(9) yes
+Al1 O2 O1 . 36_545 32.20(9) yes
+Al1 O2 O1 . 43_455 32.20(9) yes
+Al1 O2 Cas . 31_454 109.0(5) yes
+Al1 O2 Cas . 32_445 109.0(5) yes
+Al1 O2 Cas . 21_544 109.0(5) yes
+O1 O2 O1 6_554 36_545 54.96(5) yes
+O1 O2 O1 6_554 43_455 54.96(5) yes
+O1 O2 Cas 6_554 31_454 112.4(8) yes
+O1 O2 Cas 6_554 32_445 130.58(17) yes
+O1 O2 Cas 6_554 21_544 78.3(4) yes
+O1 O2 O1 36_545 6_554 54.96(5) yes
+O1 O2 O1 36_545 43_455 54.96(5) yes
+O1 O2 Cas 36_545 31_454 130.58(17) yes
+O1 O2 Cas 36_545 32_445 78.3(4) yes
+O1 O2 Cas 36_545 21_544 112.4(8) yes
+O1 O2 O1 43_455 6_554 54.96(5) yes
+O1 O2 O1 43_455 36_545 54.96(5) yes
+O1 O2 Cas 43_455 31_454 78.3(4) yes
+O1 O2 Cas 43_455 32_445 112.4(8) yes
+O1 O2 Cas 43_455 21_544 130.58(17) yes
+Cas O2 Cas 31_454 32_445 109.9(9) yes
+Cas O2 Cas 31_454 21_544 109.9(9) yes
+Cas O2 Cas 32_445 31_454 109.9(9) yes
+Cas O2 Cas 32_445 21_544 109.9(9) yes
+Cas O2 Cas 21_544 31_454 109.9(9) yes
+Cas O2 Cas 21_544 32_445 109.9(9) yes
+Ca O3 Ca 2_555 4_555 180 yes
+Ca O3 Cas 2_555 2_555 0 yes
+Ca O3 Cas 2_555 4_555 180 yes
+Ca O3 Ca 4_555 2_555 180 yes
+Ca O3 Cas 4_555 2_555 180 yes
+Ca O3 Cas 4_555 4_555 0 yes
+Cas O3 Cas 2_555 4_555 180 yes
+Cas O3 Cas 4_555 2_555 180 yes
+Ca Cas O1 . 6_554 77.0(8) yes
+Ca Cas O1 . 8_545 77.0(8) yes
+Ca Cas O2 . 2_545 87.1(8) yes
+Ca Cas O2 . 11_555 87.1(8) yes
+Ca Cas O3 . 30_555 180 yes
+O1 Cas O1 6_554 8_545 154.0(16) yes
+O1 Cas O2 6_554 2_545 97.5(3) yes
+O1 Cas O2 6_554 11_555 81.2(2) yes
+O1 Cas O3 6_554 30_555 103.0(8) yes
+O1 Cas O1 8_545 6_554 154.0(16) yes
+O1 Cas O2 8_545 2_545 81.2(2) yes
+O1 Cas O2 8_545 11_555 97.5(3) yes
+O1 Cas O3 8_545 30_555 103.0(8) yes
+O2 Cas O2 2_545 11_555 174.3(17) yes
+O2 Cas O3 2_545 30_555 92.9(8) yes
+O2 Cas O2 11_555 2_545 174.3(17) yes
+O2 Cas O3 11_555 30_555 92.9(8) yes
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_site_symmetry_2
+_geom_bond_distance
+_geom_bond_publ_flag
+Ca O1 6_554 2.3717(16) yes
+Ca O1 8_545 2.3717(16) yes
+Ca O1 36_545 2.603(4) yes
+Ca O1 38_555 2.603(4) yes
+Ca O2 2_545 2.4088(18) yes
+Ca O2 11_555 2.4088(18) yes
+Ca O3 30_555 2.750(5) yes
+Ca Cas . 0.59(3) yes
+Al1 O1 6_554 1.781(3) yes
+Al1 O1 36_545 1.781(3) yes
+Al1 O1 43_455 1.781(3) yes
+Al1 O2 . 1.712(3) yes
+Al2 O1 . 1.7438(17) yes
+Al2 O1 3_555 1.7438(17) yes
+Al2 O1 36_645 1.7438(17) yes
+Al2 O1 38_655 1.7438(17) yes
+O1 O1 3_555 2.768(2) yes
+O1 O1 36_645 2.886(2) yes
+O1 O1 38_655 2.886(2) yes
+O1 O1 15_645 2.749(2) yes
+O1 O1 48_556 2.749(2) yes
+O1 O2 30_555 2.978(2) yes
+O1 Cas 26_555 2.434(8) yes
+O2 Cas 31_454 2.365(2) yes
+O2 Cas 32_445 2.365(2) yes
+O2 Cas 21_544 2.365(2) yes
+O3 Cas 2_555 2.16(3) yes
+O3 Cas 4_555 2.16(3) yes
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0009965

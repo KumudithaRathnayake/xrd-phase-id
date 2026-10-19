@@ -1,0 +1,18 @@
+# Analysis outputs (created by the notebook)
+results/
+results_*/
+
+# Your own (unpublished) scans: keep them in a folder named data/
+data/
+
+# Python / Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+
+# Office lock files
+~$*

@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-10-10 08:27:07 +0300 (Sat, 10 Oct 2015) $
+#$Revision: 165174 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/8/10/42/8104202.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_8104202
+loop_
+_publ_author_name
+'Kutoglu, A.'
+_publ_section_title
+;
+ The rutile structure of Al1-x()xO1-3xF1+3x, x=0.0886
+;
+_journal_name_full
+'Zeitschrift fuer Kristallographie (149,1979-)'
+_journal_page_first              197
+_journal_page_last               201
+_journal_volume                  199
+_journal_year                    1992
+_chemical_formula_sum            'Al0.9114 F1.2658 O0.7342'
+_chemical_name_systematic        'Al0.9114 O0.7342 F1.2658'
+_space_group_IT_number           136
+_symmetry_space_group_name_Hall  '-P 4n 2n'
+_symmetry_space_group_name_H-M   'P 42/m n m'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   4.627
+_cell_length_b                   4.627
+_cell_length_c                   3.005
+_cell_volume                     64.334
+_citation_journal_id_ASTM        ZEKRDZ
+_cod_data_source_file            Kutoglu_ZEKRDZ_1992_36.cif
+_cod_data_source_block           Al0.9114F1.2658O0.7342
+_cod_original_cell_volume        64.33443
+_cod_database_code               8104202
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-y+1/2,x+1/2,z+1/2
+-x,-y,z
+y+1/2,-x+1/2,z+1/2
+x+1/2,-y+1/2,-z+1/2
+y,x,-z
+-x+1/2,y+1/2,-z+1/2
+-y,-x,-z
+-x,-y,-z
+y-1/2,-x-1/2,-z-1/2
+x,y,-z
+-y-1/2,x-1/2,-z-1/2
+-x-1/2,y-1/2,z-1/2
+-y,-x,z
+x-1/2,-y-1/2,z-1/2
+y,x,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+O1 O-2 0.3029 0.3029 0 0.367 0.0
+F1 F-1 0.3029 0.3029 0 0.633 0.0
+Al1 Al+3 0 0 0 0.911 0.0

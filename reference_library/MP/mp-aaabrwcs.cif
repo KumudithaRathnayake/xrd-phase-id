@@ -1,0 +1,57 @@
+# generated using pymatgen
+data_Li3Mn7O16
+_symmetry_space_group_name_H-M   R3m
+_cell_length_a   5.83018596
+_cell_length_b   5.83018596
+_cell_length_c   28.39724729
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Li3Mn7O16
+_chemical_formula_sum   'Li9 Mn21 O48'
+_cell_volume   835.93342246
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, z'
+  5  '-x+y, y, z'
+  6  'x, x-y, z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-y+2/3, x-y+1/3, z+1/3'
+  9  '-x+y+2/3, -x+1/3, z+1/3'
+  10  '-y+2/3, -x+1/3, z+1/3'
+  11  '-x+y+2/3, y+1/3, z+1/3'
+  12  'x+2/3, x-y+1/3, z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-y+1/3, x-y+2/3, z+2/3'
+  15  '-x+y+1/3, -x+2/3, z+2/3'
+  16  '-y+1/3, -x+2/3, z+2/3'
+  17  '-x+y+1/3, y+2/3, z+2/3'
+  18  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  3  0.00000000  0.00000000  0.18922900  1.0
+  Li  Li1  3  0.00000000  0.00000000  0.31104900  1.0
+  Li  Li2  3  0.00000000  0.00000000  0.81033100  1.0
+  Mn  Mn3  9  0.00676333  0.50338167  0.24830167  1.0
+  Mn  Mn4  9  0.16903133  0.33806267  0.08500167  1.0
+  Mn  Mn5  3  0.00000000  0.00000000  0.00100800  1.0
+  O  O6  9  0.01803933  0.50901967  0.11759967  1.0
+  O  O7  9  0.03850533  0.51925267  0.62266067  1.0
+  O  O8  9  0.17527567  0.35055133  0.21570233  1.0
+  O  O9  9  0.18789400  0.37578800  0.71122600  1.0
+  O  O10  3  0.00000000  0.00000000  0.12002900  1.0
+  O  O11  3  0.00000000  0.00000000  0.38173300  1.0
+  O  O12  3  0.00000000  0.00000000  0.61731600  1.0
+  O  O13  3  0.00000000  0.00000000  0.88032700  1.0

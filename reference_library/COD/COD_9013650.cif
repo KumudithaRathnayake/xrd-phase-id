@@ -1,0 +1,87 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/36/9013650.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9013650
+loop_
+_publ_author_name
+'Lopano, C. L.'
+'Heaney, P. J.'
+'Post, J. E.'
+_publ_section_title
+;Cs-exchange in birnessite: Reaction mechanisms inferred from time-resolved
+ X-ray diffraction and transmission electron microscopy Note: Solution
+ concentration 0.001 M Note: Occupancies of the Oint sites are undetermined, O
+ is used only as a scatterer
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              816
+_journal_page_last               826
+_journal_paper_doi               10.2138/am.2009.3068
+_journal_volume                  94
+_journal_year                    2009
+_chemical_formula_sum            'H4.108 Mn O4.054'
+_chemical_name_mineral           Birnessite
+_space_group_IT_number           2
+_symmetry_space_group_name_Hall  '-P 1 (1/2*x+1/2*y,1/2*x-1/2*y,-z)'
+_symmetry_space_group_name_H-M   'C -1'
+_cell_angle_alpha                90.310
+_cell_angle_beta                 101.559
+_cell_angle_gamma                89.944
+_cell_formula_units_Z            2
+_cell_length_a                   5.1342
+_cell_length_b                   2.8469
+_cell_length_c                   7.4815
+_cell_volume                     107.134
+_database_code_amcsd             0004947
+_exptl_crystal_density_diffrn    3.714
+_cod_database_code               9013650
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+Mn 0.00000 0.00000 0.00000 1.00000 0.03030 Mn 0
+O1 0.38110 0.00877 0.13420 1.00000 0.03360 O 0
+Oint 0.28280 -0.08350 0.49960 0.50600 0.04340 O 0
+Oint2 0.40180 0.36980 0.50790 0.52100 0.01070 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:25:04+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0004947

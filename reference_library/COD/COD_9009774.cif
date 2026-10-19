@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-06 10:39:41 +0300 (Mon, 06 May 2024) $
+#$Revision: 291735 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/97/9009774.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009774
+loop_
+_publ_author_name
+'Kohler, T.'
+'Armbruster, T.'
+'Libowitzky, E.'
+_publ_section_title
+;
+ Hydrogen bonding and Jahn-Teller distortion in groutite, alpha-MnOOH,
+ and manganite, gamma-MnOOH, and their relations to the manganese
+ dioxides ramsdellite and pyrolusite
+ Note: Uiso corrected
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              486
+_journal_page_last               500
+_journal_paper_doi               10.1006/jssc.1997.7516
+_journal_volume                  133
+_journal_year                    1997
+_chemical_compound_source
+'Nchwaning Mine, Kalahari manganese field, Republic of South Africa'
+_chemical_formula_sum            'H Mn O2'
+_chemical_name_mineral           Manganite
+_space_group_IT_number           14
+_symmetry_space_group_name_Hall  '-P 2ybc'
+_symmetry_space_group_name_H-M   'P 1 21/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 114.38
+_cell_angle_gamma                90
+_cell_length_a                   5.304
+_cell_length_b                   5.277
+_cell_length_c                   5.304
+_cell_formula_units_Z            4
+_cell_volume                     135.217
+_database_code_amcsd             0013942
+_exptl_crystal_density_diffrn    4.320
+_cod_original_formula_sum        'Mn O2 H'
+_cod_database_code               9009774
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+x,1/2-y,1/2+z
+-x,1/2+y,1/2-z
+-x,-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn 0.00451 0.00564 0.00477 0.00070 -0.00209 -0.00056
+O2 0.00580 0.00670 0.00640 0.00070 0.00300 -0.00080
+O1 0.00610 0.00620 0.00660 0.00010 -0.00350 -0.00040
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+Mn -0.23684 0.01033 0.75464 0.00630
+O2 0.87520 0.12560 0.12060 0.00610
+O1 0.37490 0.12380 0.62790 0.00830
+H 0.28400 0.02700 0.72500 0.02900
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0013942

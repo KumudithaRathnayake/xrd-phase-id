@@ -1,0 +1,456 @@
+#------------------------------------------------------------------------------
+#$Date: 2025-03-12 18:37:01 +0200 (Wed, 12 Mar 2025) $
+#$Revision: 298410 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/3/00/03/3000336.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_3000336
+loop_
+_publ_author_name
+'Kahlenberg, Volker'
+'Kr\"uger, Hannes'
+_publ_section_title
+;
+ High-temperature behavior and structural studies on Ca14Al10Zn6O35
+;
+_journal_name_full               'Zeitschrift f\"ur Kristallographie'
+_journal_page_first              219
+_journal_page_last               232
+_journal_volume                  237
+_journal_year                    2022
+_chemical_formula_sum            'Al10 Ca14 O35 Zn6'
+_chemical_formula_weight         1783.14
+_space_group_IT_number           196
+_space_group_name_Hall           'F 2 2 3'
+_space_group_name_H-M_alt        'F 2 3'
+_symmetry_cell_setting           cubic
+_symmetry_Int_Tables_number      196
+_symmetry_space_group_name_H-M   'F 2 3'
+_atom_sites_solution_hydrogens   .
+_atom_sites_solution_primary     direct
+_atom_sites_solution_secondary   difmap
+_audit_conform_dict_location     ftp://ftp.iucr.org/pub/cif_core.dic
+_audit_conform_dict_name         cif_core.dic
+_audit_conform_dict_version      2.4.5
+_audit_creation_date             2021-12-05T18:25:13-00:00
+_audit_creation_method           'WinGX routine CIF_UPDATE'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   14.9278(6)
+_cell_length_b                   14.9278(6)
+_cell_length_c                   14.9278(6)
+_cell_measurement_reflns_used    8703
+_cell_measurement_temperature    873(2)
+_cell_measurement_theta_max      29.16
+_cell_measurement_theta_min      2.36
+_cell_volume                     3326.5(2)
+_computing_cell_refinement
+;
+        X-Area Recipe 1.33.0.0 (STOE, 2015)
+;
+_computing_data_collection
+;
+        X-Area WinXpose 2.0.22.0 (STOE, 2016)
+;
+_computing_data_reduction
+;
+        X-Area Integrate 1.73.1.0 (STOE, 2018)
+        X-Area LANA 1.73.2.0 (STOE, 2018)
+;
+_computing_publication_material
+;
+STOE & Cie GmbH, X-Area, software package for collecting single-crystal or
+multi-domain crystal data on STOE area-detector diffractometers, for image
+processing, for the correction and scaling of reflection intensities and
+        for outlier rejection, version 1.84, Darmstadt 2018
+;
+_computing_structure_refinement  'SHELXL-97 (Sheldrick, 1997)'
+_computing_structure_solution    'SIR2004 (Burla et al, 2005)'
+_diffrn_ambient_temperature      873(2)
+_diffrn_detector                 'image plate (34 cm diameter)'
+_diffrn_detector_area_resol_mean 6.67
+_diffrn_detector_type            'STOE Imaging Plate'
+_diffrn_measured_fraction_theta_full 0.988
+_diffrn_measured_fraction_theta_max 0.988
+_diffrn_measurement_device       '2-circle diffractometer'
+_diffrn_measurement_device_type  'STOE IPDS II'
+_diffrn_measurement_method       'rotation method, \w scans'
+_diffrn_radiation_monochromator  graphite
+_diffrn_radiation_probe          x-ray
+_diffrn_radiation_type           MoK\a
+_diffrn_radiation_wavelength     0.71073
+_diffrn_reflns_av_R_equivalents  0.0234
+_diffrn_reflns_av_unetI/netI     0.0088
+_diffrn_reflns_limit_h_max       20
+_diffrn_reflns_limit_h_min       -19
+_diffrn_reflns_limit_k_max       20
+_diffrn_reflns_limit_k_min       -20
+_diffrn_reflns_limit_l_max       20
+_diffrn_reflns_limit_l_min       -20
+_diffrn_reflns_number            6799
+_diffrn_reflns_theta_full        29.16
+_diffrn_reflns_theta_max         29.16
+_diffrn_reflns_theta_min         2.36
+_diffrn_source
+'sealed X-ray tube, 12 x 0.4 mm long-fine focus'
+_exptl_absorpt_coefficient_mu    6.812
+_exptl_absorpt_correction_T_max  0.1666
+_exptl_absorpt_correction_T_min  0.1026
+_exptl_absorpt_correction_type   multi-scan
+_exptl_absorpt_process_details
+;
+STOE X-Red32, absorption correction by Gaussian integration, analogous to
+P. Coppens, "The Evaluation of Absorption and Extinction in Single-Crystal
+Structure Analysis", published in: F. R. Ahmed (Editor), "Crystallographic
+        Computing", Munksgaard, Copenhagen (1970), 255 - 270.
+Afterwards scaling of reflection intensities was performed within STOE LANA.
+J. Koziskova, F. Hahn, J. Richter, J. Kozisek, "Comparison of different
+absorption corrections on the model structure of tetrakis(\m~2~-acetato)-
+diaqua-di-copper(II)", Acta Chimica Slovaca, vol. 9, no. 2, 2016, pp. 136 - 140.
+Finally a spherical absorption correction was done within STOE LANA.
+;
+_exptl_crystal_density_diffrn    3.56
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_description       fragment
+_exptl_crystal_F_000             3480
+_exptl_crystal_size_max          0.2
+_exptl_crystal_size_mid          0.142
+_exptl_crystal_size_min          0.1
+_refine_diff_density_max         0.385
+_refine_diff_density_min         -0.402
+_refine_diff_density_rms         0.089
+_refine_ls_abs_structure_details 'Flack H D (1983), Acta Cryst. A39, 876-881'
+_refine_ls_abs_structure_Flack   0.01(2)
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_ref   1.216
+_refine_ls_hydrogen_treatment    .
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     55
+_refine_ls_number_reflns         763
+_refine_ls_number_restraints     1
+_refine_ls_restrained_S_all      1.216
+_refine_ls_R_factor_all          0.0209
+_refine_ls_R_factor_gt           0.0194
+_refine_ls_shift/su_max          0
+_refine_ls_shift/su_mean         0
+_refine_ls_structure_factor_coef Fsqd
+_refine_ls_weighting_details
+'calc w=1/[\s^2^(Fo^2^)+(0.0281P)^2^+11.1389P] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme      calc
+_refine_ls_wR_factor_gt          0.0512
+_refine_ls_wR_factor_ref         0.0546
+_reflns_number_gt                752
+_reflns_number_total             763
+_reflns_threshold_expression     >2sigma(I)
+_cod_data_source_file            Ca14Al10Zn6O35_600C.cif
+_cod_data_source_block           shelx
+_cod_depositor_comments
+'Releasing structure 3000336 into public domain as published material.'
+_cod_database_code               3000336
+loop_
+_symmetry_equiv_pos_as_xyz
+'x, y, z'
+'-z, -x, y'
+'-y, -z, x'
+'-x, -y, z'
+'-z, x, -y'
+'-y, z, -x'
+'-x, y, -z'
+'z, -x, -y'
+'y, -z, -x'
+'x, -y, -z'
+'z, x, y'
+'y, z, x'
+'x, y+1/2, z+1/2'
+'-z, -x+1/2, y+1/2'
+'-y, -z+1/2, x+1/2'
+'-x, -y+1/2, z+1/2'
+'-z, x+1/2, -y+1/2'
+'-y, z+1/2, -x+1/2'
+'-x, y+1/2, -z+1/2'
+'z, -x+1/2, -y+1/2'
+'y, -z+1/2, -x+1/2'
+'x, -y+1/2, -z+1/2'
+'z, x+1/2, y+1/2'
+'y, z+1/2, x+1/2'
+'x+1/2, y, z+1/2'
+'-z+1/2, -x, y+1/2'
+'-y+1/2, -z, x+1/2'
+'-x+1/2, -y, z+1/2'
+'-z+1/2, x, -y+1/2'
+'-y+1/2, z, -x+1/2'
+'-x+1/2, y, -z+1/2'
+'z+1/2, -x, -y+1/2'
+'y+1/2, -z, -x+1/2'
+'x+1/2, -y, -z+1/2'
+'z+1/2, x, y+1/2'
+'y+1/2, z, x+1/2'
+'x+1/2, y+1/2, z'
+'-z+1/2, -x+1/2, y'
+'-y+1/2, -z+1/2, x'
+'-x+1/2, -y+1/2, z'
+'-z+1/2, x+1/2, -y'
+'-y+1/2, z+1/2, -x'
+'-x+1/2, y+1/2, -z'
+'z+1/2, -x+1/2, -y'
+'y+1/2, -z+1/2, -x'
+'x+1/2, -y+1/2, -z'
+'z+1/2, x+1/2, y'
+'y+1/2, z+1/2, x'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_symmetry_multiplicity
+_atom_site_calc_flag
+_atom_site_refinement_flags
+_atom_site_disorder_assembly
+_atom_site_disorder_group
+M1 Ca 0 0.21434(6) 0 0.0292(2) Uani 1 2 d S . .
+M2 Ca 0.61392(4) 0.61392(4) 0.61392(4) 0.0230(2) Uani 1 3 d S . .
+M3 Ca 0.38737(4) 0.38737(4) 0.38737(4) 0.0231(2) Uani 1 3 d S . .
+M4 Al 0.5 0.5 0.5 0.0187(5) Uani 1 12 d S . .
+Zn1 Zn 0.17266(3) 0.17266(3) 0.17266(3) 0.02614(19) Uani 0.808(4) 3 d SP . .
+Al1 Al 0.17266(3) 0.17266(3) 0.17266(3) 0.02614(19) Uani 0.192(4) 3 d SP . .
+Zn2 Zn 0.25 -0.00249(8) 0.25 0.0206(3) Uani 0.090(3) 2 d SP . .
+Al2 Al 0.25 -0.00249(8) 0.25 0.0206(3) Uani 0.910(3) 2 d SP . .
+Zn3 Zn 0.85749(4) 0.85749(4) 0.85749(4) 0.0257(3) Uani 0.558(4) 3 d SP . .
+Al3 Al 0.85749(4) 0.85749(4) 0.85749(4) 0.0257(3) Uani 0.442(4) 3 d SP . .
+Al4 Al 0 0 0 0.0186(5) Uani 1 12 d S . .
+O1 O 0.25 0.25 0.25 0.0282(15) Uani 1 12 d S . .
+O2 O 0 0.36993(19) 0 0.0244(5) Uani 1 2 d S . .
+O3 O -0.06742(16) -0.06742(16) -0.06742(16) 0.0355(10) Uani 1 3 d S . .
+O4 O 0.25533(17) 0.06594(16) 0.34878(15) 0.0311(5) Uani 1 1 d . . .
+O5 O 0.25576(17) 0.15100(16) 0.57034(16) 0.0321(5) Uani 1 1 d . . .
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_23
+_atom_site_aniso_U_13
+_atom_site_aniso_U_12
+M1 0.0307(4) 0.0230(4) 0.0339(4) 0 -0.0001(4) 0
+M2 0.0230(2) 0.0230(2) 0.0230(2) -0.0004(2) -0.0004(2) -0.0004(2)
+M3 0.0231(2) 0.0231(2) 0.0231(2) -0.0012(2) -0.0012(2) -0.0012(2)
+M4 0.0187(5) 0.0187(5) 0.0187(5) 0 0 0
+Zn1 0.02614(19) 0.02614(19) 0.02614(19) 0.00250(15) 0.00250(15) 0.00250(15)
+Al1 0.02614(19) 0.02614(19) 0.02614(19) 0.00250(15) 0.00250(15) 0.00250(15)
+Zn2 0.0199(5) 0.0213(5) 0.0206(5) 0 0.0005(3) 0
+Al2 0.0199(5) 0.0213(5) 0.0206(5) 0 0.0005(3) 0
+Zn3 0.0257(3) 0.0257(3) 0.0257(3) 0.0027(2) 0.0027(2) 0.0027(2)
+Al3 0.0257(3) 0.0257(3) 0.0257(3) 0.0027(2) 0.0027(2) 0.0027(2)
+Al4 0.0186(5) 0.0186(5) 0.0186(5) 0 0 0
+O1 0.0282(15) 0.0282(15) 0.0282(15) 0 0 0
+O2 0.0273(13) 0.0183(12) 0.0275(13) 0 -0.0014(13) 0
+O3 0.0355(10) 0.0355(10) 0.0355(10) -0.0081(10) -0.0081(10) -0.0081(10)
+O4 0.0342(11) 0.0312(11) 0.0278(10) -0.0031(8) 0.0016(9) 0.0004(9)
+O5 0.0324(11) 0.0289(11) 0.0351(12) 0.0053(9) 0.0044(9) -0.0021(9)
+loop_
+_atom_type_symbol
+_atom_type_description
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+Al Al 0.0645 0.0514 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Ca Ca 0.2262 0.3064 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+O O 0.0106 0.006 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+Zn Zn 0.2839 1.4301 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+loop_
+_exptl_crystal_face_index_h
+_exptl_crystal_face_index_k
+_exptl_crystal_face_index_l
+_exptl_crystal_face_perp_dist
+-31 11 1 0.066
+-10 -4 17 0.081
+13 -11 14 0.051
+-14 13 -18 0.063
+-16 -1 12 0.081
+5 14 6 0.051
+17 11 -6 0.063
+9 -24 11 0.053
+-5 -14 15 0.076
+7 3 8 0.058
+-9 -1 3 0.074
+-5 3 19 0.084
+-4 -1 -5 0.056
+-15 -2 -5 0.058
+22 4 11 0.064
+12 -15 6 0.059
+-9 16 4 0.065
+16 19 17 0.053
+-5 16 -3 0.048
+2 12 -7 0.056
+6 36 5 0.041
+25 1 -3 0.071
+11 -13 -8 0.074
+-11 -22 -5 0.043
+-9 -14 -20 0.042
+-18 -16 -16 0.04
+3 40 -6 0.041
+-2 28 -1 0.039
+7 25 -8 0.047
+10 -22 -6 0.055
+1 -11 0 0.048
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_3
+O2 M1 O4 79.58(6) . 44_455
+O2 M1 O4 79.58(6) . 38
+O4 M1 O4 159.16(12) 44_455 38
+O2 M1 O5 79.83(6) . 38
+O4 M1 O5 86.80(8) 44_455 38
+O4 M1 O5 89.54(8) 38 38
+O2 M1 O5 79.83(6) . 44_455
+O4 M1 O5 89.54(8) 44_455 44_455
+O4 M1 O5 86.80(8) 38 44_455
+O5 M1 O5 159.65(12) 38 44_455
+O2 M1 O3 147.02(9) . 8
+O4 M1 O3 87.48(7) 44_455 8
+O4 M1 O3 110.33(6) 38 8
+O5 M1 O3 69.19(10) 38 8
+O5 M1 O3 130.66(10) 44_455 8
+O2 M1 O3 147.02(9) . 2
+O4 M1 O3 110.33(6) 44_455 2
+O4 M1 O3 87.48(7) 38 2
+O5 M1 O3 130.66(10) 38 2
+O5 M1 O3 69.19(10) 44_455 2
+O3 M1 O3 65.96(18) 8 2
+O5 M2 O5 96.23(9) 36 23
+O5 M2 O5 96.23(9) 36 37
+O5 M2 O5 96.23(9) 23 37
+O5 M2 O2 82.97(8) 36 41_556
+O5 M2 O2 115.33(7) 23 41_556
+O5 M2 O2 148.37(7) 37 41_556
+O5 M2 O2 148.37(7) 36 28_565
+O5 M2 O2 82.97(8) 23 28_565
+O5 M2 O2 115.33(7) 37 28_565
+O2 M2 O2 69.23(11) 41_556 28_565
+O5 M2 O2 115.33(7) 36 15_655
+O5 M2 O2 148.37(7) 23 15_655
+O5 M2 O2 82.97(8) 37 15_655
+O2 M2 O2 69.23(11) 41_556 15_655
+O2 M2 O2 69.23(11) 28_565 15_655
+O4 M3 O4 97.07(8) 30 20
+O4 M3 O4 97.07(8) 30 40
+O4 M3 O4 97.07(8) 20 40
+O4 M3 O2 148.74(7) 30 21
+O4 M3 O2 114.09(6) 20 21
+O4 M3 O2 82.13(8) 40 21
+O4 M3 O2 82.13(8) 30 38
+O4 M3 O2 148.74(7) 20 38
+O4 M3 O2 114.09(6) 40 38
+O2 M3 O2 70.06(11) 21 38
+O4 M3 O2 114.09(6) 30 25
+O4 M3 O2 82.13(8) 20 25
+O4 M3 O2 148.74(7) 40 25
+O2 M3 O2 70.06(11) 21 25
+O2 M3 O2 70.06(11) 38 25
+O4 M3 M4 120.08(6) 30 .
+O4 M3 M4 120.08(6) 20 .
+O4 M3 M4 120.08(6) 40 .
+O2 M3 M4 41.51(7) 21 .
+O2 M3 M4 41.51(7) 38 .
+O2 M3 M4 41.51(7) 25 .
+O2 M4 O2 90 21 38
+O2 M4 O2 90.0000(10) 21 25
+O2 M4 O2 90 38 25
+O2 M4 O2 90 21 41_556
+O2 M4 O2 180.0000(10) 38 41_556
+O2 M4 O2 90 25 41_556
+O2 M4 O2 90 21 28_565
+O2 M4 O2 90 38 28_565
+O2 M4 O2 180 25 28_565
+O2 M4 O2 90 41_556 28_565
+O2 M4 O2 180 21 15_655
+O2 M4 O2 90 38 15_655
+O2 M4 O2 90 25 15_655
+O2 M4 O2 90.0000(10) 41_556 15_655
+O2 M4 O2 90.0000(10) 28_565 15_655
+O4 Zn1 O4 114.05(6) 21 31
+O4 Zn1 O4 114.05(6) 21 38
+O4 Zn1 O4 114.05(6) 31 38
+O4 Zn1 O1 104.38(8) 21 .
+O4 Zn1 O1 104.38(8) 31 .
+O4 Zn1 O1 104.38(8) 38 .
+O5 Zn2 O5 111.24(17) 21 39
+O5 Zn2 O4 113.40(12) 21 .
+O5 Zn2 O4 104.20(12) 39 .
+O5 Zn2 O4 104.20(12) 21 31
+O5 Zn2 O4 113.40(12) 39 31
+O4 Zn2 O4 110.66(17) . 31
+O5 Zn3 O5 116.98(5) 34_566 41_656
+O5 Zn3 O5 116.98(5) 34_566 15_665
+O5 Zn3 O5 116.98(5) 41_656 15_665
+O5 Zn3 O3 100.12(8) 34_566 1_666
+O5 Zn3 O3 100.12(8) 41_656 1_666
+O5 Zn3 O3 100.12(8) 15_665 1_666
+O3 Al4 O3 109.5 . 8
+O3 Al4 O3 109.5 . 5
+O3 Al4 O3 109.5 8 5
+O3 Al4 O3 109.5 . 2
+O3 Al4 O3 109.5 8 2
+O3 Al4 O3 109.5 5 2
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+M1 O2 2.323(3) .
+M1 O4 2.504(2) 44_455
+M1 O4 2.504(2) 38
+M1 O5 2.526(2) 38
+M1 O5 2.526(2) 44_455
+M1 O3 2.6146(8) 8
+M1 O3 2.6146(8) 2
+M2 O5 2.283(3) 36
+M2 O5 2.283(3) 23
+M2 O5 2.283(3) 37
+M2 O2 2.4171(9) 41_556
+M2 O2 2.4171(9) 28_565
+M2 O2 2.4171(9) 15_655
+M3 O4 2.314(2) 30
+M3 O4 2.314(2) 20
+M3 O4 2.314(2) 40
+M3 O2 2.3919(9) 21
+M3 O2 2.3919(9) 38
+M3 O2 2.3919(9) 25
+M4 O2 1.942(3) 21
+M4 O2 1.942(3) 38
+M4 O2 1.942(3) 25
+M4 O2 1.942(3) 41_556
+M4 O2 1.942(3) 28_565
+M4 O2 1.942(3) 15_655
+Zn1 O4 1.948(2) 21
+Zn1 O4 1.948(2) 31
+Zn1 O4 1.948(2) 38
+Zn1 O1 1.9997(7) .
+Zn2 O5 1.794(2) 21
+Zn2 O5 1.794(2) 39
+Zn2 O4 1.796(2) .
+Zn2 O4 1.796(2) 31
+Zn3 O5 1.866(3) 34_566
+Zn3 O5 1.866(3) 41_656
+Zn3 O5 1.866(3) 15_665
+Zn3 O3 1.941(4) 1_666
+Al4 O3 1.743(4) .
+Al4 O3 1.743(4) 8
+Al4 O3 1.743(4) 5
+Al4 O3 1.743(4) 2

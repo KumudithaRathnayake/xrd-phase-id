@@ -1,0 +1,121 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-29 17:00:33 +0300 (Wed, 29 May 2024) $
+#$Revision: 292100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/73/9017399.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9017399
+loop_
+_publ_author_name
+'Yu, Q.'
+'Sugita, S.'
+'Feng, X.'
+'Mi, J.'
+_publ_section_title
+;
+ On the preparation of single crystals of 11CaO*7Al2O3*CaF2
+ and the confirmation of its crystal structure
+;
+_journal_name_full               'Cement and Concrete Research'
+_journal_page_first              1439
+_journal_page_last               1449
+_journal_volume                  27
+_journal_year                    1997
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'Al7 Ca6 F O16'
+_chemical_name_mineral           Fluormayenite
+_space_group_IT_number           220
+_space_group_name_Hall           'I -4bd 2c 3'
+_space_group_name_H-M_alt        'I -4 3 d'
+_symmetry_space_group_name_H-M   'I -4 3 d'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_length_a                   11.981
+_cell_length_b                   11.981
+_cell_length_c                   11.981
+_cell_formula_units_Z            4
+_cell_volume                     1719.805
+_database_code_amcsd             0019956
+_exptl_crystal_density_diffrn    2.720
+_cod_data_source_file            inputs/fixed/downloads/14/14510.cif
+_cod_data_source_block           14510
+_cod_original_formula_sum        'Ca6 Al7 O16 F'
+_cod_database_code               9017399
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,1/2+z
+1/2-z,x,-y
+-z,1/2+x,1/2-y
+1/2-y,z,-x
+-y,1/2+z,1/2-x
+1/2-x,y,-z
+-x,1/2+y,1/2-z
+1/4+x,3/4-z,1/4-y
+3/4+x,1/4-z,3/4-y
+1/4+z,3/4-y,1/4-x
+3/4+z,1/4-y,3/4-x
+1/4+y,3/4-x,1/4-z
+3/4+y,1/4-x,3/4-z
+1/4+x,1/4+z,1/4+y
+3/4+x,3/4+z,3/4+y
+1/4+z,1/4+y,1/4+x
+3/4+z,3/4+y,3/4+x
+1/4+y,1/4+x,1/4+z
+3/4+y,3/4+x,3/4+z
+-z,1/2-x,y
+1/2-z,-x,1/2+y
+-y,1/2-z,x
+1/2-y,-z,1/2+x
+-x,1/2-y,z
+1/2-x,-y,1/2+z
+1/2+z,1/2-x,-y
++z,-x,1/2-y
+1/2+y,1/2-z,-x
++y,-z,1/2-x
+1/2+x,1/2-y,-z
++x,-y,1/2-z
+3/4-x,3/4+z,1/4-y
+1/4-x,1/4+z,3/4-y
+3/4-z,3/4+y,1/4-x
+1/4-z,1/4+y,3/4-x
+3/4-y,3/4+x,1/4-z
+1/4-y,1/4+x,3/4-z
+3/4-x,1/4-z,1/4+y
+1/4-x,3/4-z,3/4+y
+3/4-z,1/4-y,1/4+x
+1/4-z,3/4-y,3/4+x
+3/4-y,1/4-x,1/4+z
+1/4-y,3/4-x,3/4+z
+z,x,y
+1/2+z,1/2+x,1/2+y
+y,z,x
+1/2+y,1/2+z,1/2+x
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ca 0.11040 0.00000 0.25000 1.00000 0.00860
+Al1 0.37500 0.00000 0.25000 1.00000 0.09000
+Al2 0.23240 0.23240 0.23240 1.00000 0.04000
+O1 0.06610 0.06610 0.06610 1.00000 0.01900
+O2 0.19550 0.28520 0.10040 1.00000 0.01400
+F 0.15000 0.12500 0.50000 0.08333 0.02400
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019956

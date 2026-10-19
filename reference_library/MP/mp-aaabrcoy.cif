@@ -1,0 +1,55 @@
+# generated using pymatgen
+data_Li6Mn15O32
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   10.06089000
+_cell_length_b   5.77208600
+_cell_length_c   19.24044809
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   100.13616181
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Li6Mn15O32
+_chemical_formula_sum   'Li12 Mn30 O64'
+_cell_volume   1099.89843745
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  4  0.02506600  0.50000000  0.09142800  1.0
+  Li  Li1  4  0.21684800  0.50000000  0.65606500  1.0
+  Li  Li2  4  0.21726600  0.00000000  0.15075800  1.0
+  Mn  Mn3  8  0.00060100  0.24886300  0.75000300  1.0
+  Mn  Mn4  4  0.12416700  0.00000000  0.87969900  1.0
+  Mn  Mn5  4  0.12677400  0.50000000  0.37692100  1.0
+  Mn  Mn6  4  0.24813000  0.00000000  0.74980000  1.0
+  Mn  Mn7  4  0.25000000  0.25000000  0.00000000  1.0
+  Mn  Mn8  4  0.25000000  0.25000000  0.50000000  1.0
+  Mn  Mn9  2  0.00000000  0.50000000  0.50000000  1.0
+  O  O10  8  0.07451050  0.28062750  0.44125800  1.0
+  O  O11  8  0.08530000  0.23410400  0.93417700  1.0
+  O  O12  8  0.17727000  0.27595900  0.30876200  1.0
+  O  O13  8  0.17786600  0.22535700  0.80690900  1.0
+  O  O14  4  0.04407600  0.50000000  0.69077200  1.0
+  O  O15  4  0.04434700  0.00000000  0.18990200  1.0
+  O  O16  4  0.06562100  0.00000000  0.69890900  1.0
+  O  O17  4  0.06688500  0.50000000  0.19790200  1.0
+  O  O18  4  0.18379900  0.50000000  0.55258900  1.0
+  O  O19  4  0.19788000  0.00000000  0.05058700  1.0
+  O  O20  4  0.20029500  0.50000000  0.05954500  1.0
+  O  O21  4  0.20604500  0.00000000  0.55855200  1.0

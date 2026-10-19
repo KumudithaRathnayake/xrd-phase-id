@@ -1,0 +1,106 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/52/62/1526285.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1526285
+loop_
+_publ_author_name
+'Hawthorne, F.C.'
+'Oberti, R.'
+'Cannillo, E.'
+'Ottolini, L.'
+'Roelofsen, J.N.'
+'Martin, R.F.'
+_publ_section_title
+;
+ Li-bearing arfvedsonitic amphiboles from the Strange Lake peralkaline
+ granite, Quebec
+;
+_journal_name_full               'Canadian Mineralogist'
+_journal_page_first              1161
+_journal_page_last               1170
+_journal_volume                  39
+_journal_year                    2001
+_chemical_formula_sum
+'Al0.16 Ca0.07 F1.05 Fe4.502 H0.69 K0.28 Li0.3 Mn0.08 Na2.6 O22.95 Si7.84 Ti0.13 Zn0.028 Zr0.01'
+_chemical_name_systematic
+;
+(Fe4.502 Zn0.028 Zr0.01 Ti0.13 Li0.3 Mn0.03) (Mn0.05 Ca0.07 Na1.88) (Na0.72 
+K0.28) (Al0.16 Si7.84) O22 (O0.26 (O H)0.69 F1.05)
+;
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 103.66
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.874
+_cell_length_b                   18.054
+_cell_length_c                   5.318
+_cell_volume                     921.199
+_citation_journal_id_ASTM        CAMIA6
+_cod_data_source_file            Hawthorne_CAMIA6_2001_926.cif
+_cod_data_source_block
+H0.69Al0.16Ca0.07F1.05Fe4.502K0.28Li0.3Mn0.08Na2.6O22.95Si7.84Ti0.13Zn0.028Zr0.01
+_cod_original_formula_sum
+;
+H0.69 Al0.16 Ca0.07 F1.05 Fe4.502 K0.28 Li0.3 Mn0.08 Na2.6 O22.95 Si7.84 
+Ti0.13 Zn0.028 Zr0.01
+;
+_cod_database_code               1526285
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z
+-x,-y,-z
+x,-y,z
+x+1/2,y+1/2,z
+-x+1/2,y+1/2,-z
+-x+1/2,-y+1/2,-z
+x+1/2,-y+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Zn3 Zn+2 0 0 0 0.006 0.0
+Ca1 Ca+2 0 0.27682 0.5 0.035 0.0
+O2 O-2 0.12069 0.1714 0.73242 1 0.0
+O1 O-2 0.1117 0.09013 0.20773 1 0.0
+Na2 Na+1 0 0.5 0 0.24 0.0
+F1 F-1 0.11198 0 0.70596 0.525 0.0
+O6 O-2 0.34098 0.11947 0.57725 1 0.0
+Zn2 Zn+2 0 0.18292 0 0.003 0.0
+Mn2 Mn+2 0 0.27682 0.5 0.025 0.0
+O3 O-2 0.11198 0 0.70596 0.475 0.0
+O7 O-2 0.33358 0 0.29722 1 0.0
+O5 O-2 0.34821 0.12672 0.07759 1 0.0
+Si1 Si+4 0.27882 0.08559 0.28934 0.96 0.0
+Fe4 Fe+2 0 0 0 0.664 0.0
+Ti1 Ti+4 0 0.09066 0.5 0.065 0.0
+Na3 Na+1 0.05287 0.5 0.10954 0.24 0.0
+K2 K+1 0.05287 0.5 0.10954 0.093 0.0
+O4 O-2 0.36392 0.24826 0.79958 1 0.0
+Si2 Si+4 0.28886 0.17031 0.79853 1 0.0
+Na1 Na+1 0 0.27682 0.5 0.94 0.0
+Fe3 Fe+3 0 0.18292 0 0.62 0.0
+K1 K+1 0 0.5 0 0.093 0.0
+Zn1 Zn+2 0 0.09066 0.5 0.008 0.0
+Mn1 Mn+2 0 0 0 0.03 0.0
+Zr1 Zr+4 0 0.18292 0 0.005 0.0
+Fe1 Fe+2 0 0.09066 0.5 0.927 0.0
+Li1 Li+1 0 0 0 0.3 0.0
+Fe2 Fe+2 0 0.18292 0 0.372 0.0
+Al1 Al+3 0.27882 0.08559 0.28934 0.04 0.0

@@ -1,0 +1,86 @@
+#------------------------------------------------------------------------------
+#$Date: 2015-07-13 20:45:47 +0300 (Mon, 13 Jul 2015) $
+#$Revision: 150521 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/4/34/38/4343816.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4343816
+loop_
+_publ_author_name
+'Brice, M.D.'
+'Penfold, B.R.'
+_publ_section_title
+;
+ Structural studies of derivatives of methinyltricobalt enneacarbonyls. V.
+ Crystal structure of bis(methinyltricobalt enneacarbonyl), [C Co3 (C
+ O)9]2
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              1381
+_journal_page_last               1384
+_journal_volume                  11
+_journal_year                    1972
+_chemical_formula_sum            'C20 Co6 O18'
+_chemical_name_systematic        '(C Co3 (C O)9)2'
+_space_group_IT_number           15
+_symmetry_space_group_name_Hall  '-C 2yc'
+_symmetry_space_group_name_H-M   'C 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 106.79
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   16.368
+_cell_length_b                   9.45
+_cell_length_c                   18.906
+_cell_volume                     2799.670
+_citation_journal_id_ASTM        INOCAJ
+_cod_data_source_file            Brice_INOCAJ_1972_1686.cif
+_cod_data_source_block           C20Co6O18
+_cod_original_cell_volume        2799.67
+_cod_database_code               4343816
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z+1/2
+-x,-y,-z
+x,-y,z-1/2
+x+1/2,y+1/2,z
+-x+1/2,y+1/2,-z+1/2
+-x+1/2,-y+1/2,-z
+x+1/2,-y+1/2,z-1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+C9 C+2 0.3544 0.4764 0.1625 1 0.0
+C3 C+2 0.3528 0.1228 0.0403 1 0.0
+C1 C 0.4868 0.2492 0.2121 1 0.0
+C7 C+2 0.5318 0.1965 0.0402 1 0.0
+O1 O-2 0.2464 0.1899 0.1832 1 0.0
+O9 O-2 0.382 0.4522 -0.0232 1 0.0
+C10 C+2 0.4061 0.4283 0.0396 1 0.0
+O7 O-2 0.5626 0.6274 0.1829 1 0.0
+C5 C+2 0.6424 0.3117 0.1618 1 0.0
+Co3 Co 0.44062 0.39521 0.13716 1 0.0
+O3 O-2 0.3217 0.106 -0.0217 1 0.0
+O2 O-2 0.4208 -0.1563 0.1754 1 0.0
+O8 O-2 0.299 0.5336 0.175 1 0.0
+Co1 Co 0.40066 0.14473 0.1372 1 0.0
+O5 O-2 0.6239 -0.066 0.1842 1 0.0
+O6 O-2 0.5225 0.188 -0.0232 1 0.0
+C8 C+2 0.5161 0.5359 0.1656 1 0.0
+C6 C+2 0.5925 0.0406 0.1649 1 0.0
+Co2 Co 0.54594 0.20994 0.13718 1 0.0
+C4 C+2 0.4148 -0.0375 0.162 1 0.0
+O4 O-2 0.7047 0.3707 0.1749 1 0.0
+C2 C+2 0.306 0.1738 0.1651 1 0.0

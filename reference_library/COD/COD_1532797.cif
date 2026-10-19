@@ -1,0 +1,107 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-02-13 21:28:24 +0200 (Sat, 13 Feb 2016) $
+#$Revision: 176429 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/53/27/1532797.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1532797
+loop_
+_publ_author_name
+'Oberti, R.'
+'Boiocchi, M.'
+'Smith, D.C.'
+_publ_section_title
+;
+ Fluoronyboeite from Jianchang (Su-Lu, China) and nyboeite from Nyboe
+ (Nordfjord, Norway): a petrological and crystal-chemical comparisonof
+ these two high-pressure amphiboles
+;
+_journal_name_full               'Mineralogical Magazine (1969-)'
+_journal_page_first              769
+_journal_page_last               782
+_journal_volume                  67
+_journal_year                    2003
+_chemical_formula_sum
+'Al2.07 Ca0.47 F1.16 Fe1.21 H0.84 K0.06 Mg2.55 Mn0.01 Na2.31 O22.84 Si7.14 Ti0.01 Zn0.01'
+_chemical_name_systematic
+;
+(Na0.78 K0.06) (Na1.53 Ca0.47) (Fe1.21 Mg2.55 Mn0.01 Zn0.01 Al1.21 Ti0.01) 
+((Si7.14 Al0.86) O22 ((O H)0.84 F1.16))
+;
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 104.1
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.666
+_cell_length_b                   17.799
+_cell_length_c                   5.311
+_cell_volume                     886.203
+_citation_journal_id_ASTM        MNLMBB
+_cod_data_source_file            Oberti_MNLMBB_2003_860.cif
+_cod_data_source_block
+H0.84Al2.07Ca0.47F1.16Fe1.21K0.06Mg2.55Mn0.01Na2.31O22.84Si7.14Ti0.01Zn0.01
+_cod_original_cell_volume        886.2028
+_cod_original_formula_sum
+;
+H0.84 Al2.07 Ca0.47 F1.16 Fe1.21 K0.06 Mg2.55 Mn0.01 Na2.31 O22.84 Si7.14 
+Ti0.01 Zn0.01
+;
+_cod_database_code               1532797
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z
+-x,-y,-z
+x,-y,z
+x+1/2,y+1/2,z
+-x+1/2,y+1/2,-z
+-x+1/2,-y+1/2,-z
+x+1/2,-y+1/2,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Na1 Na+1 0 0.278 0.5 0.765 0.0
+Fe2 Fe+2 0 0.1797 0 0.12 0.0
+O3 O-2 0.1086 0 0.7064 0.42 0.0
+Ti1 Ti+4 0 0.1797 0 0.005 0.0
+Zn1 Zn+2 0 0.1797 0 0.005 0.0
+O6 O-2 0.3425 0.1204 0.592 1 0.0
+F1 F-1 0.1086 0 0.7064 0.58 0.0
+Al1 Al+3 0.2825 0.0869 0.2966 0.215 0.0
+Ca1 Ca+2 0 0.278 0.5 0.235 0.0
+O7 O-2 0.339 0 0.2913 1 0.0
+Mg1 Mg+2 0 0.0908 0.5 0.8 0.0
+O1 O-2 0.1077 0.0908 0.2093 1 0.0
+Na4 Na+1 0 0.4763 0 0.081 0.0
+Fe1 Fe+2 0 0.0908 0.5 0.2 0.0
+H1 H+1 0.195 0 0.762 0.42 0.0
+Si2 Si+4 0.2917 0.1732 0.8095 1 0.0
+Na2 Na+1 0 0.5 0 0.064 0.0
+O2 O-2 0.1184 0.1717 0.743 1 0.0
+Mg2 Mg+2 0 0.1797 0 0.105 0.0
+Mn1 Mn+2 0 0 0 0.01 0.0
+Fe4 Fe+2 0 0 0 0.25 0.0
+Al2 Al+3 0 0.1797 0 0.605 0.0
+Mg3 Mg+2 0 0 0 0.74 0.0
+K2 K+1 0.0516 0.5 0.1107 0.021 0.0
+Na3 Na+1 0.0516 0.5 0.1107 0.277 0.0
+Fe3 Fe+3 0 0.1797 0 0.16 0.0
+K1 K+1 0 0.5 0 0.005 0.0
+O4 O-2 0.3666 0.2527 0.8004 1 0.0
+O5 O-2 0.3544 0.134 0.0935 1 0.0
+K3 K+1 0 0.4763 0 0.006 0.0
+Si1 Si+4 0.2825 0.0869 0.2966 0.785 0.0

@@ -1,0 +1,132 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/52/9005258.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9005258
+loop_
+_publ_author_name
+'Oberti, R.'
+'Ungaretti, L.'
+'Cannillo, E.'
+'Hawthorne, F. C.'
+'Memmi, I.'
+_publ_section_title
+;
+ Temperature-dependent Al order-disorder in the
+ tetrahedral double chain of C2/m amphiboles
+ Sample: S(6)
+ Note: O(5) y-coordinate changed to reproduce reported bond lengths
+;
+_journal_name_full               'European Journal of Mineralogy'
+_journal_page_first              1049
+_journal_page_last               1063
+_journal_volume                  7
+_journal_year                    1995
+_chemical_formula_sum
+;Al0.97 Ca1.84 F0.028 Fe1.57 H1.972 K0.1 Mg2.97 Mn0.02 Na0.45 Ni0.01 O23.972
+ Si7.4 Ti0.21 Zn0.01
+;
+_chemical_name_mineral           Pargasite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 105.06
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.867
+_cell_length_b                   18.044
+_cell_length_c                   5.318
+_cell_volume                     914.298
+_database_code_amcsd             0006604
+_exptl_crystal_density_diffrn    3.198
+_cod_original_formula_sum
+;Na.45 K.1 Mg2.97 Fe1.57 Al.97 Ti.21 Ni.01 Zn.01 Ca1.84 Mn.02 Si7.4 H1.972
+ O23.972 F.028
+;
+_cod_database_code               9005258
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+NaA 0.00000 0.50000 0.00000 0.09000 0.07295 Na 0
+KA 0.00000 0.50000 0.00000 0.02000 0.07295 K 0
+NaAm 0.03410 0.50000 0.06640 0.09000 0.05028 Na 0
+KAm 0.03410 0.50000 0.06640 0.02000 0.05028 K 0
+NaA2 0.00000 0.46640 0.00000 0.09000 0.06447 Na 0
+KA2 0.00000 0.46640 0.00000 0.02000 0.06447 K 0
+MgM1 0.00000 0.08890 0.50000 0.69000 0.00798 Mg 0
+FeM1 0.00000 0.08890 0.50000 0.31000 0.00798 Fe 0
+MgM2 0.00000 0.17790 0.00000 0.49000 0.00735 Mg 0
+AlM2 0.00000 0.17790 0.00000 0.16000 0.00735 Al 0
+TiM2 0.00000 0.17790 0.00000 0.10500 0.00735 Ti 0
+FeM2 0.00000 0.17790 0.00000 0.23500 0.00735 Fe 0
+NiM2 0.00000 0.17790 0.00000 0.00500 0.00735 Ni 0
+ZnM2 0.00000 0.17790 0.00000 0.00500 0.00735 Zn 0
+MgM3 0.00000 0.00000 0.00000 0.61000 0.00697 Mg 0
+AlM3 0.00000 0.00000 0.00000 0.05000 0.00697 Al 0
+FeM3 0.00000 0.00000 0.00000 0.34000 0.00697 Fe 0
+CaM4 0.00000 0.27990 0.50000 0.46000 0.01140 Ca 0
+MnM4 0.00000 0.27990 0.50000 0.00500 0.01140 Mn 0
+FeM4 0.00000 0.27990 0.50000 0.03500 0.01140 Fe 0
+CaM4* 0.00000 0.25260 0.50000 0.46000 0.00963 Ca 0
+MnM4* 0.00000 0.25260 0.50000 0.00500 0.00963 Mn 0
+FeM4* 0.00000 0.25260 0.50000 0.03500 0.00963 Fe 0
+AlT1 0.28060 0.08530 0.30110 0.05000 0.00608 Al 0
+SiT1 0.28060 0.08530 0.30110 0.95000 0.00608 Si 0
+AlT2 0.29070 0.17210 0.81160 0.10000 0.00659 Al 0
+SiT2 0.29070 0.17210 0.81160 0.90000 0.00659 Si 0
+H 0.18970 0.00000 0.75110 0.98600 0.03179 H 0
+O1 0.10790 0.08890 0.21470 1.00000 0.00975 O 0
+O2 0.11860 0.17400 0.73300 1.00000 0.00925 O 0
+O3 0.10930 0.00000 0.71430 0.98600 0.01026 O 0
+F3 0.10930 0.00000 0.71430 0.01400 0.01026 F 0
+O4 0.36870 0.24970 0.79050 1.00000 0.01229 O 0
+O5 0.34920 0.13860 0.11040 1.00000 0.01267 O 0
+O6 0.34280 0.11760 0.60170 1.00000 0.01305 O 0
+O7 0.33580 0.00000 0.28190 1.00000 0.01520 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:14:30+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0006604

@@ -1,0 +1,79 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-05-29 17:00:33 +0300 (Wed, 29 May 2024) $
+#$Revision: 292100 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/73/9017393.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9017393
+loop_
+_publ_author_name
+'Deyrieux, R.'
+'Berro, C.'
+'Peneloux, A.'
+_publ_section_title
+;
+ Contribution a l'etude des oxalates de certains metaux bivalents.
+ III. - Structure cristalline des oxalates dihydrates de manganese,
+ de cobalt, de nickel et de zinc. Polymorphisme des oxalates dihydrates
+ de cobalt et de nickel
+;
+_journal_name_full               'Bulletin de la Societe Chimique de France'
+_journal_page_first              25
+_journal_page_last               34
+_journal_volume                  1973
+_journal_year                    1973
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'C2 Ni O6'
+_space_group_IT_number           15
+_space_group_name_Hall           '-C 2yc'
+_space_group_name_H-M_alt        'C 1 2/c 1'
+_symmetry_space_group_name_H-M   'C 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 127.21
+_cell_angle_gamma                90
+_cell_length_a                   11.7748
+_cell_length_b                   5.3328
+_cell_length_c                   9.8326
+_cell_formula_units_Z            4
+_cell_volume                     491.724
+_database_code_amcsd             0019966
+_exptl_crystal_density_diffrn    2.414
+_cod_data_source_file            inputs/fixed/downloads/14/14380.cif
+_cod_data_source_block           14380
+_cod_original_formula_sum        'Ni C2 O6'
+_cod_database_code               9017393
+_amcsd_formula_title             NiC2O4*2H2O
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,1/2+z
+1/2+x,1/2-y,1/2+z
+-x,y,1/2-z
+1/2-x,1/2+y,1/2-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Ni 0.00000 0.17500 0.25000
+C 0.03700 0.67400 0.33500
+O1 0.08500 0.47100 0.42000
+O2 0.08500 0.87700 0.42000
+O3 0.17200 0.17400 0.25000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0019966

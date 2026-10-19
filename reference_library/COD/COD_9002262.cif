@@ -1,0 +1,85 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-10 20:44:19 +0300 (Wed, 10 May 2023) $
+#$Revision: 283658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/22/9002262.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9002262
+loop_
+_publ_author_name
+'Marchetti, F.'
+'Perchiazzi, N.'
+_publ_section_title
+;
+ The crystal structure of gearksutite, CaAlF4(OH).H2O
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              231
+_journal_page_last               235
+_journal_volume                  85
+_journal_year                    2000
+_chemical_formula_sum            'Al Ca F4 O2'
+_chemical_name_mineral           Gearksutite
+_space_group_IT_number           2
+_symmetry_space_group_name_Hall  '-P 1'
+_symmetry_space_group_name_H-M   'P -1'
+_cell_angle_alpha                101.12
+_cell_angle_beta                 94.86
+_cell_angle_gamma                110.07
+_cell_formula_units_Z            2
+_cell_length_a                   4.940
+_cell_length_b                   6.810
+_cell_length_c                   6.978
+_cell_volume                     213.435
+_database_code_amcsd             0002346
+_exptl_crystal_density_diffrn    2.724
+_cod_original_formula_sum        'Ca Al F4 O2'
+_cod_database_code               9002262
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+-x,-y,-z
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+Ca 0.35620 0.38760 0.22250 0.01000 Ca 0
+Al -0.00550 0.82810 0.33840 0.00800 Al 0
+F1 0.23150 0.68510 0.29420 0.01400 F 0
+F2 0.19980 0.02050 0.20800 0.01300 F 0
+F3 0.73420 0.67460 0.11460 0.01300 F 0
+F4 0.23430 0.37010 0.53940 0.01200 F 0
+OW 0.78350 0.25240 0.14990 0.01500 O 0
+O1 0.22020 0.99480 0.58840 0.00900 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9574 2023-05-10 09:00:05Z saulius
+;
+2023-05-10T18:47:55+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0002346

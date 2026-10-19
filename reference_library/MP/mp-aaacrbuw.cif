@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_CaAl2F8
+_symmetry_space_group_name_H-M   C2/c
+_cell_length_a   6.73108600
+_cell_length_b   11.12354000
+_cell_length_c   7.54932560
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   92.10443308
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   15
+_chemical_formula_structural   CaAl2F8
+_chemical_formula_sum   'Ca4 Al8 F32'
+_cell_volume   564.86323733
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z+1/2'
+  4  'x, -y, z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  4  0.00000000  0.46521200  0.75000000  1.0
+  Al  Al1  4  0.00000000  0.13080700  0.75000000  1.0
+  Al  Al2  4  0.25000000  0.25000000  0.50000000  1.0
+  F  F3  8  0.03434450  0.15109050  0.51017800  1.0
+  F  F4  8  0.08115800  0.37843400  0.46950000  1.0
+  F  F5  8  0.19274700  0.02877300  0.78886100  1.0
+  F  F6  8  0.19426850  0.26057650  0.74138800  1.0

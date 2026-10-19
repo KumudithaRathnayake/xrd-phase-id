@@ -1,0 +1,55 @@
+#------------------------------------------------------------------------------
+#$Date: 2014-07-11 17:35:18 +0300 (Fri, 11 Jul 2014) $
+#$Revision: 120071 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/01/08/1010865.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1010865
+loop_
+_publ_author_name
+'Vaux, G'
+'Bennett, H'
+_publ_section_title
+;
+X-ray studies on Pyrolusite (including Polianite) and Psilomelane.
+;
+_journal_coden_ASTM              MIASA6
+_journal_name_full
+;
+Mineralogical Magazine and Journal of the Mineralogical Society (1876-
+1968)
+;
+_journal_page_first              521
+_journal_page_last               526
+_journal_volume                  24
+_journal_year                    1937
+_chemical_compound_source        'from Elgersburg, Thuringia'
+_chemical_formula_structural     'H4 Mn2 Mn8 O20'
+_chemical_formula_sum            'H4 Mn10 O20'
+_chemical_name_mineral           Pyrolusite
+_chemical_name_systematic
+;
+Tetrahydrogen dimanganese octamanganese(IV) oxide
+;
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            0
+_cell_length_a                   4.38
+_cell_length_b                   4.38
+_cell_length_c                   2.86
+_cell_volume                     54.9
+_cod_database_code               1010865
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+? ? ? ?
+_journal_paper_doi 10.1180/minmag.1937.024.157.02

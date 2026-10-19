@@ -1,0 +1,161 @@
+#------------------------------------------------------------------------------
+#$Date: 2024-08-03 13:19:43 +0300 (Sat, 03 Aug 2024) $
+#$Revision: 293658 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/01/06/9010640.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9010640
+loop_
+_publ_author_name
+'Hawthorne, F. C.'
+'Harlow, G. E.'
+_publ_section_title
+;The crystal chemistry of Al-rich amphiboles: sadanagaite and
+ potassic-ferrisadanagaite Locality: Ilmen alkaline massif, South Urals,
+ Russia
+;
+_journal_name_full               'The Canadian Mineralogist'
+_journal_page_first              151
+_journal_page_last               162
+_journal_paper_doi               10.3749/canmin.46.1.151
+_journal_volume                  46
+_journal_year                    2008
+_chemical_compound_source        'Ilmen alkaline massif, South Urals, Russia'
+_chemical_formula_sum
+;Al3.62 Ca1.72 F0.3 Fe3.11 H1.7 K0.62 Mg0.68 Mn0.26 Na0.6 O23.7 Si5.1 Ti0.21
+ Zn0.02
+;
+_chemical_name_mineral           Potassic-ferrisadanagaite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 105.19
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.9257
+_cell_length_b                   18.0917
+_cell_length_c                   5.3709
+_cell_volume                     930.771
+_database_code_amcsd             0006161
+_exptl_crystal_density_diffrn    3.391
+_cod_original_formula_sum
+'K.62 Na.6 Ca1.72 Mg.68 Fe3.11 Mn.26 Al3.62 Ti.21 Zn.02 Si5.1 O23.7 F.3 H1.7'
+_cod_database_code               9010640
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+CaM4 0.01250 0.01030 0.01100 0.00000 0.00550 0.00000
+NaM4 0.01250 0.01030 0.01100 0.00000 0.00550 0.00000
+MgM1 0.00820 0.00810 0.00420 0.00000 0.00260 0.00000
+Fe2+M1 0.00820 0.00810 0.00420 0.00000 0.00260 0.00000
+MnM1 0.00820 0.00810 0.00420 0.00000 0.00260 0.00000
+AlM2 0.00430 0.00370 0.00380 0.00000 0.00090 0.00000
+Fe3+M2 0.00430 0.00370 0.00380 0.00000 0.00090 0.00000
+TiM2 0.00430 0.00370 0.00380 0.00000 0.00090 0.00000
+ZnM2 0.00430 0.00370 0.00380 0.00000 0.00090 0.00000
+MgM2 0.00430 0.00370 0.00380 0.00000 0.00090 0.00000
+MgM3 0.00750 0.00440 0.00450 0.00000 0.00080 0.00000
+Fe2+M3 0.00750 0.00440 0.00450 0.00000 0.00080 0.00000
+MnM3 0.00750 0.00440 0.00450 0.00000 0.00080 0.00000
+SiT1 0.01070 0.01060 0.00990 -0.00070 0.00200 -0.00020
+AlT1 0.01070 0.01060 0.00990 -0.00070 0.00200 -0.00020
+SiT2 0.00940 0.00930 0.00750 -0.00020 0.00200 0.00010
+AlT2 0.00940 0.00930 0.00750 -0.00020 0.00200 0.00010
+O1 0.01180 0.01390 0.01130 -0.00050 0.00270 -0.00060
+O2 0.01130 0.01290 0.01050 0.00090 0.00130 0.00030
+O-h3 0.01130 0.01560 0.01290 0.00000 0.00280 0.00000
+F3 0.01130 0.01560 0.01290 0.00000 0.00280 0.00000
+O4 0.01440 0.01140 0.01230 -0.00030 0.00560 -0.00020
+O5 0.01130 0.01470 0.01210 -0.00050 0.00240 0.00290
+O6 0.01170 0.01470 0.01490 0.00170 0.00330 -0.00330
+O7 0.01580 0.01400 0.02250 0.00000 0.00410 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+KAm 0.02223 0.50000 0.04661 0.05000 0.01770 K 0
+KAm* 0.06500 0.50000 0.13100 0.26000 0.01770 K 0
+NaA2 0.00000 0.47950 0.00000 0.16000 0.01770 Na 0
+CaM4 0.00000 0.28249 0.50000 0.86000 0.01080 Ca 0
+NaM4 0.00000 0.28249 0.50000 0.14000 0.01080 Na 0
+MgM1 0.00000 0.09139 0.50000 0.18500 0.00660 Mg 0
+Fe2+M1 0.00000 0.09139 0.50000 0.77500 0.00660 Fe 0
+MnM1 0.00000 0.09139 0.50000 0.04000 0.00660 Mn 0
+AlM2 0.00000 0.17959 0.00000 0.36000 0.00400 Al 0
+Fe3+M2 0.00000 0.17959 0.00000 0.42000 0.00400 Fe 0
+TiM2 0.00000 0.17959 0.00000 0.10500 0.00400 Ti 0
+ZnM2 0.00000 0.17959 0.00000 0.01000 0.00400 Zn 0
+MgM2 0.00000 0.17959 0.00000 0.10500 0.00400 Mg 0
+MgM3 0.00000 0.00000 0.00000 0.10000 0.00560 Mg 0
+Fe2+M3 0.00000 0.00000 0.00000 0.72000 0.00560 Fe 0
+MnM3 0.00000 0.00000 0.00000 0.18000 0.00560 Mn 0
+SiT1 0.27785 0.08708 0.30453 0.47000 0.01051 Si 0
+AlT1 0.27785 0.08708 0.30453 0.53000 0.01051 Al 0
+SiT2 0.29168 0.17379 0.81893 0.80500 0.00879 Si 0
+AlT2 0.29168 0.17379 0.81893 0.19500 0.00879 Al 0
+O1 0.10290 0.09398 0.20990 1.00000 0.01240 O 0
+O2 0.11870 0.17763 0.74490 1.00000 0.01190 O 0
+O-h3 0.11010 0.00000 0.71060 0.85000 0.01330 O 0
+F3 0.11010 0.00000 0.71060 0.15000 0.01330 F 0
+O4 0.37150 0.25126 0.79540 1.00000 0.01230 O 0
+O5 0.35180 0.13948 0.11360 1.00000 0.01280 O 0
+O6 0.34060 0.11902 0.60820 1.00000 0.01380 O 0
+O7 0.33000 0.00000 0.28780 1.00000 0.01760 O 0
+H 0.21060 0.00000 0.74000 0.85000 0.01599 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-18T11:41:13+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+2
+;cod-tools version 3.10.1
+Id: cif_fix_AMCSD_aniso_labels 10200 2024-08-01 14:09:44Z saulius
+;
+2024-08-02T12:21:33+03:00
+;Changed the following '_atom_site_aniso_label' values:
+'Oh3' -> 'O-h3'
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0006161

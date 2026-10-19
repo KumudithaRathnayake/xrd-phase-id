@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Li5Mn3O8
+_symmetry_space_group_name_H-M   P-1
+_cell_length_a   2.88458112
+_cell_length_b   5.13560756
+_cell_length_c   9.78245976
+_cell_angle_alpha   80.94016124
+_cell_angle_beta   89.90786712
+_cell_angle_gamma   89.99196483
+_symmetry_Int_Tables_number   2
+_chemical_formula_structural   Li5Mn3O8
+_chemical_formula_sum   'Li5 Mn3 O8'
+_cell_volume   143.10998549
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  2  0.49403700  0.74716950  0.26163200  1.0
+  Li  Li1  1  0.00000000  0.00000000  0.00000000  1.0
+  Li  Li2  1  0.00000000  0.50000000  0.50000000  1.0
+  Li  Li3  1  0.50000000  0.00000000  0.50000000  1.0
+  Mn  Mn4  2  0.00479450  0.77838500  0.74042550  1.0
+  Mn  Mn5  1  0.50000000  0.50000000  0.00000000  1.0
+  O  O6  2  0.00285100  0.41226500  0.87920000  1.0
+  O  O7  2  0.00572650  0.10084500  0.63432450  1.0
+  O  O8  2  0.49432650  0.35811400  0.35989650  1.0
+  O  O9  2  0.49568050  0.12086300  0.13972350  1.0

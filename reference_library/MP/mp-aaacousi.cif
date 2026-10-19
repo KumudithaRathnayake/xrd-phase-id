@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Li5Co3O8
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   10.01882000
+_cell_length_b   5.75999600
+_cell_length_c   5.03907682
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   109.38878393
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Li5Co3O8
+_chemical_formula_sum   'Li10 Co6 O16'
+_cell_volume   274.30510473
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  4  0.00000000  0.24487200  0.50000000  1.0
+  Li  Li1  4  0.24926900  0.00000000  0.50049100  1.0
+  Li  Li2  2  0.00000000  0.00000000  0.00000000  1.0
+  Co  Co3  4  0.25000000  0.25000000  0.00000000  1.0
+  Co  Co4  2  0.00000000  0.50000000  0.00000000  1.0
+  O  O5  8  0.12096600  0.26878900  0.22084900  1.0
+  O  O6  4  0.11982800  0.50000000  0.76792900  1.0
+  O  O7  4  0.13835300  0.00000000  0.77227000  1.0

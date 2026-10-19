@@ -1,0 +1,195 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-12-12 12:54:25 +0200 (Tue, 12 Dec 2023) $
+#$Revision: 288246 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/56/11/1561170.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1561170
+loop_
+_publ_author_name
+'Puzan, Anna N.'
+'Baumer, Vyacheslav N.'
+'Lisovytskiy, Dmytro V.'
+'Mateychenko, Pavel V.'
+_publ_section_title
+;
+ Structure disordering and thermal decomposition of manganese oxalate
+ dihydrate, MnC2O4&#x00B7;2H2O
+;
+_journal_name_full               'Journal of Solid State Chemistry'
+_journal_page_first              87
+_journal_page_last               94
+_journal_paper_doi               10.1016/j.jssc.2018.01.022
+_journal_volume                  260
+_journal_year                    2018
+_chemical_formula_moiety         'C2 Mn1 O4'
+_chemical_formula_structural     'Mn1 C2 O4'
+_chemical_formula_sum            'C2 Mn O4'
+_chemical_formula_weight         142.96
+_chemical_name_common            'manganese oxalate'
+_chemical_name_systematic
+; 
+catena-((\m~6~-oxalato)-(\m~4~-oxalato)-di-manganese)
+;
+_space_group_crystal_system      orthorhombic
+_space_group_IT_number           53
+_space_group_name_Hall           '-P 2ac 2'
+_space_group_name_H-M_alt        'P m n a'
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_formula_units_Z            4
+_cell_length_a                   7.1333(1)
+_cell_length_b                   5.8787(1)
+_cell_length_c                   9.0186(2)
+_cell_measurement_temperature    295
+_cell_volume                     378.191(12)
+_computing_cell_refinement       'PowderX (Dong, 1999)'
+_computing_data_collection       'Traces v.6 (GBC Diffraction Ltd)'
+_computing_data_reduction        'FullProf (Rodriguez-Carvajal, 2010).'
+_computing_molecular_graphics    'Macrae et al., 2006; Momma & Izumi, 2011'
+_computing_publication_material  'FullProf (Rodriguez-Carvajal, 2010).'
+_computing_structure_refinement  'FullProf (Rodriguez-Carvajal, 2010).'
+_computing_structure_solution    'Favre-Nicolin & \<Cern\`y, 2002)'
+_diffrn_ambient_temperature      293
+_diffrn_detector                 scintillation
+_diffrn_measurement_device_type  'Siemens D500'
+_diffrn_measurement_method       \q-2\q
+_diffrn_radiation_monochromator  Graphite
+_diffrn_source                   'sealed X-ray tube'
+_diffrn_source_target            Cu
+_exptl_crystal_density_diffrn    2.511
+_exptl_crystal_density_method    'not measured'
+_exptl_crystal_F_000             276
+_pd_char_colour                  white
+_pd_char_particle_morphology     plate-like
+_pd_instr_location
+; 
+
+60 Nauky ave., Kharkiv 61001, Ukraine
+
+;
+_pd_meas_2theta_range_inc        0.02
+_pd_meas_2theta_range_max        110
+_pd_meas_2theta_range_min        10
+_pd_meas_number_of_points        5001
+_pd_meas_scan_method             step
+_pd_prep_pressure                101.3
+_pd_prep_temperature             293
+_pd_proc_2theta_range_inc        0.02
+_pd_proc_2theta_range_max        110
+_pd_proc_2theta_range_min        10
+_pd_proc_ls_background_function  'Chebyshev polynomial'
+_pd_proc_ls_pref_orient_corr
+; 
+
+Modified March-Dollase function (Dollase, W.A. J Appl. Cryst. (1986), 19, 267
+
+;
+_pd_proc_ls_profile_function     pseudo-Voigt
+_pd_proc_ls_prof_R_factor        0.0729
+_pd_proc_ls_prof_wR_expected     0.0189
+_pd_proc_ls_prof_wR_factor       0.0946
+_pd_spec_mounting                ' packed powder pellet '
+_pd_spec_mount_mode              reflection
+_pd_spec_shape                   flat_sheet
+_pd_spec_size_axial              20
+_pd_spec_size_equat              10
+_pd_spec_size_thick              1
+_refine_ls_extinction_method     none
+_refine_ls_goodness_of_fit_all   5.02
+_refine_ls_hydrogen_treatment    .
+_refine_ls_matrix_type           full
+_refine_ls_number_parameters     48
+_refine_ls_number_reflns         536
+_refine_ls_number_restraints     26
+_refine_ls_R_I_factor            0.0483
+_refine_ls_shift/su_max          0.01
+_refine_ls_structure_factor_coef Inet
+_refine_ls_weighting_details     1/[\s(Y~i~)^2^]
+_refine_ls_weighting_scheme      sigma
+_cod_data_source_file            JSSC-2018-260-87.cif
+_cod_data_source_block           4
+_cod_original_cell_volume        378.19(1)
+_cod_original_formula_sum        'C2 Mn1 O4'
+_cod_database_code               1561170
+_pd_proc_ls_prof_chi2            0.2517
+_pd_proc_ls_prof_echi2           0.2572
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 x,-y,-z
+3 -x+1/2,y,-z+1/2
+4 -x+1/2,-y,z+1/2
+5 -x,-y,-z
+6 -x,y,z
+7 x+1/2,-y,z+1/2
+8 x+1/2,y,-z+1/2
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+_atom_site_type_symbol
+Mn1 .5 .5939(2) .17985(15) .0229(10) Uani 1 Mn
+C3 .4862(14) .06595(10) .07418(15) .0180(10) Uiso .25 C
+O5 .473(3) -.04771(14) .1897(2) .0180(10) Uiso .25 O
+O6 .5 .27839(8) .06776(7) .0180(10) Uiso .5 O
+C4 .5140(14) -.06748(10) -.07361(15) .0180(10) Uiso .25 C
+O7 .5 -.27779(8) -.06802(7) .0180(10) Uiso .5 O
+O8 .528(3) .04884(14) -.1899(2) .0180(10) Uiso .25 O
+C2 -.1072(4) .526(3) 0 .0239(12) Uiso .25 C
+O4 -.1800(7) .592(5) .1172(11) .0239(12) Uiso .25 O
+O3 -.1931(7) .479(5) -.1176(11) .0239(12) Uiso .25 O
+C1 .1077(4) .478(3) .0021(6) .0239(12) Uiso .25 C
+O1 .1935(7) .522(5) .1183(11) .0239(12) Uiso .25 O
+O2 .1802(7) .411(5) -.1171(11) .0239(12) Uiso .25 O
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+_atom_site_aniso_type_symbol
+Mn1 .0300(11) .0292(10) .0093(8) 0 0 .0040(11) Mn
+loop_
+_atom_type_symbol
+_atom_type_scat_Cromer_Mann_a1
+_atom_type_scat_Cromer_Mann_b1
+_atom_type_scat_Cromer_Mann_a2
+_atom_type_scat_Cromer_Mann_b2
+_atom_type_scat_Cromer_Mann_a3
+_atom_type_scat_Cromer_Mann_b3
+_atom_type_scat_Cromer_Mann_a4
+_atom_type_scat_Cromer_Mann_b4
+_atom_type_scat_Cromer_Mann_c
+_atom_type_scat_dispersion_real
+_atom_type_scat_dispersion_imag
+_atom_type_scat_source
+mn 11.28190 5.34090 7.35730 0.34320 3.01930 17.86740 2.24410 83.75430 1.08960
+-0.56800 2.80800
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+c 2.31000 20.84390 1.02000 10.20750 1.58860 0.56870 0.86500 51.65120 0.21560
+0.01700 0.00900
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+o 3.04850 13.27710 2.28680 5.70110 1.54630 0.32390 0.86700 32.90890 0.25080
+0.04700 0.03200
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+loop_
+_diffrn_radiation_type
+_diffrn_radiation_wavelength
+CuK\a 1.541837
+CuK\a1 1.540598
+CuK\a2 1.544426

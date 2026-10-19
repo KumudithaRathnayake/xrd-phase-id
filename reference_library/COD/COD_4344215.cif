@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+#$Date: 2018-02-05 00:40:03 +0200 (Mon, 05 Feb 2018) $
+#$Revision: 206169 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/4/34/42/4344215.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_4344215
+loop_
+_publ_author_name
+'Churchill, M.R.'
+'Amoh, K.N.'
+'Wassermann, H.J.'
+_publ_section_title
+;
+ Redetermination of the Crystal Structure of Dimanganese Decacarbonyl and
+ Determination of the Crystal Structure of Dirhenium Decacarbonyl. Revised
+ Values for the Mn-Mn and Re-Re Bond Lengths In Mn2 (C O)10 and Re2 (C
+ O)10
+;
+_journal_name_full               'Inorganic Chemistry'
+_journal_page_first              1609
+_journal_page_last               1611
+_journal_volume                  20
+_journal_year                    1981
+_chemical_formula_sum            'C10 Mn2 O10'
+_chemical_name_systematic        'Mn2 (C O)10'
+_space_group_crystal_system      monoclinic
+_space_group_IT_number           15
+_space_group_name_Hall           '-I 2ya'
+_space_group_name_H-M_alt        'I 1 2/a 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 105.167
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   14.135
+_cell_length_b                   7.0999
+_cell_length_c                   14.6277
+_cell_volume                     1416.859
+_citation_journal_id_ASTM        INOCAJ
+_cod_data_source_file            Churchill_INOCAJ_1981_1397.cif
+_cod_data_source_block           C10Mn2O10
+_cod_database_code               4344215
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 -x+1/2,y,-z
+3 -x,-y,-z
+4 x-1/2,-y,z
+5 x+1/2,y+1/2,z+1/2
+6 -x+1,y+1/2,-z+1/2
+7 -x+1/2,-y+1/2,-z+1/2
+8 x,-y+1/2,z+1/2
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+C1 C+2 0.03819 0.23874 0.84311 1 0.0
+O5 O-2 0.2072 0.61729 0.87837 1 0.0
+O1 O-2 -0.03415 0.24361 0.78664 1 0.0
+O2 O-2 0.07741 0.39707 1.08616 1 0.0
+C5 C+2 0.18855 0.4713 0.89865 1 0.0
+C2 C+2 0.10768 0.33699 1.02774 1 0.0
+O3 O-2 0.25765 0.0502 0.80164 1 0.0
+O4 O-2 0.11095 -0.14308 1.00194 1 0.0
+Mn1 Mn 0.15449 0.23212 0.93204 1 0.0
+C3 C+2 0.21966 0.11998 0.85186 1 0.0
+C4 C+2 0.13046 -0.00332 0.97576 1 0.0

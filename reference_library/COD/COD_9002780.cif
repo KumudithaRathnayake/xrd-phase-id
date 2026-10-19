@@ -1,0 +1,149 @@
+#------------------------------------------------------------------------------
+#$Date: 2023-05-28 16:36:49 +0300 (Sun, 28 May 2023) $
+#$Revision: 284046 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/27/9002780.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9002780
+loop_
+_publ_author_name
+'Caballero, J. M.'
+'Oberti, R.'
+'Ottolini, L.'
+_publ_section_title
+;
+ Ferripedrizite, a new monoclinic Li amphibole end-member from the
+ Eastern Pedriza Massif, Sierra de Guadarrama, Spain, and a restatement
+ of the nomenclature of Mg-Fe-Mn-Li amphiboles
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              976
+_journal_page_last               982
+_journal_volume                  87
+_journal_year                    2002
+_chemical_formula_sum
+;Al0.2 Ca0.04 F0.7 Fe2.51 H1.3 K0.04 Li2.34 Mg1.48 Mn0.07 Na0.76 O23.3 Si8
+ Ti0.08 Zn0.02
+;
+_chemical_name_mineral           Ferripedrizite
+_space_group_IT_number           12
+_symmetry_space_group_name_Hall  '-C 2y'
+_symmetry_space_group_name_H-M   'C 1 2/m 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 102.15
+_cell_angle_gamma                90
+_cell_formula_units_Z            2
+_cell_length_a                   9.499
+_cell_length_b                   17.864
+_cell_length_c                   5.296
+_cell_volume                     878.548
+_database_code_amcsd             0002869
+_exptl_crystal_density_diffrn    3.173
+_cod_original_formula_sum
+;O23.3 F.7 Si8 Mg1.48 Fe2.51 Al.2 Ti.08 Zn.02 Li2.34 Mn.07 Na.76 Ca.04 K.04
+ H1.3
+;
+_cod_database_code               9002780
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+x,-y,z
+1/2+x,1/2-y,z
+-x,y,-z
+1/2-x,1/2+y,-z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+O1 0.00612 0.00808 0.00869 -0.00084 0.00146 0.00000
+O2 0.00699 0.01132 0.00801 0.00084 0.00170 0.00047
+O3 0.01048 0.01132 0.01304 0.00000 0.00049 0.00000
+F3 0.01048 0.01132 0.01304 0.00000 0.00049 0.00000
+O4 0.01223 0.00808 0.01046 -0.00336 0.00097 0.00047
+O5 0.00743 0.01617 0.00869 0.00000 0.00195 0.00422
+O6 0.00874 0.01778 0.00774 0.00084 0.00073 -0.00469
+O7 0.01048 0.00647 0.01697 0.00000 0.00195 0.00000
+SiT1 0.00568 0.00485 0.00543 0.00000 0.00073 -0.00047
+SiT2 0.00612 0.00647 0.00543 -0.00084 0.00073 0.00000
+MgM1 0.00874 0.00808 0.00693 0.00000 0.00268 0.00000
+FeM1 0.00874 0.00808 0.00693 0.00000 0.00268 0.00000
+FeM2 0.00612 0.00647 0.00652 0.00000 0.00097 0.00000
+AlM2 0.00612 0.00647 0.00652 0.00000 0.00097 0.00000
+TiM2 0.00612 0.00647 0.00652 0.00000 0.00097 0.00000
+ZnM2 0.00612 0.00647 0.00652 0.00000 0.00097 0.00000
+LiM3 0.01005 0.00647 0.00856 0.00000 0.00073 0.00000
+FeM3 0.01005 0.00647 0.00856 0.00000 0.00073 0.00000
+MnM3 0.01005 0.00647 0.00856 0.00000 0.00073 0.00000
+NaM4 0.01442 0.05012 0.00978 0.00000 0.00633 0.00000
+CaM4 0.01442 0.05012 0.00978 0.00000 0.00633 0.00000
+NaAm 0.04980 0.19400 0.04413 0.00000 0.03629 0.00000
+KAm 0.04980 0.19400 0.04413 0.00000 0.03629 0.00000
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+O1 0.11210 0.09110 0.20450 1.00000 0.00773 O 0
+O2 0.12170 0.17360 0.73110 1.00000 0.00861 O 0
+O3 0.11450 0.00000 0.70110 0.65000 0.01191 O 0
+F3 0.11450 0.00000 0.70110 0.35000 0.01191 F 0
+O4 0.37470 0.25030 0.78260 1.00000 0.01064 O 0
+O5 0.35450 0.12950 0.06390 1.00000 0.01039 O 0
+O6 0.34670 0.12050 0.56260 1.00000 0.01140 O 0
+O7 0.33950 0.00000 0.28030 1.00000 0.01140 O 0
+SiT1 0.28560 0.08640 0.27790 1.00000 0.00557 Si 0
+SiT2 0.29670 0.17130 0.78670 1.00000 0.00583 Si 0
+MgM1 0.00000 0.08780 0.50000 0.74000 0.00785 Mg 0
+FeM1 0.00000 0.08780 0.50000 0.26000 0.00785 Fe 0
+FeM2 0.00000 0.18100 0.00000 0.85000 0.00671 Fe 0
+AlM2 0.00000 0.18100 0.00000 0.10000 0.00671 Al 0
+TiM2 0.00000 0.18100 0.00000 0.04000 0.00671 Ti 0
+ZnM2 0.00000 0.18100 0.00000 0.01000 0.00671 Zn 0
+LiM3 0.00000 0.00000 0.00000 0.64000 0.00874 Li 0
+FeM3 0.00000 0.00000 0.00000 0.29000 0.00874 Fe 0
+MnM3 0.00000 0.00000 0.00000 0.07000 0.00874 Mn 0
+NaM4 0.00000 0.26360 0.50000 0.12000 0.02444 Na 0
+CaM4 0.00000 0.26360 0.50000 0.02000 0.02444 Ca 0
+LiM4* 0.00000 0.24540 0.50000 0.85000 0.01330 Li 0
+NaAm 0.07200 0.50000 0.14530 0.26000 0.03394 Na 0
+KAm 0.07200 0.50000 0.14530 0.02000 0.03394 K 0
+H 0.18770 0.00000 0.76570 0.65000 0.01153 H 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:15:09+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0002869

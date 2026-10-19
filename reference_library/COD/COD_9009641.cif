@@ -1,0 +1,101 @@
+#------------------------------------------------------------------------------
+#$Date: 2025-08-23 03:11:47 +0300 (Sat, 23 Aug 2025) $
+#$Revision: 301881 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/96/9009641.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9009641
+loop_
+_publ_author_name
+'Idemoto, Y.'
+'Richardson, J. W.'
+'Koura, N.'
+'Kohara, S.'
+'Loong, C. K.'
+_publ_section_title
+;
+ Crystal structure of (LixK1-x)2CO3 (x = 0,0.43,0.5,0.62,1)
+ by neutron powder diffraction analysis
+ Sample: neutron powder diffraction refinement of raw material
+;
+_journal_name_full               'Journal of Physics and Chemistry of Solids'
+_journal_page_first              363
+_journal_page_last               376
+_journal_paper_doi               10.1016/S0022-3697(97)00209-6
+_journal_volume                  59
+_journal_year                    1998
+_chemical_compound_source        Synthetic
+_chemical_formula_sum            'C Li2 O3'
+_chemical_name_mineral           Zabuyelite
+_space_group_crystal_system      monoclinic
+_space_group_IT_number           15
+_space_group_name_Hall           '-C 2yc'
+_space_group_name_H-M_alt        'C 1 2/c 1'
+_symmetry_space_group_name_H-M   'C 1 2/c 1'
+_cell_angle_alpha                90
+_cell_angle_beta                 114.789
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_cell_length_a                   8.35884
+_cell_length_b                   4.97375
+_cell_length_c                   6.19377
+_cell_volume                     233.778
+_database_code_amcsd             0013246
+_exptl_crystal_density_diffrn    2.099
+_cod_depositor_comments
+;
+ Adding the _cell_formula_units_Z data item and updating the space group
+ information.
+
+ Antanas Vaitkus,
+ 2018-01-15
+;
+_cod_original_formula_sum        'Li2 C O3'
+_cod_database_code               9009641
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 x,y,z
+2 1/2+x,1/2+y,z
+3 x,-y,1/2+z
+4 1/2+x,1/2-y,1/2+z
+5 -x,y,1/2-z
+6 1/2-x,1/2+y,1/2-z
+7 -x,-y,-z
+8 1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Li 0.01110 0.01620 0.02410 -0.00050 0.00830 -0.00310
+C 0.01010 0.00720 0.01380 0.00000 0.00510 0.00000
+O1 0.01280 0.00370 0.04440 0.00000 0.01220 0.00000
+O2 0.00930 0.00840 0.02090 0.00440 0.00740 0.00130
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Li 0.19680 0.44540 0.83340
+C 0.00000 0.06650 0.25000
+O1 0.00000 0.32130 0.25000
+O2 0.14630 -0.06310 0.31330
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0013246
+2 PubChem 11125
