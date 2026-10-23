@@ -5,6 +5,15 @@ results_*/
 # Your own (unpublished) scans: keep them in a folder named data/
 data/
 
+# Library parts that are not redistributed
+reference_library/_cache/            # disk cache of parsed structures and simulated patterns
+reference_library/_downloads/        # CoRE MOF / QMOF archives
+reference_library/_failed_queries.json
+reference_library/CoRE_MOF/          # large; import it yourself (section 0 of the notebook)
+reference_library/QMOF/              # large; import it yourself (section 0 of the notebook)
+reference_library/CSD/               # CCDC licence does not allow redistribution
+reference_library/Published/         # CIFs from journals' supporting information
+
 # Python / Jupyter clutter
 __pycache__/
 *.pyc

@@ -27,9 +27,10 @@ Tested with pymatgen 2026.9 (pymatgen-core). Works with or without the mp-api pa
 """
 from __future__ import annotations
 
-__version__ = "2026-10-18 (minor-phase consistency check, failed-query retry)"
+__version__ = "2026-10-23 (peak guide lines in plots; save_reference_cifs; measured peak width; cache + multi-core)"
 
 import os
+import re
 import time
 import warnings
 from pathlib import Path
@@ -98,8 +99,9 @@ def _record(source, ref_id, label, structure=None, cif_path=None, error=None, **
         "error": error,
     }
     meta.pop("formula", None)
+    sg = meta.pop("spacegroup", None)
     if structure is not None:
-        rec["spacegroup"] = _spacegroup(structure)
+        rec["spacegroup"] = sg or _spacegroup(structure)
     rec.update(meta)
     return rec
 
@@ -535,6 +537,7 @@ def summary_table(refs, two_theta=(10, 80), wavelength="CuKa", group_duplicates=
     for r in refs:
         s = r["structure"]
         row = {k: r.get(k) for k in ("source", "ref_id", "label", "formula", "spacegroup")}
+        row["kind"] = r.get("kind") or {"COD": "experimental", "MP": "DFT", "built": "model"}.get(r.get("source"), "")
         for k in ("e_above_hull", "year", "title", "li_ni_mixing", "error"):
             if r.get(k) is not None:
                 row[k] = r[k]
@@ -582,11 +585,18 @@ def pseudo_voigt_profile(grid, positions, intensities, fwhm=0.15, eta=0.5):
 
 
 def plot_stack(refs, two_theta=(10, 80), wavelength="CuKa", fwhm=0.15, eta=0.5, offset=135,
-               label_hkl_above=15, ax=None, experimental=None):
+               label_hkl_above=15, ax=None, experimental=None, peak_lines=True, peak_min_rel=0.0,
+               label_peaks_above=3.0, unexplained=None, tol_deg=None):
     """Offset plot of broadened simulated patterns (first ref at the bottom).
 
     experimental : optional (two_theta_array, intensity_array) plotted at the very bottom.
     label_hkl_above : label sticks stronger than this (relative %) with their hkl.
+    peak_lines   : dashed vertical line through every measured peak (needs experimental), from the
+                   scan up through all reference patterns, so you can see which reference line
+                   sits under which measured peak. peak_min_rel: only peaks >= this % of the
+                   strongest; label_peaks_above: write the 2theta of peaks >= this % at the top.
+    unexplained  : 2theta values of peaks no identified phase explains (e.g. from
+                   unexplained_peaks); their lines are drawn red and always labelled.
     """
     import matplotlib.pyplot as plt
 
@@ -624,7 +634,35 @@ def plot_stack(refs, two_theta=(10, 80), wavelength="CuKa", fwhm=0.15, eta=0.5, 
                     rotation=90, ha="center", va="bottom", fontsize=7, color=line.get_color())
         k += 1
     ax.set_xlim(*two_theta)
-    ax.set_ylim(-5, (k - 1) * offset + 125)
+    top = (k - 1) * offset + 125
+    if experimental is not None and peak_lines:
+        xe, ye = np.asarray(experimental[0], float), np.asarray(experimental[1], float)
+        pk_e = find_experimental_peaks(xe, subtract_background(xe, ye)[0])
+        pk_e = pk_e[(pk_e.rel_intensity >= peak_min_rel) & (pk_e.two_theta >= two_theta[0])
+                    & (pk_e.two_theta <= two_theta[1])]
+        bad = np.asarray(list(unexplained) if unexplained is not None else [], float)
+        tol = tol_deg if tol_deg is not None else max(0.05, 0.5 * float(np.median(pk_e.fwhm)) if len(pk_e) else 0.1)
+        band = 0.32 * offset                       # a strip above the top pattern for the 2theta labels
+        top += band
+        min_sep = 0.011 * (two_theta[1] - two_theta[0])
+        labelled = []
+        order = sorted(zip(pk_e.two_theta, pk_e.rel_intensity),
+                       key=lambda p_: (not (len(bad) and np.min(np.abs(bad - p_[0])) <= tol), -p_[1]))
+        for t_, h_ in order:                       # unexplained first, then strongest first
+            red = bool(len(bad) and np.min(np.abs(bad - t_)) <= tol)
+            ax.axvline(t_, ls=(0, (4, 3)), lw=0.9 if red else 0.6, color="red" if red else "0.45",
+                       alpha=0.9 if red else 0.55, zorder=0)
+            if (red or h_ >= label_peaks_above) and all(abs(t_ - s) >= min_sep for s in labelled):
+                labelled.append(t_)
+                ax.text(t_, top - 3, f"{t_:.2f}", rotation=90, ha="center", va="top", fontsize=6.5,
+                        color="red" if red else "0.3", zorder=3,
+                        bbox=dict(boxstyle="square,pad=0.1", fc="white", ec="none", alpha=0.8))
+        if len(bad):
+            ax.plot([], [], ls=(0, (4, 3)), color="red", label="measured peak not explained")
+            ax.plot([], [], ls=(0, (4, 3)), color="0.45", label="measured peak")
+            ax.legend(loc="lower right", bbox_to_anchor=(1.0, 1.0), ncol=2, fontsize=7, frameon=False,
+                      borderaxespad=0.2)
+    ax.set_ylim(-5, top)
     ax.set_yticks([])
     ax.set_xlabel(r"2$\theta$ / degrees" + (f"  ({wavelength})" if isinstance(wavelength, str) else ""))
     ax.set_ylabel("Intensity + offset (a.u.)")
@@ -698,15 +736,265 @@ def find_experimental_peaks(x, y_bg, min_rel=None, snr=6.0, floor_rel=0.001, smo
     return out
 
 
-def _cached_peaks(ref, two_theta, wavelength):
-    """simulate_peaks with a per-reference cache; reuses any cached wider range."""
-    cache = ref.setdefault("_peaks_cache", {})
-    lo, hi = float(two_theta[0]), float(two_theta[1])
-    for (clo, chi, wl), pk in cache.items():
+# ---------------------------------------------------------------------------
+# Speed: a disk cache in the library + several CPU cores
+# ---------------------------------------------------------------------------
+# CACHE_DIR : where parsed structures and simulated patterns are kept between sessions.
+#             None = set automatically to <library>/_cache the first time a library is loaded;
+#             False = no disk cache.
+# WORKERS   : CPU cores used for simulating and scoring. None = all cores but one (at most 12);
+#             1 = everything on one core (as before).
+CACHE_DIR = None
+WORKERS = None
+PARALLEL_MIN = 12           # fewer jobs than this run on one core (starting workers costs ~2-5 s)
+_CACHE_VERSION = 1
+_POOL = None
+_POOL_N = 0
+_PARALLEL_BROKEN = False
+
+
+def set_cache_dir(path):
+    """Use this folder for the disk cache (False / None to switch it off for this session)."""
+    global CACHE_DIR
+    CACHE_DIR = Path(path) if path else False
+
+
+def _cache_root():
+    if not CACHE_DIR:
+        return None
+    root = Path(CACHE_DIR)
+    try:
+        root.mkdir(parents=True, exist_ok=True)
+    except OSError:
+        return None
+    return root
+
+
+def _auto_cache_dir(library_dir):
+    """First library loaded in a session decides the cache folder, unless the user chose one."""
+    global CACHE_DIR
+    if CACHE_DIR is None:
+        CACHE_DIR = Path(library_dir) / "_cache"
+
+
+def clear_cache(what="all"):
+    """Delete the disk cache ('peaks', 'structures' or 'all'); it is rebuilt as needed."""
+    import shutil
+
+    root = _cache_root()
+    if root is None:
+        return
+    for sub in (("peaks", "structures") if what == "all" else (what,)):
+        shutil.rmtree(root / sub, ignore_errors=True)
+
+
+def _cache_read(path):
+    import pickle
+
+    try:
+        with open(path, "rb") as fh:
+            obj = pickle.load(fh)
+        return obj if isinstance(obj, dict) and obj.get("v") == _CACHE_VERSION else None
+    except Exception:
+        return None
+
+
+def _cache_write(path, obj):
+    """Atomic write (a half-written file is never read back)."""
+    import pickle
+
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_name(path.name + f".{os.getpid()}.tmp")
+        with open(tmp, "wb") as fh:
+            pickle.dump({"v": _CACHE_VERSION, **obj}, fh, protocol=pickle.HIGHEST_PROTOCOL)
+        os.replace(tmp, path)
+    except Exception:
+        pass
+
+
+def _structure_key(structure):
+    """Fingerprint of a structure (lattice, species/occupancies, positions) for the pattern cache."""
+    import hashlib
+
+    h = hashlib.md5()
+    h.update(np.round(structure.lattice.matrix, 5).tobytes())
+    h.update(np.round(np.mod(structure.frac_coords, 1.0), 5).tobytes())
+    h.update("|".join(site.species.formula for site in structure).encode())
+    return h.hexdigest()
+
+
+def load_cif_cached(path):
+    """(structure, spacegroup) for a CIF file - parsed once, then read back from the disk cache
+    (keyed by the file's content, so a copied or moved file is still a cache hit)."""
+    import hashlib
+
+    path = Path(path)
+    data = path.read_bytes()
+    root = _cache_root()
+    key = hashlib.md5(data).hexdigest()
+    if root is not None:
+        hit = _cache_read(root / "structures" / f"{key}.pkl")
+        if hit is not None:
+            return hit["structure"], hit["spacegroup"]
+    st = parse_cif_text(data.decode("utf-8", errors="replace"))
+    sg = _spacegroup(st)
+    if root is not None:
+        _cache_write(root / "structures" / f"{key}.pkl", {"structure": st, "spacegroup": sg})
+    return st, sg
+
+
+def _n_workers():
+    if WORKERS is not None:
+        return max(1, int(WORKERS))
+    return max(1, min(12, (os.cpu_count() or 2) - 1))
+
+
+def _pool(n):
+    """One pool of worker processes for the session (Windows/Jupyter safe: the work functions
+    live in this module, which the workers import)."""
+    global _POOL, _POOL_N
+    from concurrent.futures import ProcessPoolExecutor
+
+    if _POOL is None or _POOL_N != n:
+        if _POOL is not None:
+            _POOL.shutdown(wait=False, cancel_futures=True)
+        _POOL, _POOL_N = ProcessPoolExecutor(max_workers=n), n
+    return _POOL
+
+
+def shutdown_workers():
+    """Stop the worker processes (they also stop when the kernel restarts)."""
+    global _POOL, _POOL_N
+    if _POOL is not None:
+        _POOL.shutdown(wait=False, cancel_futures=True)
+    _POOL, _POOL_N = None, 0
+
+
+def _parallel_map(func, jobs, min_jobs=None):
+    """func over jobs on several cores; falls back to one core if workers cannot start."""
+    global _PARALLEL_BROKEN
+    n = _n_workers()
+    if n <= 1 or len(jobs) < (PARALLEL_MIN if min_jobs is None else min_jobs) or _PARALLEL_BROKEN:
+        return [func(j) for j in jobs]
+    try:
+        chunk = max(1, len(jobs) // (n * 4))
+        return list(_pool(n).map(func, jobs, chunksize=chunk))
+    except Exception as ex:                       # e.g. a blocked process start - keep working on one core
+        _PARALLEL_BROKEN = True
+        shutdown_workers()
+        print(f"  (several cores not available here - continuing on one core: {str(ex)[:80]})")
+        return [func(j) for j in jobs]
+
+
+def _simulate_job(job):
+    structure, lo, hi, wavelength = job
+    try:
+        return simulate_peaks(structure, (lo, hi), wavelength)
+    except Exception as ex:
+        return ex
+
+
+def _peaks_disk_path(ref, wavelength):
+    root = _cache_root()
+    if root is None or ref.get("structure") is None:
+        return None
+    if "_key" not in ref:
+        ref["_key"] = _structure_key(ref["structure"])
+    wl = re.sub(r"[^A-Za-z0-9.]", "_", str(wavelength))
+    return root / "peaks" / f"{ref['_key']}_{wl}.pkl"
+
+
+def _memory_peaks(ref, lo, hi, wavelength):
+    for (clo, chi, wl), pk in ref.get("_peaks_cache", {}).items():
         if wl == str(wavelength) and clo <= lo + 1e-9 and chi >= hi - 1e-9:
             return pk[(pk.two_theta >= lo) & (pk.two_theta <= hi)]
-    pk = simulate_peaks(ref["structure"], (lo, hi), wavelength)
-    cache[(lo, hi, str(wavelength))] = pk
+    return None
+
+
+def _disk_peaks(ref, lo, hi, wavelength):
+    p = _peaks_disk_path(ref, wavelength)
+    if p is None or not p.exists():
+        return None
+    hit = _cache_read(p)
+    if hit is None or not (hit["lo"] <= lo + 1e-9 and hit["hi"] >= hi - 1e-9):
+        return None
+    ref.setdefault("_peaks_cache", {})[(hit["lo"], hit["hi"], str(wavelength))] = hit["df"]
+    return hit["df"][(hit["df"].two_theta >= lo) & (hit["df"].two_theta <= hi)]
+
+
+def _store_peaks(ref, lo, hi, wavelength, pk):
+    ref.setdefault("_peaks_cache", {})[(lo, hi, str(wavelength))] = pk
+    p = _peaks_disk_path(ref, wavelength)
+    if p is not None:
+        old = _cache_read(p) if p.exists() else None
+        if old is None or (hi - lo) >= (old["hi"] - old["lo"]):     # keep the widest range on disk
+            _cache_write(p, {"lo": lo, "hi": hi, "df": pk})
+
+
+def precompute_peaks(refs, two_theta, wavelength="CuKa"):
+    """Make sure every reference has its pattern for this 2theta range: memory, then disk cache,
+    then simulate what is missing - on several cores when there is enough to do."""
+    lo, hi = float(two_theta[0]), float(two_theta[1])
+    todo = []
+    for r in refs:
+        if r.get("structure") is None:
+            continue
+        if _memory_peaks(r, lo, hi, wavelength) is not None or _disk_peaks(r, lo, hi, wavelength) is not None:
+            continue
+        todo.append(r)
+    if not todo:
+        return 0
+    if len(todo) >= PARALLEL_MIN and _n_workers() > 1:
+        print(f"  simulating {len(todo)} patterns on {_n_workers()} cores ...")
+    res = _parallel_map(_simulate_job, [(r["structure"], lo, hi, wavelength) for r in todo])
+    for r, pk in zip(todo, res):
+        if not isinstance(pk, Exception):
+            _store_peaks(r, lo, hi, wavelength, pk)
+    return len(todo)
+
+
+# ---------------------------------------------------------------------------
+# Peak width used for matching
+# ---------------------------------------------------------------------------
+# Sharp lab peaks (FWHM up to ~0.25 deg) are matched with a fixed 0.15 deg width - that works for
+# CPD and NMC data. Broad peaks (MOFs, nanoparticles, poorly crystalline samples: FWHM >= 0.3 deg)
+# are matched with their measured width, otherwise a reference with the right peaks but the
+# "wrong" sharpness loses to big low-symmetry cells that have a line everywhere.
+PEAK_WIDTH = None          # None = automatic; a number (deg) forces it, e.g. X.PEAK_WIDTH = 0.5
+BROAD_PEAKS_FROM = 0.30    # measured FWHM (deg) above which the measured width is used
+
+
+def peak_width(x, y):
+    """Peak width (deg) used to match references to this scan (see PEAK_WIDTH)."""
+    if PEAK_WIDTH:
+        return float(PEAK_WIDTH)
+    x, y = np.asarray(x, float), np.asarray(y, float)
+    pk = find_experimental_peaks(x, subtract_background(x, y)[0])
+    if pk.empty:
+        return 0.15
+    w = float(pk.nlargest(5, "rel_intensity").fwhm.median())
+    return float(min(w, 1.0)) if w >= BROAD_PEAKS_FROM else 0.15
+
+
+def _widths(x, y, width_deg=None, tol_deg=None, mask_deg=None):
+    """(blur width, peak-matching tolerance, masking half-width) for this scan."""
+    w = float(width_deg) if width_deg is not None else peak_width(x, y)
+    tol = float(tol_deg) if tol_deg is not None else max(0.15, 0.5 * w)
+    mask = float(mask_deg) if mask_deg is not None else max(0.25, 0.5 * w)
+    return w, tol, mask
+
+
+def _cached_peaks(ref, two_theta, wavelength):
+    """simulate_peaks with a per-reference cache (memory, then the disk cache); reuses any cached
+    wider range."""
+    lo, hi = float(two_theta[0]), float(two_theta[1])
+    pk = _memory_peaks(ref, lo, hi, wavelength)
+    if pk is None:
+        pk = _disk_peaks(ref, lo, hi, wavelength)
+    if pk is None:
+        pk = simulate_peaks(ref["structure"], (lo, hi), wavelength)
+        _store_peaks(ref, lo, hi, wavelength, pk)
     return pk
 
 
@@ -741,9 +1029,10 @@ class _Matcher:
         self.detection_limit = float(self.peaks.attrs.get("detection_limit_rel", 0.0))   # % of max
         self.peaks = self.peaks[(self.peaks.two_theta >= self.lo) & (self.peaks.two_theta <= self.hi)]
         self.scales = 1 + np.arange(-max_shift_pct, max_shift_pct + 1e-9, step_pct) / 100
+        self.sim_range = (max(self.lo - 3, 1.0), min(self.hi + 3, 170.0))
 
     def sticks(self, ref):
-        pk = _cached_peaks(ref, (max(self.lo - 3, 1.0), min(self.hi + 3, 170.0)), self.wavelength)
+        pk = _cached_peaks(ref, self.sim_range, self.wavelength)
         return pk["d"].to_numpy(float), pk["intensity"].to_numpy(float)
 
     def line_sticks(self, d, inten, scale):
@@ -760,47 +1049,127 @@ class _Matcher:
         return np.concatenate(tts), np.concatenate(Is), np.concatenate(idx), np.concatenate(lams)
 
     def profile(self, d, inten, scale):
-        tt, I, _, _ = self.line_sticks(d, inten, scale)
-        h, _ = np.histogram(tt, bins=self.edges, weights=I)
-        return np.convolve(h, self.kernel, mode="same")
+        return self.profiles(d, inten, np.array([scale]))[0]
 
-    def best_scale(self, d, inten, target_lin, weight=None):
+    def profiles(self, d, inten, scales):
+        """Blurred stick patterns for several cell scales at once (rows = scales)."""
+        from scipy.ndimage import convolve1d
+
+        nb = len(self.edges) - 1
+        out = np.zeros((len(scales), nb))
+        for lam, w in self.lines:
+            arg = lam / (2 * d[None, :] * np.asarray(scales)[:, None])
+            ok = arg < 1
+            tt = np.degrees(2 * np.arcsin(np.where(ok, arg, 0.0)))
+            k = np.floor((tt - self.edges[0]) / self.dx).astype(np.int64)
+            ok &= (k >= 0) & (k < nb)
+            rows = np.broadcast_to(np.arange(len(scales))[:, None], k.shape)
+            flat = (rows * nb + k)[ok]
+            out += np.bincount(flat, weights=np.broadcast_to(inten * w, k.shape)[ok],
+                               minlength=len(scales) * nb).reshape(len(scales), nb)
+        return convolve1d(out, self.kernel, axis=1, mode="constant", cval=0.0)
+
+    def scale_scores(self, d, inten, target_lin, weight=None):
+        """Cosine score for every trial cell scale (-inf where undefined)."""
         w = np.ones_like(target_lin) if weight is None else weight
         t = np.sqrt(target_lin) * w
         tn = np.linalg.norm(t)
-        best = (-1.0, 1.0)
         if tn == 0:
-            return best
-        for sc in self.scales:
-            p = np.sqrt(self.profile(d, inten, sc)) * w
-            pn = np.linalg.norm(p)
-            if pn > 0:
-                c = float(t @ p) / (tn * pn)
-                if c > best[0]:
-                    best = (c, sc)
-        return best
+            return np.full(len(self.scales), -np.inf)
+        P = np.sqrt(np.clip(self.profiles(d, inten, self.scales), 0, None)) * w
+        pn = np.linalg.norm(P, axis=1)
+        with np.errstate(invalid="ignore", divide="ignore"):
+            return np.where(pn > 0, (P @ t) / (tn * pn), -np.inf)
+
+    def best_scale(self, d, inten, target_lin, weight=None):
+        c = self.scale_scores(d, inten, target_lin, weight)
+        i = int(np.argmax(c))
+        if not np.isfinite(c[i]):
+            return (-1.0, 1.0)
+        return (float(c[i]), float(self.scales[i]))
+
+    def best_scale_on_peaks(self, d, inten, target_lin, weight, peaks, tol_deg=0.15, near_best=0.8):
+        """For the LEFTOVER signal: a minor phase's score hardly changes with the cell scale, so noise
+        can pick a stretch that misses every leftover peak. Among the scales scoring within
+        near_best of the best, take the one whose visible lines land on the most leftover peaks
+        (then the highest score)."""
+        c = self.scale_scores(d, inten, target_lin, weight)
+        i_best = int(np.argmax(c))
+        if not np.isfinite(c[i_best]) or not len(peaks):
+            return self.best_scale(d, inten, target_lin, weight)
+        cand = np.flatnonzero(c >= near_best * c[i_best]) if c[i_best] > 0 else np.array([i_best])
+        if len(cand) == 1:
+            return (float(c[cand[0]]), float(self.scales[cand[0]]))
+        pk = np.sort(peaks.two_theta.to_numpy())
+        any_hit = np.zeros((len(cand), len(pk)), bool)      # scale x leftover peak: a line lands on it
+        for lam, w in self.lines:                            # all candidate scales at once
+            dv = d[inten * w >= 0.5]
+            if not len(dv):
+                continue
+            arg = lam / (2 * dv[None, :] * self.scales[cand][:, None])
+            tt = np.where(arg < 1, np.degrees(2 * np.arcsin(np.clip(arg, 0, 1))), np.inf)
+            any_hit |= (np.abs(tt[:, :, None] - pk[None, None, :]) <= tol_deg).any(axis=1)
+        n = any_hit.sum(axis=1)
+        order = sorted(range(len(cand)), key=lambda j: (n[j], c[cand[j]]), reverse=True)
+        i = cand[order[0]]
+        return (float(c[i]), float(self.scales[i]))
 
 
-def _mask_weight(m, phases, target, mask_deg=0.25, min_rel=0.05, max_reflections=150):
-    """1 everywhere except within mask_deg of the reflections of the given phases - all allowed
-    reflections down to min_rel % (weak lines such as fluorite 200/222 count), but at most the
-    max_reflections strongest, so a big low-symmetry cell does not blank out the whole pattern.
-    Each phase is aligned (isotropic cell shift) on what the previous phases left over."""
+def _height_ratio(tt, I, peaks, tol_deg=0.15):
+    """Measured peak height (% of max) per unit of predicted line intensity, as the median over the
+    measured peaks this phase has a line under. None if no peak matches."""
+    if not len(peaks) or not len(tt):
+        return None
+    order = np.argsort(tt)
+    ts, Is = tt[order], I[order]
+    ratios = []
+    for t0, h in zip(peaks.two_theta.to_numpy(), peaks.rel_intensity.to_numpy()):
+        lo_i, hi_i = np.searchsorted(ts, t0 - tol_deg), np.searchsorted(ts, t0 + tol_deg, side="right")
+        if hi_i > lo_i and Is[lo_i:hi_i].max() > 0:
+            ratios.append(h / Is[lo_i:hi_i].max())
+    return float(np.median(ratios)) if ratios else None
+
+
+def _mask_weight(m, phases, target, mask_deg=0.25, min_rel=0.05, max_reflections=150, visible_frac=0.5,
+                 max_underprediction=30.0):
+    """1 everywhere except within mask_deg of the reflections of the given phases.
+
+    A line (>= min_rel %) is masked when the phase could plausibly produce what is measured there:
+      - it would be visible on its own (the phase put on the measured scale by the median height
+        ratio of its peaks reaches visible_frac x the detection limit), or
+      - the measured peak under it is at most max_underprediction x the line's scaled height -
+        weak lines are often under-predicted (fluorite 200 in CPD-1a: measured ~14x the simulation),
+        but a 0.05 % line of a big MOF cell cannot account for a peak at 35 % of the maximum.
+    At most the max_reflections strongest lines (stable order). Each phase is aligned (isotropic
+    cell shift) on what the previous phases left over."""
     weight = np.ones_like(target)
+    pk_t = m.peaks.two_theta.to_numpy()
+    pk_h = m.peaks.rel_intensity.to_numpy()
     for ph in phases:
         d, inten = m.sticks(ph)
         _, sc = m.best_scale(d, inten, target, weight)
         tt, I, _, _ = m.line_sticks(d, inten, sc)
         keep = I >= min_rel
+        k = _height_ratio(tt, I, m.peaks, max(0.15, 0.5 * m.width))
+        if k is not None and len(pk_t):
+            scaled = k * I
+            visible = scaled >= visible_frac * m.detection_limit
+            # strongest measured peak within the masked window of each line
+            order = np.argsort(pk_t)
+            ts, hs = pk_t[order], pk_h[order]
+            lo_i = np.searchsorted(ts, tt - mask_deg)
+            hi_i = np.searchsorted(ts, tt + mask_deg, side="right")
+            hmax = np.array([hs[a:b].max() if b > a else 0.0 for a, b in zip(lo_i, hi_i)])
+            keep &= visible | (hmax <= max_underprediction * scaled)
         tt, I = tt[keep], I[keep]
-        for t in tt[np.argsort(I)[::-1][:max_reflections]]:
+        for t in tt[np.argsort(-I, kind="stable")[:max_reflections]]:
             weight[np.abs(m.grid - t) <= mask_deg] = 0.0
     return weight
 
 
-def score_against_experiment(refs, x, y, wavelength="CuKa", two_theta=None, width_deg=0.15,
-                             max_shift_pct=1.5, step_pct=0.05, min_rel=None, tol_deg=0.15,
-                             subtract=None, mask_deg=0.25, progress=True):
+def score_against_experiment(refs, x, y, wavelength="CuKa", two_theta=None, width_deg=None,
+                             max_shift_pct=1.5, step_pct=0.05, min_rel=None, tol_deg=None,
+                             subtract=None, mask_deg=None, progress=True):
     """Rank references by how well they reproduce a measured scan.
 
     Each reference is simulated, blurred to `width_deg`, and compared with the
@@ -828,6 +1197,7 @@ def score_against_experiment(refs, x, y, wavelength="CuKa", two_theta=None, widt
     entry with the exact cell wins over a DFT one that needs 1 % stretching.
     """
     x, y = np.asarray(x, float), np.asarray(y, float)
+    width_deg, tol_deg, mask_deg = _widths(x, y, width_deg, tol_deg, mask_deg)
     m = _Matcher(x, y, wavelength, two_theta, width_deg, max_shift_pct, step_pct, min_rel)
     target = m.exp_lin.copy()
 
@@ -844,49 +1214,92 @@ def score_against_experiment(refs, x, y, wavelength="CuKa", two_theta=None, widt
 
     rows = []
     good = [r for r in refs if r.get("structure") is not None]
-    for n, r in enumerate(good):
-        if progress and n and n % 100 == 0:
-            print(f"  scored {n}/{len(good)}")
+    precompute_peaks(good, m.sim_range, wavelength)          # cache / several cores
+    sticks = []
+    for r in good:
         try:
-            d, inten = m.sticks(r)
+            sticks.append(m.sticks(r))
         except Exception as ex:
+            sticks.append(None)
             rows.append({"ref_id": r["ref_id"], "source": r["source"], "error": str(ex)[:120]})
-            continue
-        score, sc = m.best_scale(d, inten, target, weight)
-        tt, I, _, lam = m.line_sticks(d, inten, sc)
-        inr = (tt >= m.lo) & (tt <= m.hi)
-        tt, I, lam = tt[inr], I[inr], lam[inr]
-        visible = tt[I >= 0.5]
-        expl = np.array([np.any(np.abs(visible - t) <= tol_deg) for t in peaks.two_theta]) if len(peaks) else np.array([])
-        unexpl = peaks[~expl] if len(peaks) else peaks
-        tot = peaks.rel_intensity.sum() if len(peaks) else 0
-        # "missing" = predicted at least as strong as this phase's weakest DETECTED line (and >= 10 %),
-        # yet absent: for a minor phase, lines below the noise are not counted against it
-        all_pk = m.peaks.two_theta.to_numpy()
-        own_pk = peaks.two_theta.to_numpy() if len(peaks) else np.array([])
-        seen = np.array([np.any(np.abs(all_pk - t) <= tol_deg) for t in tt], bool)
-        own = np.array([np.any(np.abs(own_pk - t) <= tol_deg) for t in tt], bool)   # lines this phase explains
-        floor_I = max(10.0, I[own & (I >= 0.5)].min()) if np.any(own & (I >= 0.5)) else 10.0
-        missing = [t for t, i_, s_ in zip(tt, I, seen) if i_ >= floor_I and not s_]
-        missing_exp = _missing_expected(tt, I, lam, own, seen, peaks, m.lam, m.detection_limit, tol_deg)
+    idx = [i for i, s_ in enumerate(sticks) if s_ is not None]
+    n_cores = _n_workers()
+    if n_cores > 1 and len(idx) >= PARALLEL_MIN and not _PARALLEL_BROKEN:
+        chunks = [list(c) for c in np.array_split(idx, min(len(idx), 3 * n_cores)) if len(c)]
+        jobs = [(m, target, weight, peaks, tol_deg, [sticks[i] for i in c]) for c in chunks]
+        res = [row for part in _parallel_map(_score_job, jobs, min_jobs=2) for row in part]
+    else:
+        res = []
+        for k, i in enumerate(idx):
+            if progress and k and k % 100 == 0:
+                print(f"  scored {k}/{len(idx)}")
+            res.append(_score_one(m, target, weight, peaks, tol_deg, *sticks[i]))
+    for i, sc_row in zip(idx, res):
+        r = good[i]
         rows.append({
-            "ref_id": r["ref_id"], "source": r["source"], "label": r["label"], "formula": r["formula"],
-            "spacegroup": r["spacegroup"], "score": round(score, 4),
-            "cell_scale_pct": round((sc - 1) * 100, 2),
-            "explained_pct": round(100 * peaks.rel_intensity[expl].sum() / tot, 1) if tot else np.nan,
-            "n_unexplained": int(len(unexpl)),
-            "unexplained_peaks": ", ".join(f"{t:.2f}({i:.0f}%)" for t, i in
-                                           unexpl.sort_values("rel_intensity", ascending=False)
-                                           [["two_theta", "rel_intensity"]].head(6).to_numpy()),
-            "missing_strong": len(missing),
-            "missing_expected": missing_exp,
-        })
+            "ref_id": r["ref_id"], "source": r["source"],
+            "kind": r.get("kind") or {"COD": "experimental", "MP": "DFT", "built": "model"}.get(r["source"], ""),
+            "label": r["label"], "formula": r["formula"], "spacegroup": r["spacegroup"], **sc_row})
+    if not rows:                                   # no candidates: an empty table with the usual columns
+        return pd.DataFrame(columns=["ref_id", "source", "kind", "label", "formula", "spacegroup", "score",
+                                     "cell_scale_pct", "explained_pct", "n_unexplained", "unexplained_peaks",
+                                     "missing_strong", "missing_expected"])
     out = pd.DataFrame(rows).sort_values("score", ascending=False, na_position="last").reset_index(drop=True)
     if not subtract:
         out = _prefer_exact_cell(out)
     if note:
         out.attrs["subtracted"] = note.strip()
     return out
+
+
+def _near(a, b, tol):
+    """For each value in a: is there a value in b within tol? (vectorised)"""
+    a = np.asarray(a, float)
+    b = np.sort(np.asarray(b, float))
+    if not len(b) or not len(a):
+        return np.zeros(len(a), bool)
+    i = np.clip(np.searchsorted(b, a), 1, len(b) - 1)
+    return (np.abs(b[i - 1] - a) <= tol) | (np.abs(b[i] - a) <= tol) | (np.abs(b[0] - a) <= tol)
+
+
+def _score_one(m, target, weight, peaks, tol_deg, d, inten):
+    """Score one reference (its d-spacings and intensities) against the scan held by matcher m."""
+    if weight is None:
+        score, sc = m.best_scale(d, inten, target, weight)
+    else:                                   # leftover signal: prefer the scale that hits leftover peaks
+        score, sc = m.best_scale_on_peaks(d, inten, target, weight, peaks, tol_deg)
+    tt, I, _, lam = m.line_sticks(d, inten, sc)
+    inr = (tt >= m.lo) & (tt <= m.hi)
+    tt, I, lam = tt[inr], I[inr], lam[inr]
+    visible = tt[I >= 0.5]
+    expl = _near(peaks.two_theta.to_numpy(), visible, tol_deg) if len(peaks) else np.array([], bool)
+    unexpl = peaks[~expl] if len(peaks) else peaks
+    tot = peaks.rel_intensity.sum() if len(peaks) else 0
+    # "missing" = predicted at least as strong as this phase's weakest DETECTED line (and >= 10 %),
+    # yet absent: for a minor phase, lines below the noise are not counted against it
+    all_pk = m.peaks.two_theta.to_numpy()
+    own_pk = peaks.two_theta.to_numpy() if len(peaks) else np.array([])
+    seen = _near(tt, all_pk, tol_deg)
+    own = _near(tt, own_pk, tol_deg)                       # lines this phase explains
+    floor_I = max(10.0, I[own & (I >= 0.5)].min()) if np.any(own & (I >= 0.5)) else 10.0
+    missing = [t for t, i_, s_ in zip(tt, I, seen) if i_ >= floor_I and not s_]
+    return {
+        "score": round(score, 4),
+        "cell_scale_pct": round((sc - 1) * 100, 2),
+        "explained_pct": round(100 * peaks.rel_intensity[expl].sum() / tot, 1) if tot else np.nan,
+        "n_unexplained": int(len(unexpl)),
+        "unexplained_peaks": ", ".join(f"{t:.2f}({i:.0f}%)" for t, i in
+                                       unexpl.sort_values("rel_intensity", ascending=False)
+                                       [["two_theta", "rel_intensity"]].head(6).to_numpy()),
+        "missing_strong": len(missing),
+        "missing_expected": _missing_expected(tt, I, lam, own, seen, peaks, m.lam, m.detection_limit, tol_deg),
+    }
+
+
+def _score_job(job):
+    """Worker: score a chunk of references (several cores)."""
+    m, target, weight, peaks, tol_deg, items = job
+    return [_score_one(m, target, weight, peaks, tol_deg, d, inten) for d, inten in items]
 
 
 def _missing_expected(tt, I, lam, own, seen, peaks, lam1, det_limit, tol_deg, factor=2.0, b_iso=0.5):
@@ -924,7 +1337,7 @@ def _prefer_exact_cell(rank, tol=0.005):
     return rank.loc[order].reset_index(drop=True)
 
 
-def pick_for_plot(ranking, n_top=4, per_source=1, sources=("COD", "MP", "built", "local"), table=None):
+def pick_for_plot(ranking, n_top=4, per_source=1, sources=None, table=None):
     """ref_ids to plot: the n_top best overall plus the best `per_source` of each source,
     skipping duplicates (same 'group' in the summary table, if given)."""
     seen_groups, picked = set(), []
@@ -942,6 +1355,8 @@ def pick_for_plot(ranking, n_top=4, per_source=1, sources=("COD", "MP", "built",
         return True
 
     rk = ranking.dropna(subset=["score"])
+    if sources is None:                      # every source present in the ranking, best first
+        sources = list(dict.fromkeys(rk.source))
     for row in rk.itertuples():
         if len(picked) >= n_top:
             break
@@ -983,7 +1398,7 @@ def _cell_row(system, h, k, l):
     return (h * h, k * k, l * l)
 
 
-def fit_cell(x, y, ref, wavelength="CuKa", other_phases=(), tol_deg=0.15, min_rel=None, refine_zero=True,
+def fit_cell(x, y, ref, wavelength="CuKa", other_phases=(), tol_deg=None, min_rel=None, refine_zero=True,
              zero_shift=None):
     """Lattice parameters of one phase from YOUR peak positions, indexed with `ref`.
 
@@ -1001,7 +1416,8 @@ def fit_cell(x, y, ref, wavelength="CuKa", other_phases=(), tol_deg=0.15, min_re
     system = _cell_system(ref["structure"].lattice)
     if system is None:
         raise ValueError(f"{ref['ref_id']}: monoclinic/triclinic cells are not supported by this fit")
-    m = _Matcher(x, y, wavelength, None, 0.15, 1.5, 0.05, min_rel)
+    w_fit, tol_deg, _ = _widths(np.asarray(x, float), np.asarray(y, float), None, tol_deg, None)
+    m = _Matcher(x, y, wavelength, None, w_fit, 1.5, 0.05, min_rel)
 
     phases = [ref] + [o for o in other_phases if o["ref_id"] != ref["ref_id"]]
 
@@ -1132,7 +1548,7 @@ def built_impurity_models():
 
 
 def search_impurities(library="Li-ion layered oxide (NMC/NCA/LCO)", out_dir="refs_impurities",
-                      max_per_search=80, include_built=True, refresh=False, pause_between=2.0):
+                      max_per_search=80, include_built=None, refresh=False, pause_between=2.0):
     """Fetch candidate side phases from COD for every query in IMPURITY_LIBRARIES[library]
     (or a list of element lists you pass instead). Failed queries are reported and skipped.
     Returns a list of reference records tagged with r["role"] = "impurity"."""
@@ -1151,6 +1567,8 @@ def search_impurities(library="Li-ion layered oxide (NMC/NCA/LCO)", out_dir="ref
             print(f"  impurities {'-'.join(q):10s}: FAILED ({str(ex)[:80]})")
         if online:
             time.sleep(pause_between)      # COD drops rapid back-to-back queries (no wait when reused)
+    if include_built is None:      # the built Li-ion side-phase models only belong to the named Li-ion library
+        include_built = isinstance(library, str)
     if include_built:
         refs += built_impurity_models()
     for r in refs:
@@ -1160,9 +1578,10 @@ def search_impurities(library="Li-ion layered oxide (NMC/NCA/LCO)", out_dir="ref
     return list({r["ref_id"]: r for r in refs}.values())
 
 
-def unexplained_peaks(phases, x, y, wavelength="CuKa", width_deg=0.15, min_rel=None, mask_deg=0.25):
+def unexplained_peaks(phases, x, y, wavelength="CuKa", width_deg=None, min_rel=None, mask_deg=None):
     """Measured peaks that none of `phases` accounts for (DataFrame: two_theta, rel_intensity, fwhm)."""
     x, y = np.asarray(x, float), np.asarray(y, float)
+    width_deg, _, mask_deg = _widths(x, y, width_deg, None, mask_deg)
     m = _Matcher(x, y, wavelength, None, width_deg, 1.5, 0.05, min_rel)
     w = _mask_weight(m, phases, m.exp_lin.copy(), mask_deg)
     keep = np.interp(m.peaks.two_theta, m.grid, w) > 0.5
@@ -1219,6 +1638,10 @@ def identify_phases(candidates, x, y, wavelength="CuKa", impurity_candidates=(),
     pool = list({r["ref_id"]: r for r in list(candidates) + list(impurity_candidates)}.values())
     pool = [r for r in pool if r.get("structure") is not None]
     rank = score_against_experiment(list(candidates), x, y, wavelength, min_rel=min_rel, progress=False)
+    rank = rank.dropna(subset=["score"])
+    if rank.empty:
+        raise ValueError("identify_phases: no candidate structures to compare with the scan - check ELEMENTS, "
+                         "DATABASES and that the library holds structures with these elements")
     by_id = {r["ref_id"]: r for r in pool}
     first = rank.iloc[0]
     phases = [by_id[first.ref_id]]
@@ -1237,6 +1660,13 @@ def identify_phases(candidates, x, y, wavelength="CuKa", impurity_candidates=(),
             break
         rest = [r for r in pool if not any(_same_phase(r, p) for p in phases)]
         rk = score_against_experiment(rest, x, y, wavelength, subtract=phases, min_rel=min_rel, progress=False)
+        rk = rk.dropna(subset=["score"]).reset_index(drop=True)
+        if rk.empty:
+            rows[-1]["not_assigned"] = (f"{len(left)} leftover peak(s) not assigned: no other candidate "
+                                        "structures (switch more DATABASES on or add CIFs)")
+            if verbose:
+                print("  ->", rows[-1]["not_assigned"])
+            break
         # on leftovers, a phase must explain MANY of the leftover peaks, not just fit one of them well:
         # rank by pattern score x fraction of leftover peak intensity it accounts for
         # small penalty for needing a big cell stretch (an exact-cell match is more convincing)
@@ -1322,11 +1752,390 @@ def identify_phases(candidates, x, y, wavelength="CuKa", impurity_candidates=(),
 
 
 # ---------------------------------------------------------------------------
+# Offline structure collections: MOF databases and CIFs you download yourself
+# ---------------------------------------------------------------------------
+# Each collection lives in its own library subfolder (library/<name>/) with an index file
+# (_index.json: elements, formula, cell of every CIF). The index is what makes them usable:
+# filtering 20 000 MOFs by elements takes milliseconds, and only the matching CIFs are parsed.
+COLLECTIONS = {
+    "CoRE_MOF": {
+        "title": "CoRE MOF 2024 - experimental MOF structures (computation-ready: solvent removed; "
+                 "plus not-computation-ready entries)",
+        "kind": "experimental",
+        "download": "https://zenodo.org/records/15055758/files/CoREMOF2024DB_SI_20250204.zip?download=1",
+        "page": "https://zenodo.org/records/15055758",
+        "note": "about 44 MB, 8 300 structures, CC BY 4.0",
+    },
+    "QMOF": {
+        "title": "QMOF database - DFT-optimised MOF structures",
+        "kind": "DFT",
+        "figshare_article": 13147324,
+        "page": "https://doi.org/10.6084/m9.figshare.13147324",
+        "note": "large download; DFT cells can differ from experiment by 1-3 %",
+    },
+    "CSD": {
+        "title": "CIFs you downloaded from the CCDC (Access Structures / your CSD licence)",
+        "kind": "experimental",
+        "manual": True,
+        "page": "https://www.ccdc.cam.ac.uk/structures/",
+    },
+    "Published": {
+        "title": "CIFs from papers' supporting information and data repositories (Zenodo, Mendeley ...)",
+        "kind": "experimental",
+        "manual": True,
+    },
+}
+
+_INDEX = "_index.json"
+
+
+def _element_symbol(token):
+    """'Cu1' -> 'Cu', 'CU1' -> 'Cu', 'O2A' -> 'O', 'C10' -> 'C', 'Zn2+' -> 'Zn'; None if not an element."""
+    from pymatgen.core.periodic_table import Element
+
+    m = re.match(r"([A-Za-z]{1,2})", token.strip().strip("'\""))
+    if not m:
+        return None
+    s = m.group(1)
+    for cand in ((s[0].upper() + s[1:].lower()) if len(s) == 2 else None, s[0].upper()):
+        if cand and Element.is_valid_symbol(cand):
+            return cand
+    return None
+
+
+def _cif_quick_info(text):
+    """Elements, formula and cell of a CIF without building the structure (fast, for indexing).
+    Elements come from the atom-site loop (what pymatgen will actually build); the formula from
+    _chemical_formula_sum when present."""
+    info = {"elements": [], "formula": "", "a": None, "b": None, "c": None, "spacegroup": "", "n_sites": 0}
+
+    def num(key):
+        m = re.search(rf"^\s*{key}\s+([-+0-9.]+)", text, re.M)
+        return float(m.group(1)) if m else None
+
+    info["a"], info["b"], info["c"] = num("_cell_length_a"), num("_cell_length_b"), num("_cell_length_c")
+    m = re.search(r"^\s*_(?:symmetry_space_group_name_H-M|space_group_name_H-M_alt)\s+(['\"]?)(.+?)\1\s*$", text, re.M)
+    if m:
+        info["spacegroup"] = m.group(2).strip()
+    m = re.search(r"^\s*_chemical_formula_sum\s+(['\"]?)(.+?)\1\s*$", text, re.M)
+    if m:
+        info["formula"] = m.group(2).strip()
+
+    # atom-site loop: header lines starting with _atom_site_, then rows until a blank line / loop_ / _tag
+    lines = text.splitlines()
+    els = set()
+    i = 0
+    while i < len(lines):
+        if lines[i].strip().lower() == "loop_":
+            j, heads = i + 1, []
+            while j < len(lines) and lines[j].strip().startswith("_"):
+                heads.append(lines[j].strip().split()[0].lower())
+                j += 1
+            if any(h.startswith("_atom_site_") and not h.startswith("_atom_site_aniso") for h in heads):
+                col = (heads.index("_atom_site_type_symbol") if "_atom_site_type_symbol" in heads
+                       else heads.index("_atom_site_label") if "_atom_site_label" in heads else None)
+                n = 0
+                while j < len(lines):
+                    ln = lines[j].strip()
+                    if not ln or ln.lower() == "loop_" or ln.startswith("_") or ln.startswith("#"):
+                        break
+                    parts = ln.split()
+                    if col is not None and len(parts) > col:
+                        el = _element_symbol(parts[col])
+                        if el and el not in ("D", "T"):
+                            els.add(el)
+                        elif el in ("D", "T"):
+                            els.add("H")
+                    n += 1
+                    j += 1
+                info["n_sites"] += n
+            i = j
+            continue
+        i += 1
+    if not els and info["formula"]:
+        els = {e for e in (_element_symbol(t) for t in re.findall(r"[A-Za-z]{1,2}", info["formula"])) if e}
+    info["elements"] = sorted(els)
+    return info
+
+
+def _safe_name(rel):
+    """A flat, unique file name from a path inside an archive: 'CR/ASR/ABAVIJ.cif' -> 'CR__ASR__ABAVIJ.cif'."""
+    parts = [p for p in re.split(r"[\\/]+", rel) if p not in ("", ".", "..")]
+    name = "__".join(parts)
+    name = re.sub(r"[^A-Za-z0-9._+-]", "_", name)
+    if len(name) > 150:                       # Windows path limits
+        stem, ext = os.path.splitext(name)
+        import hashlib
+        name = stem[:110] + "_" + hashlib.md5(name.encode()).hexdigest()[:8] + ext
+    return name
+
+
+def _extract_cifs(archive, dest, prefix="", verbose=True):
+    """Copy every .cif out of a zip / tar(.gz) archive into dest (nested archives included).
+    Returns the list of written file names."""
+    import io
+    import tarfile
+    import zipfile
+
+    written = []
+
+    def handle(name, data):
+        low = name.lower()
+        if low.endswith(".cif"):
+            out = _safe_name(prefix + name)
+            (dest / out).write_bytes(data)
+            written.append(out)
+        elif low.endswith(".zip") or low.endswith((".tar", ".tar.gz", ".tgz")):
+            written.extend(_extract_cifs(io.BytesIO(data), dest, prefix + os.path.splitext(name)[0] + "/",
+                                         verbose=False))
+
+    src = archive
+    if isinstance(src, (str, Path)):
+        src = Path(src)
+        is_zip = zipfile.is_zipfile(src)
+    else:
+        is_zip = zipfile.is_zipfile(src)
+        src.seek(0)
+    if is_zip:
+        with zipfile.ZipFile(src) as z:
+            members = [m for m in z.infolist() if not m.is_dir()]
+            wanted = [m for m in members if m.filename.lower().endswith((".cif", ".zip", ".tar", ".tar.gz", ".tgz"))]
+            # one top folder around everything (e.g. 'CoREMOF2024DB/') adds nothing to the names - drop it
+            tops = {m.filename.replace("\\", "/").split("/")[0] for m in wanted}
+            strip = (next(iter(tops)) + "/") if len(tops) == 1 and all("/" in m.filename.replace("\\", "/") for m in wanted) else ""
+            for k, mem in enumerate(wanted):
+                fn = mem.filename.replace("\\", "/")
+                handle(fn[len(strip):] if strip and fn.startswith(strip) else fn, z.read(mem))
+                if verbose and k and k % 5000 == 0:
+                    print(f"  ... {k}/{len(members)} archive members read, {len(written)} CIFs so far")
+    else:
+        mode = "r:*"
+        with (tarfile.open(src, mode) if isinstance(src, Path) else tarfile.open(fileobj=src, mode=mode)) as t:
+            for mem in t:
+                if mem.isfile() and mem.name.lower().endswith((".cif", ".zip", ".tar", ".tar.gz", ".tgz")):
+                    handle(mem.name, t.extractfile(mem).read())
+    return written
+
+
+def _download(url, dest_file, verbose=True, chunk=1 << 20):
+    """Stream a (large) file to disk with progress; skips the download if it is already there."""
+    dest_file = Path(dest_file)
+    if dest_file.exists() and dest_file.stat().st_size > 0:
+        if verbose:
+            print(f"  using the file already downloaded: {dest_file}")
+        return dest_file
+    dest_file.parent.mkdir(parents=True, exist_ok=True)
+    tmp = dest_file.with_suffix(dest_file.suffix + ".part")
+    with requests.get(url, stream=True, timeout=120) as r:
+        r.raise_for_status()
+        total = int(r.headers.get("content-length", 0))
+        done, next_report = 0, 0.1
+        with open(tmp, "wb") as fh:
+            for block in r.iter_content(chunk):
+                fh.write(block)
+                done += len(block)
+                if verbose and total and done / total >= next_report:
+                    print(f"  downloaded {done / 1e6:.0f} / {total / 1e6:.0f} MB")
+                    next_report += 0.1
+    tmp.replace(dest_file)
+    return dest_file
+
+
+def _figshare_zip_url(article_id, prefer="qmof_database"):
+    """Download URL of the main zip in a figshare record (the one whose name contains `prefer`,
+    else the largest zip)."""
+    r = _http_get(f"https://api.figshare.com/v2/articles/{article_id}/files", timeout=60)
+    files = [f for f in r.json() if str(f.get("name", "")).lower().endswith(".zip")]
+    if not files:
+        raise RuntimeError(f"figshare record {article_id} lists no zip file")
+    pick = [f for f in files if prefer in f["name"].lower()] or files
+    best = max(pick, key=lambda f: f.get("size", 0))
+    return best["download_url"], best["name"], best.get("size", 0)
+
+
+def index_collection(name, library_dir, verbose=True):
+    """(Re)build library/<name>/_index.json from the CIFs in that folder. Run it after copying
+    CIFs into a manual collection (CSD, Published) - load_collection also does it automatically
+    when it sees new or removed files."""
+    import json
+
+    folder = Path(library_dir) / name
+    folder.mkdir(parents=True, exist_ok=True)
+    meta = COLLECTIONS.get(name, {})
+    old = {}
+    if (folder / _INDEX).exists():
+        try:
+            old = {e["file"]: e for e in json.loads((folder / _INDEX).read_text(encoding="utf-8"))["entries"]}
+        except Exception:
+            old = {}
+    entries, bad = [], 0
+    cifs = sorted(folder.glob("*.cif"))
+    for k, cif in enumerate(cifs):
+        if cif.name in old and old[cif.name].get("mtime") == int(cif.stat().st_mtime):
+            entries.append(old[cif.name])
+            continue
+        try:
+            info = _cif_quick_info(cif.read_text(encoding="utf-8", errors="replace"))
+        except Exception:
+            bad += 1
+            continue
+        parts = cif.stem.split("__")
+        entries.append({"file": cif.name, "id": parts[-1], "subset": "/".join(parts[:-1]),
+                        "mtime": int(cif.stat().st_mtime), **info})
+        if verbose and k and k % 2000 == 0:
+            print(f"  indexed {k}/{len(cifs)}")
+    (folder / _INDEX).write_text(json.dumps({"collection": name, "kind": meta.get("kind", "experimental"),
+                                             "indexed": time.strftime("%Y-%m-%d %H:%M"),
+                                             "entries": entries}), encoding="utf-8")
+    if verbose:
+        print(f"{name}: {len(entries)} CIFs indexed" + (f", {bad} unreadable" if bad else ""))
+    return entries
+
+
+def import_collection(name, library_dir, source=None, download=True, keep_archive=True, verbose=True):
+    """Put a structure collection into the library, once. Afterwards it works offline.
+
+      name    : "CoRE_MOF", "QMOF", "CSD", "Published", or any name of your own
+      source  : None  -> download it (CoRE_MOF from Zenodo, QMOF from figshare)
+                a .zip / .tar.gz you downloaded yourself (nested archives are fine)
+                a folder of CIFs (e.g. files saved from the CCDC or a paper's SI) - copied in
+                a URL of a zip
+    Every CIF is copied to library/<name>/ (sub-folders become part of the name, e.g.
+    'CR__ASR__ABAVIJ.cif', so the subset stays visible) and indexed.
+    """
+    import shutil
+
+    lib = Path(library_dir)
+    dest = lib / name
+    dest.mkdir(parents=True, exist_ok=True)
+    meta = COLLECTIONS.get(name, {})
+
+    if source is None:
+        if meta.get("manual"):
+            if verbose:
+                print(f"{name}: copy your CIFs into {dest} (or pass source=<folder or zip>), then it is indexed.")
+            return index_collection(name, lib, verbose)
+        if not download:
+            raise ValueError(f"{name}: no source given and download=False")
+        if "download" in meta:
+            url, fname = meta["download"], meta["download"].split("/")[-1].split("?")[0]
+        elif "figshare_article" in meta:
+            url, fname, size = _figshare_zip_url(meta["figshare_article"])
+            if verbose and size:
+                print(f"{name}: {fname} is {size / 1e6:.0f} MB")
+        else:
+            raise ValueError(f"{name}: unknown collection - pass source=<zip, folder or URL>")
+        if verbose:
+            print(f"{name}: downloading {url}")
+        source = _download(url, lib / "_downloads" / fname, verbose)
+    elif isinstance(source, str) and source.lower().startswith(("http://", "https://")):
+        fname = source.split("/")[-1].split("?")[0] or f"{name}.zip"
+        source = _download(source, lib / "_downloads" / fname, verbose)
+
+    source = Path(source)
+    if source.is_dir():
+        n = 0
+        for cif in source.rglob("*.cif"):
+            shutil.copy2(cif, dest / _safe_name(str(cif.relative_to(source))))
+            n += 1
+        if verbose:
+            print(f"{name}: copied {n} CIFs from {source}")
+    else:
+        if verbose:
+            print(f"{name}: extracting CIFs from {source.name} ...")
+        got = _extract_cifs(source, dest, verbose=verbose)
+        if verbose:
+            print(f"{name}: {len(got)} CIFs extracted to {dest}")
+        if not keep_archive and source.parent == lib / "_downloads":
+            source.unlink()
+    return index_collection(name, lib, verbose)
+
+
+def collection_status(library_dir):
+    """Which collections are in the library, how many structures each, experimental or DFT."""
+    import json
+
+    rows = []
+    lib = Path(library_dir)
+    for name in sorted(set(COLLECTIONS) | {p.parent.name for p in lib.glob(f"*/{_INDEX}")}):
+        f = lib / name / _INDEX
+        n, when = 0, ""
+        if f.exists():
+            try:
+                d = json.loads(f.read_text(encoding="utf-8"))
+                n, when = len(d["entries"]), d.get("indexed", "")
+            except Exception:
+                pass
+        rows.append({"collection": name, "structures": n, "indexed": when,
+                     "kind": COLLECTIONS.get(name, {}).get("kind", "experimental"),
+                     "what": COLLECTIONS.get(name, {}).get("title", "your own collection")})
+    return pd.DataFrame(rows)
+
+
+def load_collection(name, library_dir, allowed_elements=None, max_sites=None, require=None, verbose=True):
+    """Structures of one collection whose elements are all in allowed_elements (and include every
+    element in `require`, if given). Only the matching CIFs are parsed. max_sites skips huge
+    cells (number of atom-site rows in the CIF) if simulation gets slow."""
+    import json
+
+    lib = Path(library_dir)
+    _auto_cache_dir(lib)
+    folder = lib / name
+    if not folder.exists():
+        return []
+    f = folder / _INDEX
+    n_cif = sum(1 for _ in folder.glob("*.cif"))
+    entries = None
+    if f.exists():
+        try:
+            entries = json.loads(f.read_text(encoding="utf-8"))["entries"]
+        except Exception:
+            entries = None
+    if entries is None or len(entries) != n_cif:
+        entries = index_collection(name, lib, verbose)
+    allowed = set(allowed_elements) if allowed_elements else None
+    need = set(require) if require else set()
+    hits = [e for e in entries if e["elements"]
+            and (allowed is None or set(e["elements"]) <= allowed)
+            and need <= set(e["elements"])
+            and (max_sites is None or (e.get("n_sites") or 0) <= max_sites)]
+    kind = COLLECTIONS.get(name, {}).get("kind", "experimental")
+    refs, bad = [], 0
+    for e in hits:
+        path = folder / e["file"]
+        try:
+            st, sg = load_cif_cached(path)
+        except Exception:
+            bad += 1
+            continue
+        rid = f"{name}:{Path(e['file']).stem}"
+        refs.append(_record(name, rid, f"{name} {e.get('id', '')} {e.get('subset', '')}".strip(), st, path,
+                            kind=kind, subset=e.get("subset", ""), spacegroup=sg))
+    if verbose:
+        print(f"  {name}: {len(hits)} of {len(entries)} structures match the elements"
+              + (f" ({bad} could not be parsed)" if bad else ""))
+    return refs
+
+
+# ---------------------------------------------------------------------------
 # Reference library: use what you already have, search databases only when needed
 # ---------------------------------------------------------------------------
-def load_library(library_dir, allowed_elements=None, verbose=True):
+def _db_on(databases, name, default=True):
+    """Is database `name` switched on? databases = {"COD": True, "MP": False, ...}; names not
+    listed use `default`."""
+    if not databases:
+        return default
+    return bool(databases.get(name, default))
+
+
+def load_library(library_dir, allowed_elements=None, verbose=True, databases=None):
     """Load every CIF already in a reference library folder (from earlier COD / Materials
     Project searches, any project) - no internet needed.
+
+    databases : switches, e.g. {"COD": True, "MP": False, "local": True, "CoRE_MOF": True,
+                "QMOF": False, "CSD": True, "Published": True}; anything not listed is on.
+                Collections (library/<name>/ with an _index.json) are loaded through their
+                index, so only structures with your elements are parsed.
 
     library_dir/COD/COD_<id>.cif   -> ref_id "cod-<id>"
     library_dir/MP/<mp-id>.cif     -> ref_id "<mp-id>" (E above hull restored from the saved searches)
@@ -1337,6 +2146,7 @@ def load_library(library_dir, allowed_elements=None, verbose=True):
     import json
 
     lib = Path(library_dir)
+    _auto_cache_dir(lib)
     allowed = set(allowed_elements) if allowed_elements else None
     mp_meta = {}
     for f in (lib / "MP").glob("_mp_search_*.json"):
@@ -1348,9 +2158,11 @@ def load_library(library_dir, allowed_elements=None, verbose=True):
 
     refs, skipped, bad = [], 0, 0
     for sub, source in (("COD", "COD"), ("MP", "MP"), ("local", "local")):
+        if not _db_on(databases, sub):
+            continue
         for cif in sorted((lib / sub).glob("*.cif")):
             try:
-                st = parse_cif_text(cif.read_text(encoding="utf-8", errors="replace"))
+                st, sg = load_cif_cached(cif)
             except Exception:
                 bad += 1
                 continue
@@ -1359,17 +2171,26 @@ def load_library(library_dir, allowed_elements=None, verbose=True):
                 continue
             if source == "COD":
                 rid = "cod-" + cif.stem.split("_", 1)[-1]
-                refs.append(_record("COD", rid, f"COD {rid[4:]}", st, cif))
+                refs.append(_record("COD", rid, f"COD {rid[4:]}", st, cif, kind="experimental", spacegroup=sg))
             elif source == "MP":
                 meta = mp_meta.get(cif.stem, {})
                 refs.append(_record("MP", cif.stem, f"{cif.stem} {meta.get('formula_pretty', '')}".strip(), st, cif,
-                                    e_above_hull=meta.get("e_above_hull"), theoretical=meta.get("theoretical")))
+                                    e_above_hull=meta.get("e_above_hull"), theoretical=meta.get("theoretical"),
+                                    kind="DFT", spacegroup=sg))
             else:
-                refs.append(_record("local", cif.stem, cif.stem, st, cif))
+                refs.append(_record("local", cif.stem, cif.stem, st, cif, kind="local", spacegroup=sg))
     if verbose:
         print(f"Library {lib}: {len(refs)} structures loaded"
               + (f", {skipped} skipped (other elements)" if skipped else "")
               + (f", {bad} unreadable" if bad else ""))
+    # offline collections (CoRE MOF, QMOF, CSD downloads, published CIFs ...)
+    names = sorted(set(n for n in COLLECTIONS if (lib / n).is_dir()) | {p.parent.name for p in lib.glob(f"*/{_INDEX}")})
+    for name in names:
+        if not _db_on(databases, name):
+            if verbose:
+                print(f"  {name}: switched off")
+            continue
+        refs += load_collection(name, lib, allowed_elements, verbose=verbose)
     return refs
 
 
@@ -1410,7 +2231,7 @@ def _related_systems(elements, size):
 def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api_key=None,
                           extra_refs=(), min_score=0.85, min_explained_pct=80.0, max_cell_shift_pct=1.0,
                           related=True, max_e_above_hull=0.10, systems=None, mixture=True,
-                          min_mixture_main_score=0.5, verbose=True):
+                          min_mixture_main_score=0.5, databases=None, verbose=True):
     """Find references for a scan, going online only when the library is not good enough.
 
       stage 1  library only (offline): every CIF already downloaded, filtered to your elements
@@ -1435,6 +2256,11 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
                  intensity, each within max_cell_shift_pct, the main one scoring
                  >= min_mixture_main_score.
 
+    databases : switch sources on/off, e.g. {"COD": True, "MP": False, "CoRE_MOF": True,
+                "QMOF": False, "CSD": True, "Published": True, "local": True}. COD and MP off
+                means neither their library folders nor the online search are used; the
+                collections are offline (import them once with import_collection).
+
     Returns (refs, ranking, log): all references considered, their ranking vs the scan, and a
     small table saying what each stage found.
     """
@@ -1444,6 +2270,13 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
     lib = Path(library_dir)
     cod_dir, mp_dir = lib / "COD", lib / "MP"
     allowed = set(elements)
+    if systems and all(isinstance(e, str) for e in systems):
+        # ["Cu", "C", "H", "O"] means ONE system; a list of systems is [["Cu","C","H","O"], ["Cu","O"]]
+        systems = [list(systems)]
+    for sysm in systems or []:
+        bad = set(sysm) - allowed
+        if bad:
+            raise ValueError(f"SYSTEMS entry {sysm} has elements not in ELEMENTS: {sorted(bad)}")
     log = []
 
     def evaluate(stage, refs):
@@ -1505,6 +2338,8 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
         _save_failed()
 
     def cod(els, exact=True, refresh=False):
+        if not _db_on(databases, "COD"):
+            return []
         try:
             out = [r for r in search_cod(els, out_dir=cod_dir, exact=exact, refresh=refresh) if r["structure"] is not None]
         except Exception as ex:
@@ -1515,6 +2350,8 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
         return out
 
     def mp(els):
+        if not _db_on(databases, "MP"):
+            return []
         if not (mp_api_key or os.environ.get("MP_API_KEY") or os.environ.get("PMG_MAPI_KEY")):
             return []
         try:
@@ -1537,8 +2374,14 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
         return refs, rk, out_log
 
     # stage 1: what we already have (expected systems missing from the library are fetched first)
-    refs = load_library(lib, allowed_elements=allowed, verbose=verbose)
-    retry = [v for v in failed.values() if set(v["elements"]) <= allowed]
+    if verbose and databases:
+        print("Databases: " + ", ".join(f"{k} {'on' if v else 'OFF'}" for k, v in databases.items()))
+    if verbose:
+        _w = peak_width(x, y)
+        if _w > 0.15 + 1e-9:
+            print(f"Broad peaks: matching with the measured peak width {_w:.2f} deg (X.PEAK_WIDTH to override)")
+    refs = load_library(lib, allowed_elements=allowed, verbose=verbose, databases=databases)
+    retry = [v for v in failed.values() if set(v["elements"]) <= allowed and _db_on(databases, v["db"])]
     if retry and verbose:
         print(f"  retrying {len(retry)} query(ies) that failed last time: "
               + ", ".join(f"{v['db']} {'-'.join(v['elements'])}" for v in retry))
@@ -1547,6 +2390,10 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
     for sysm in systems or []:
         have = any({e.symbol for e in r["structure"].composition.elements} == set(sysm) for r in refs)
         if not have:
+            if not (_db_on(databases, "COD") or _db_on(databases, "MP")):
+                if verbose:
+                    print(f"  library has no {'-'.join(sysm)} structure (COD and MP are off, so nothing is fetched)")
+                continue
             if verbose:
                 print(f"  library has no {'-'.join(sysm)} structure yet - fetching it")
             refs += cod(list(sysm))
@@ -1594,6 +2441,116 @@ def auto_reference_search(elements, x, y, library_dir, wavelength="CuKa", mp_api
               "the elements and the wavelength setting.")
     return _finish(refs, rk)
 
+
+
+_ACS_NEW = {"ja": "jacs", "am": "acsami", "ic": "acs.inorgchem", "cm": "acs.chemmater", "cg": "acs.cgd",
+            "jo": "acs.joc", "om": "acs.organomet", "ma": "acs.macromol", "nl": "acs.nanolett"}
+
+
+def doi_from_name(name):
+    """Probable DOI hidden in a CIF file name from a paper's supporting information (as used by
+    CoRE MOF and many SI downloads): 'ja4015666_si_004' -> 10.1021/ja4015666,
+    'am8b02015_si_009' -> 10.1021/acsami.8b02015, 'c6ce00407e1' -> 10.1039/c6ce00407e,
+    'S0885715619000228sup002' -> 10.1017/S0885715619000228. '' if no pattern fits."""
+    s = str(name)
+    for part in re.split(r"__|/|\\", s):
+        m = re.match(r"^(ja|cm|cg|ic|jo|om|ma|nl)(\d{6,7}[a-z]?)(?![a-z0-9])", part)
+        if m:
+            return f"10.1021/{m.group(1)}{m.group(2)}"
+        m = re.match(r"^(ja|am|ic|cm|cg|jo|om|ma|nl)(\d{1,2}b\d{5})", part)
+        if m and m.group(1) in _ACS_NEW:
+            return f"10.1021/{_ACS_NEW[m.group(1)]}.{m.group(2)}"
+        m = re.match(r"^([b-d]\d[a-z]{2}\d{5}[a-z])", part)
+        if m:
+            return f"10.1039/{m.group(1)}"
+        m = re.match(r"^(S\d{16})", part)
+        if m:
+            return f"10.1017/{m.group(1)}"
+    return ""
+
+
+def _source_link(r):
+    src, rid = r.get("source", ""), str(r.get("ref_id", ""))
+    if src == "COD":
+        return f"https://www.crystallography.net/cod/{rid.split('-', 1)[-1]}.html"
+    if src == "MP":
+        return f"https://next-gen.materialsproject.org/materials/{rid}"
+    if src == "CoRE_MOF":
+        return COLLECTIONS["CoRE_MOF"]["page"]
+    if src == "QMOF":
+        return COLLECTIONS["QMOF"]["page"]
+    return ""
+
+
+def save_reference_cifs(ranking, refs, out_dir, n_top=10, phases=(), folder="reference_cifs"):
+    """Copy the CIFs of the identified phases and of the n_top best-ranked references next to the
+    results (out_dir/reference_cifs/), with sources.csv saying where each one comes from:
+    database, its page (COD / Materials Project), the original file in the library, the CSD
+    refcode or QMOF id where the name holds one, and a probable DOI read from SI file names
+    (check it - it is a guess from the name). Returns the sources table."""
+    import shutil
+
+    out = Path(out_dir) / folder
+    out.mkdir(parents=True, exist_ok=True)
+    by_id = {r["ref_id"]: r for r in refs}
+    for p in phases:
+        by_id.setdefault(p["ref_id"], p)
+    rank_of = {rid: i + 1 for i, rid in enumerate(ranking.ref_id)} if ranking is not None and len(ranking) else {}
+    row_of = {r.ref_id: r for r in ranking.itertuples()} if ranking is not None and len(ranking) else {}
+    chosen = [p["ref_id"] for p in phases]
+    for rid in (list(ranking.ref_id) if ranking is not None and len(ranking) else []):
+        if len(chosen) >= len(phases) + n_top:
+            break
+        if rid not in chosen:
+            chosen.append(rid)
+    phase_ids = {p["ref_id"]: i + 1 for i, p in enumerate(phases)}
+    rows = []
+    for k, rid in enumerate(chosen, 1):
+        r = by_id.get(rid)
+        if r is None or r.get("structure") is None:
+            continue
+        fname = f"{k:02d}_" + re.sub(r"[^A-Za-z0-9._+-]", "_", rid) + ".cif"
+        src_file = r.get("cif_path")
+        try:
+            if src_file and Path(src_file).exists():
+                shutil.copy2(src_file, out / fname)
+            else:
+                write_cif(r["structure"], out / fname)
+        except Exception as ex:
+            fname = f"(not written: {str(ex)[:60]})"
+        stem = Path(src_file).stem if src_file else rid
+        refcode = ""
+        m = re.search(r"core_([A-Z]{6}(?:\d{2})?)", stem)
+        if m:
+            refcode = m.group(1)
+        qmof = re.search(r"(qmof-[0-9a-f]{7})", stem)
+        doi_cif = ""
+        try:
+            txt = Path(src_file).read_text(encoding="utf-8", errors="replace") if src_file and Path(src_file).exists() else ""
+            m = re.search(r"^\s*_(?:journal_paper_doi|citation_doi|journal_DOI)\s+['\"]?([^\s'\"]+)", txt, re.M | re.I)
+            if m and m.group(1) not in ("?", "."):
+                doi_cif = m.group(1)
+        except Exception:
+            pass
+        rk = row_of.get(rid)
+        rows.append({
+            "file": fname,
+            "role": (f"identified phase {phase_ids[rid]}" if rid in phase_ids else "candidate"),
+            "rank": rank_of.get(rid), "ref_id": rid, "source": r.get("source"),
+            "kind": r.get("kind") or {"COD": "experimental", "MP": "DFT", "built": "model"}.get(r.get("source"), ""),
+            "formula": r.get("formula"), "spacegroup": r.get("spacegroup"),
+            "score": getattr(rk, "score", None), "cell_scale_pct": getattr(rk, "cell_scale_pct", None),
+            "explained_pct": getattr(rk, "explained_pct", None),
+            "link": _source_link(r),
+            "doi_in_cif": doi_cif,
+            "probable_doi": "" if doi_cif else doi_from_name(stem),
+            "csd_refcode": refcode, "qmof_id": qmof.group(1) if qmof else "",
+            "original_file": str(src_file or ""),
+        })
+    table = pd.DataFrame(rows)
+    table.to_csv(out / "sources.csv", index=False)
+    print(f"{len(table)} CIFs saved to {out} (see sources.csv)")
+    return table
 
 
 def add_to_library(sources, library_dir):
